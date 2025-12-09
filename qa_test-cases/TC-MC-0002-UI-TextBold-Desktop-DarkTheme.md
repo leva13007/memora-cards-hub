@@ -1,6 +1,6 @@
 ---
-id: TC-MC-0001
-title: "UI-kit: TextBold – Desktop – Light Theme – Typography Tokens"
+id: TC-MC-0002
+title: "UI-kit: TextBold – Desktop – Dark Theme – Typography Tokens"
 type: UI
 priority: Medium
 area: "ui-kit/typography"
@@ -11,11 +11,11 @@ created: 2025-12-09
 updated: 2025-12-09
 ---
 
-# TC-MC-0001 — UI: TextBold – Desktop – Light Theme – Typography Tokens
+# TC-MC-0002 — UI: TextBold – Desktop – Dark Theme – Typography Tokens
 
 ## Objective
 
-Validate that the `TextBold` UI component renders correctly on **Desktop** in **Light theme**, using the expected typography design tokens and computed styles defined in ticket  
+Validate that the `TextBold` UI component renders correctly on **Desktop** in **Dark theme**, using the expected typography design tokens and computed styles defined in ticket  
 [MC-0001-UI-kit-Create-Text-component](../tickets/MC-0001-UI-kit-Create-Text-component.md).
 
 Specifically confirm:
@@ -23,7 +23,7 @@ Specifically confirm:
 - correct font family
 - correct font size from token `--fonts-size-text`
 - correct font-weight via `--font-weight-semi`
-- correct text color (`--color-text`)
+- correct text color (`--color-text`) for **Dark** theme
 - correct line-height
 - no visual or spacing inconsistencies
 
@@ -34,18 +34,18 @@ Specifically confirm:
 - Application or Storybook is running.
 - The `TextBold` component is available (e.g., via Storybook story `UI / Atoms / TextBold`).
 - Browser viewport width is ≥ **1193px** (desktop breakpoint).
-- Application theme is set to **Light**.
+- Application theme is set to **Dark**.
 - Design tokens are loaded:
-  - `--color-text`
-  - `--fonts-size-text`
-  - `--font-weight-semi`
+	- `--color-text`
+	- `--fonts-size-text`
+	- `--font-weight-semi`
 - Browser devtools are available to inspect computed styles.
 
 ---
 
 ## Test Data
 
-_static UI verification; no dynamic data required._
+_Static UI verification; no dynamic data required._
 
 Environment assumptions:
 
@@ -53,7 +53,7 @@ Environment assumptions:
 |----------------|--------------------------|
 | Device         | Desktop                  |
 | Viewport       | ≥ 1193px                 |
-| Theme          | Light                    |
+| Theme          | Dark                     |
 | Browser        | Latest Chrome / Chromium |
 
 ---
@@ -62,20 +62,20 @@ Environment assumptions:
 
 1. Open Storybook or the application in a desktop browser.
 2. Set viewport width to **≥ 1193px**.
-3. Ensure the **Light** theme is active.
+3. Ensure the **Dark** theme is active.
 4. Navigate to the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textbold--default&viewMode=story) or [Storybook story](https://leva13007.github.io/memora-cards-storybook/?path=/docs/ui-atoms-textbold--docs) that showcases the `TextBold` component (`UI / Atoms / TextBold`).
 5. Identify a sample `TextBold` text element (e.g., “Sample Bold Text”).
 6. Open browser devtools and inspect the element.
 7. In the **Styles** or **Computed** panel, verify the following CSS properties:
-   - `font-family`
-   - `font-size`
-   - `font-weight`
-   - `line-height`
-   - `color`
+	 - `font-family`
+	 - `font-size`
+	 - `font-weight`
+	 - `line-height`
+	 - `color`
 8. Confirm that the styles originate from or match the expected design tokens:
-   - `--fonts-size-text`
-   - `--font-weight-semi`
-   - `--color-text`
+	 - `--fonts-size-text`
+	 - `--font-weight-semi`
+	 - `--color-text`
 
 ---
 
@@ -85,16 +85,16 @@ Environment assumptions:
 - `font-size` = **1rem (16px)**, sourced from `--fonts-size-text`
 - `font-weight` = **600**, mapped from token `--font-weight-semi`
 - `line-height` = **normal** (or browser-resolved equivalent)
-- `color` = `#0f172a` equals the resolved value of **`--color-text`**
+- `color` equals the resolved value of **`--color-text`** for **Dark theme** (`#f5f7fb`)
 - No unexpected spacing, clipping, overlaps, or rendering artifacts
 
 ---
 
 ## Screenshots / Attachments (optional)
 
-- Screenshot of component rendering on Desktop + Light theme
-  
-![alt text](./assets/image-0.png)
+- Screenshot of component rendering on Desktop + Dark theme
+
+![alt text](./assets/image-1.png)
 
 ---
 
@@ -102,22 +102,24 @@ Environment assumptions:
 *(Not required for pass/fail, but recommended to observe)*
 
 - Adjust viewport around desktop threshold (1192px ↔ 1194px) and confirm:
-  - ≥1193px uses 1rem
-  - tablet range uses 0.875rem
-- Toggle Light → Dark → Light and verify color token re-evaluates correctly.
+	- ≥1193px uses 1rem
+	- tablet range uses 0.875rem
+- Toggle Dark → Light → Dark and verify color token re-evaluates correctly back to Dark theme value.
 - Test long text wrapping to ensure no layout shifts.
 
 ---
 
 ## Notes
 
-- This test case covers only **Desktop + Light theme**.
-- Additional test cases are required for Tablet, Mobile, and Dark theme variants.
+- This test case covers only **Desktop + Dark theme**.
+- Additional test cases are required for Tablet, Mobile, and Light theme variants (see related cases).
 
 ---
 
 ## Related
 
 - Ticket: [MC-0001](../tickets/MC-0001-UI-kit-Create-Text-component.md)
-- Planned related test cases:
-  - ..
+- Related test cases:
+	- [TC-MC-0001 – TextBold – Desktop – Light Theme](./TC-MC-0001-UI-TextBold-Desktop-LightTheme.md)
+	- (future) Tablet / Mobile + Dark theme
+
