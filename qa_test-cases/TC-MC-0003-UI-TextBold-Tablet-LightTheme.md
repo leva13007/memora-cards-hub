@@ -91,7 +91,7 @@ Recommended specific widths:
 - `font-size` = **0.875rem (14px)** for tablet, sourced from `--fonts-size-text`
 - `font-weight` = **600**, mapped from token `--font-weight-semi`
 - `line-height` = **normal** (or browser-resolved equivalent)
-- `color` equals the resolved value of **`--color-text`** for **Light theme** (`#0f172a`)
+- `color` = `#0f172a` equals the resolved value of **`--color-text`** for **Light theme**
 - No unexpected spacing, clipping, overlaps, or rendering artifacts
 
 ---
