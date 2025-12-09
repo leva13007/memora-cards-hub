@@ -63,7 +63,7 @@ Environment assumptions:
 1. Open Storybook or the application in a desktop browser.
 2. Set viewport width to **≥ 1193px**.
 3. Ensure the **Dark** theme is active.
-4. Navigate to the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textbold--default&viewMode=story) or [Storybook story](https://leva13007.github.io/memora-cards-storybook/?path=/docs/ui-atoms-textbold--docs) that showcases the `TextBold` component (`UI / Atoms / TextBold`).
+4. Navigate to the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textbold--default&viewMode=story&globals=theme:dark) or [Storybook story](https://leva13007.github.io/memora-cards-storybook/?path=/docs/ui-atoms-textbold--docs) that showcases the `TextBold` component (`UI / Atoms / TextBold`).
 5. Identify a sample `TextBold` text element (e.g., “Sample Bold Text”).
 6. Open browser devtools and inspect the element.
 7. In the **Styles** or **Computed** panel, verify the following CSS properties:
