@@ -54,6 +54,31 @@ Implement three React components: __TextLight__, __TextMedium__, and __TextBold_
   - `font-weight: var(--font-weight-semi);`
   - token value: `600`
 
+### Component props
+
+All Text components (__TextLight__, __TextMedium__, __TextBold__) must support the following props:
+
+- `as`
+  - Type: HTML tag string.
+  - Default: `"span"`.
+  - Behavior:
+    - Controls which HTML tag is rendered for the Text component.
+    - When `as="span"` (default), the component renders a `<span>` element.
+    - When `as="p"` (paragraph), the component renders a `<p>` element.
+  - The rendered element must preserve all typography styles and tokens defined above, regardless of tag.
+
+- `variant`
+  - Type: one of  `"primary"` | `"warning"`.
+  - Default: `"primary"`.
+  - Behavior:
+    - Sets the visual variant of the component (for example, via a CSS class).
+    - When `variant="primary"` (default):
+      - `color` must use `var(--color-text)`.
+    - When `variant="warning"`:
+      - `color` must use `var(--color-warning)`.
+  - Design token for warning color:
+    - `--color-warning: #ec1515;` (for both Light and Dark themes).
+
 ---
 
 ## Acceptance Criteria  
@@ -62,11 +87,15 @@ Implement three React components: __TextLight__, __TextMedium__, and __TextBold_
 3. When the Text components are viewed on Desktop screen > 1193px, they must use font-size `1rem` (16px).
 4. When the Text components are viewed on Tablet screen between 768px and 1192px, they must use font-size `0.875rem` (14px).
 5. When the Text components are viewed on Mobile screen < 768px, they must use font-size `0.75rem` (12px).
-6. When the application theme is set to Dark, the Text components must use `--color-text: #f5f7fb`.
-7. When the application theme is set to Light, the Text components must use `--color-text: #0f172a;`.
-8. When the __TextLight__ component is rendered, it must apply `font-weight: var(--font-weight-light);` with token value `300`.
-9. When the __TextMedium__ component is rendered, it must apply `font-weight: var(--font-weight-normal);` with token value `400`.
-10. When the __TextBold__ component is rendered, it must apply `font-weight: var(--font-weight-semi);` with token value `600`.
+6. When the application theme is set to Dark and `variant="primary"`, the Text components must use `color: var(--color-text);` where `--color-text: #f5f7fb`.
+7. When the application theme is set to Light and `variant="primary"`, the Text components must use `color: var(--color-text);` where `--color-text: #0f172a;`.
+8. When `variant="warning"` (for any theme), the Text components must use `color: var(--color-warning);` where `--color-warning: #ec1515;`.
+9. When the __TextLight__ component is rendered, it must apply `font-weight: var(--font-weight-light);` with token value `300`.
+10. When the __TextMedium__ component is rendered, it must apply `font-weight: var(--font-weight-normal);` with token value `400`.
+11. When the __TextBold__ component is rendered, it must apply `font-weight: var(--font-weight-semi);` with token value `600`.
+12. When the Text components are rendered without passing the `as` prop, they must render a `<span>` element.
+13. When the Text components are rendered with `as="p"`, they must render a `<p>` element.
+14. Changing the `as` prop (for example, `span` → `p`) must not affect the applied typography tokens or the `variant` color behavior.
 
 All criteria must be objectively verifiable.
 
