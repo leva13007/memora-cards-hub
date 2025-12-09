@@ -23,7 +23,9 @@ Specifically confirm on tablet range (768–1192px):
 - correct font family
 - correct tablet font size from token `--fonts-size-text`
 - correct font-weight via `--font-weight-semi`
-- correct text color (`--color-text`)
+- correct text color for **Light** theme when `variant="primary"`
+- correct behavior when `variant="warning"`
+- correct default `as` prop (`<span>`) and optional `as="p"` behavior
 - correct line-height
 - no visual or spacing inconsistencies
 
@@ -83,6 +85,15 @@ Recommended specific widths:
 	 - `--font-weight-semi`
 	 - `--color-text`
 
+9. Toggle `variant` prop or visit the page with different variants:
+  - Set `variant="primary"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textbold--default&viewMode=story&args=variant:primary) and verify color uses `--color-text`.
+  - Set `variant="warning"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textbold--default&viewMode=story&args=variant:warning) and verify color uses `--color-warning`.
+
+10. Toggle `as` prop or visit the page with different variants:
+   - Without passing `as` or when `as="span"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textbold--default&viewMode=story&args=as%3Aspan), verify the element is rendered as `<span>`.
+   - Set `as="p"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textbold--default&viewMode=story&args=as%3Ap), verify the element is rendered as `<p>`.
+   - In both cases, confirm typography tokens (font-size, weight, line-height, variant color) remain correct.
+
 ---
 
 ## Expected Result
@@ -91,7 +102,10 @@ Recommended specific widths:
 - `font-size` = **0.875rem (14px)** for tablet, sourced from `--fonts-size-text`
 - `font-weight` = **600**, mapped from token `--font-weight-semi`
 - `line-height` = **normal** (or browser-resolved equivalent)
-- `color` = `#0f172a` equals the resolved value of **`--color-text`** for **Light theme**
+- When `variant="primary"`, `color` = `#0f172a` equals the resolved value of **`--color-text`** for **Light theme**
+- When `variant="warning"`, `color` = `#ec1515` equals the resolved value of **`--color-warning`** (for both Light and Dark themes)
+- When `as` is not provided, the rendered element is `<span>`
+- When `as="p"`, the rendered element is `<p>` and typography tokens remain unchanged
 - No unexpected spacing, clipping, overlaps, or rendering artifacts
 
 ---

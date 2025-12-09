@@ -23,7 +23,9 @@ Specifically confirm on mobile range (<768px):
 - correct font family
 - correct mobile font size from token `--fonts-size-text` 
 - correct font-weight via `--font-weight-semi`
-- correct text color (`--color-text`)
+- correct text color for **Light** theme when `variant="primary"`
+- correct behavior when `variant="warning"`
+- correct default `as` prop (`<span>`) and optional `as="p"` behavior
 - correct line-height
 - no visual or spacing inconsistencies
 
@@ -49,18 +51,18 @@ _Static UI verification; no dynamic data required._
 
 Environment assumptions:
 
-| Parameter      | Value                    |
-|----------------|--------------------------|
-| Device         | Mobile (simulated)       |
-| Viewport       | ≤767px                   |
-| Theme          | Light                    |
-| Browser        | Latest Chrome / Chromium |
+| Parameter | Value                    |
+| --------- | ------------------------ |
+| Device    | Mobile (simulated)       |
+| Viewport  | ≤767px                   |
+| Theme     | Light                    |
+| Browser   | Latest Chrome / Chromium |
 
 Recommended specific widths:
 
-| Scenario       | Width (px) |
-|----------------|------------|
-| Mobile check   | 375        |
+| Scenario     | Width (px) |
+| ------------ | ---------- |
+| Mobile check | 375        |
 
 ---
 
@@ -73,15 +75,24 @@ Recommended specific widths:
 5. Identify a sample `TextBold` text element (e.g., “Sample Bold Text”).
 6. Open browser devtools and inspect the element.
 7. In the **Styles** or **Computed** panel, verify the following CSS properties:
-	 - `font-family`
-	 - `font-size`
-	 - `font-weight`
-	 - `line-height`
-	 - `color`
+   - `font-family`
+   - `font-size`
+   - `font-weight`
+   - `line-height`
+   - `color`
 8. Confirm that the styles originate from or match the expected design tokens:
-	 - `--fonts-size-text`
-	 - `--font-weight-semi`
-	 - `--color-text`
+   - `--fonts-size-text`
+   - `--font-weight-semi`
+   - `--color-text`
+
+9. Toggle `variant` prop or visit the page with different variants:
+  - Set `variant="primary"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textbold--default&viewMode=story&args=variant:primary) and verify color uses `--color-text`.
+  - Set `variant="warning"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textbold--default&viewMode=story&args=variant:warning) and verify color uses `--color-warning`.
+
+10. Toggle `as` prop or visit the page with different variants:
+   - Without passing `as` or when `as="span"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textbold--default&viewMode=story&args=as%3Aspan), verify the element is rendered as `<span>`.
+   - Set `as="p"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textbold--default&viewMode=story&args=as%3Ap), verify the element is rendered as `<p>`.
+   - In both cases, confirm typography tokens (font-size, weight, line-height, variant color) remain correct.
 
 ---
 
@@ -91,7 +102,10 @@ Recommended specific widths:
 - `font-size` = **0.75rem (12px)** for mobile, sourced from `--fonts-size-text`
 - `font-weight` = **600**, mapped from token `--font-weight-semi`
 - `line-height` = **normal** (or browser-resolved equivalent)
-- `color` = `#0f172a` equals the resolved value of **`--color-text`** for **Light theme**
+- When `variant="primary"`, `color` = `#0f172a` equals the resolved value of **`--color-text`** for **Light theme**
+- When `variant="warning"`, `color` = `#ec1515` equals the resolved value of **`--color-warning`** (for both Light and Dark themes)
+- When `as` is not provided, the rendered element is `<span>`
+- When `as="p"`, the rendered element is `<p>` and typography tokens remain unchanged
 - No unexpected spacing, clipping, overlaps, or rendering artifacts
 
 ---
