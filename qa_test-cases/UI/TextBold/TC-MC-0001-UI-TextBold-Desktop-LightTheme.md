@@ -16,7 +16,7 @@ updated: 2025-12-09
 ## Objective
 
 Validate that the `TextBold` UI component renders correctly on **Desktop** in **Light theme**, using the expected typography design tokens and computed styles defined in ticket  
-[MC-0001-UI-kit-Create-Text-component](../tickets/MC-0001-UI-kit-Create-Text-component.md).
+[MC-0001-UI-kit-Create-Text-component](../../../tickets/MC-0001-UI-kit-Create-Text-component.md).
 
 Specifically confirm:
 
@@ -108,7 +108,7 @@ Environment assumptions:
 
 - Screenshot of component rendering on Desktop + Light theme
   
-![alt text](./assets/image-1.png)
+![alt text](../../assets/image-1.png)
 
 ---
 
@@ -132,6 +132,6 @@ Environment assumptions:
 
 ## Related
 
-- Ticket: [MC-0001](../tickets/MC-0001-UI-kit-Create-Text-component.md)
+- Ticket: [MC-0001](../../../tickets/MC-0001-UI-kit-Create-Text-component.md)
 - Planned related test cases:
   - ..

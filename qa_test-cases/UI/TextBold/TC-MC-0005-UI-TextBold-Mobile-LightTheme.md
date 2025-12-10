@@ -16,7 +16,7 @@ updated: 2025-12-09
 ## Objective
 
 Validate that the `TextBold` UI component renders correctly on **Mobile** viewport in **Light theme**, using the expected typography design tokens and computed styles defined in ticket  
-[MC-0001-UI-kit-Create-Text-component](../tickets/MC-0001-UI-kit-Create-Text-component.md).
+[MC-0001-UI-kit-Create-Text-component](../../../tickets/MC-0001-UI-kit-Create-Text-component.md).
 
 Specifically confirm on mobile range (<768px):
 
@@ -114,7 +114,7 @@ Recommended specific widths:
 
 - Screenshot of component rendering on Mobile + Light theme at ~375px width
 
-![alt text](./assets/image-5.png)
+![alt text](../../assets/image-5.png)
 
 ---
 
@@ -139,7 +139,7 @@ Recommended specific widths:
 
 ## Related
 
-- Ticket: [MC-0001](../tickets/MC-0001-UI-kit-Create-Text-component.md)
+- Ticket: [MC-0001](../../../tickets/MC-0001-UI-kit-Create-Text-component.md)
 - Related test cases:
 	- [TC-MC-0001 – TextBold – Desktop – Light Theme](./TC-MC-0001-UI-TextBold-Desktop-LightTheme.md)
 	- [TC-MC-0002 – TextBold – Desktop – Dark Theme](./TC-MC-0002-UI-TextBold-Desktop-DarkTheme.md)

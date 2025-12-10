@@ -1,6 +1,6 @@
 ---
-id: TC-MC-0013
-title: "UI-kit: TextLight – Desktop – Light Theme – Typography Tokens"
+id: TC-MC-0015
+title: "UI-kit: TextLight – Tablet – Light Theme – Typography Tokens"
 type: UI
 priority: Medium
 area: "ui-kit/typography"
@@ -11,17 +11,17 @@ created: 2025-12-10
 updated: 2025-12-10
 ---
 
-# TC-MC-0013 — UI: TextLight – Desktop – Light Theme – Typography Tokens
+# TC-MC-0015 — UI: TextLight – Tablet – Light Theme – Typography Tokens
 
 ## Objective
 
-Validate that the `TextLight` UI component renders correctly on **Desktop** in **Light theme**, using the expected typography design tokens and computed styles defined in ticket  
-[MC-0001-UI-kit-Create-Text-component](../tickets/MC-0001-UI-kit-Create-Text-component.md).
+Validate that the `TextLight` UI component renders correctly on **Tablet** viewport in **Light theme**, using the expected typography design tokens and computed styles defined in ticket  
+[MC-0001-UI-kit-Create-Text-component](../../../tickets/MC-0001-UI-kit-Create-Text-component.md).
 
-Specifically confirm:
+Specifically confirm on tablet range (768–1192px):
 
 - correct font family
-- correct desktop font size from token `--fonts-size-text`
+- correct tablet font size from token `--fonts-size-text`
 - correct font-weight via `--font-weight-light`
 - correct text color for **Light** theme when `variant="primary"`
 - correct behavior when `variant="warning"`
@@ -35,7 +35,7 @@ Specifically confirm:
 
 - Application or Storybook is running.
 - The `TextLight` component is available (e.g., via Storybook story `UI / Atoms / TextLight`).
-- Browser viewport width is ≥ **1193px** (desktop breakpoint).
+- Browser viewport width is within **tablet range 768–1192px**.
 - Application theme is set to **Light**.
 - Design tokens are loaded:
 	- `--color-text`
@@ -53,17 +53,23 @@ Environment assumptions:
 
 | Parameter      | Value                    |
 |----------------|--------------------------|
-| Device         | Desktop                  |
-| Viewport       | ≥ 1193px                 |
+| Device         | Tablet (simulated)       |
+| Viewport       | 768–1192px               |
 | Theme          | Light                    |
 | Browser        | Latest Chrome / Chromium |
+
+Recommended specific widths:
+
+| Scenario       | Width (px) |
+|----------------|------------|
+| Tablet check   | 1024       |
 
 ---
 
 ## Steps
 
 1. Open Storybook or the application in a desktop browser.
-2. Set viewport width to **≥ 1193px**.
+2. Set viewport width to a tablet value within **768–1192px** (for example, **1024px**).
 3. Ensure the **Light** theme is active.
 4. Navigate to the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textlight--default&viewMode=story) or [Storybook story](https://leva13007.github.io/memora-cards-storybook/?path=/docs/ui-atoms-textlight--docs) that showcases the `TextLight` component (`UI / Atoms / TextLight`).
 5. Identify a sample `TextLight` text element (e.g., "Sample Light Text").
@@ -93,7 +99,7 @@ Environment assumptions:
 ## Expected Result
 
 - `font-family` = inherit from (_Inter_) or **Inter**
-- `font-size` = **1rem (16px)**, sourced from `--fonts-size-text`
+- `font-size` = **0.875rem (14px)** for tablet, sourced from `--fonts-size-text`
 - `font-weight` = **300**, mapped from token `--font-weight-light`
 - `line-height` = **normal** (or browser-resolved equivalent)
 - When `variant="primary"`, `color` = `#0f172a` equals the resolved value of **`--color-text`** for **Light theme**
@@ -106,35 +112,37 @@ Environment assumptions:
 
 ## Screenshots / Attachments (optional)
 
-- Screenshot of component rendering on Desktop + Light theme for `TextLight`
+- Screenshot of component rendering on Tablet + Light theme for `TextLight` at ~1024px width
 
-![alt text](./assets/image-13.png)
+![alt text](../../assets/image-15.png)
 
 ---
 
 ## Edge Cases  
 *(Not required for pass/fail, but recommended to observe)*
 
-- Adjust viewport around desktop threshold (1192px ↔ 1194px) and confirm:
-	- ≥1193px uses 1rem
-	- tablet range uses 0.875rem
-- Toggle Light → Dark → Light and verify color token re-evaluates correctly for `variant="primary"` and does not affect `variant="warning"` using `--color-warning`.
-- Test long text wrapping and multi-line content to ensure no layout shifts.
+- Move viewport just below and above the tablet range:
+	- **≤767px** (mobile) should use `0.75rem` font-size
+	- **≥1193px** (desktop) should use `1rem` font-size
+- Toggle Light → Dark → Light and verify color token re-evaluates correctly back to Light theme value for `variant="primary"` and does not affect `variant="warning"` using `--color-warning`.
+- Test long text wrapping to ensure no layout shifts at tablet width.
 
 ---
 
 ## Notes
 
-- This test case covers only **Desktop + Light theme** for the `TextLight` component.
-- Separate test cases should cover Dark theme, Tablet, and Mobile variants, and analogous cases exist for `TextMedium` and `TextBold`.
+- This test case covers only **Tablet (768–1192px) + Light theme** for the `TextLight` component.
+- Complementary test cases cover Desktop and Dark theme variants, and analogous Tablet cases exist for `TextMedium` and `TextBold`.
 
 ---
 
 ## Related
 
-- Ticket: [MC-0001](../tickets/MC-0001-UI-kit-Create-Text-component.md)
+- Ticket: [MC-0001](../../../tickets/MC-0001-UI-kit-Create-Text-component.md)
 - Related test cases:
-	- [TC-MC-0001 – TextBold – Desktop – Light Theme](./TC-MC-0001-UI-TextBold-Desktop-LightTheme.md)
-	- [TC-MC-0007 – TextMedium – Desktop – Light Theme](./TC-MC-0007-UI-TextMedium-Desktop-LightTheme.md)
-	- (future) TextLight – Desktop – Dark/Tablet/Mobile
+	- [TC-MC-0013 – TextLight – Desktop – Light Theme](./TC-MC-0013-UI-TextLight-Desktop-LightTheme.md)
+	- [TC-MC-0014 – TextLight – Desktop – Dark Theme](./TC-MC-0014-UI-TextLight-Desktop-DarkTheme.md)
+	- [TC-MC-0003 – TextBold – Tablet – Light Theme](./TC-MC-0003-UI-TextBold-Tablet-LightTheme.md)
+	- [TC-MC-0009 – TextMedium – Tablet – Light Theme](./TC-MC-0009-UI-TextMedium-Tablet-LightTheme.md)
+	- (future) TextLight – Tablet/Mobile + Dark and Mobile + Light
 

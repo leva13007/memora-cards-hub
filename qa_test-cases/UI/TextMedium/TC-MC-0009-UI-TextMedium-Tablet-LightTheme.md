@@ -16,7 +16,7 @@ updated: 2025-12-09
 ## Objective
 
 Validate that the `TextMedium` UI component renders correctly on **Tablet** viewport in **Light theme**, using the expected typography design tokens and computed styles defined in ticket  
-[MC-0001-UI-kit-Create-Text-component](../tickets/MC-0001-UI-kit-Create-Text-component.md).
+[MC-0001-UI-kit-Create-Text-component](../../../tickets/MC-0001-UI-kit-Create-Text-component.md).
 
 Specifically confirm on tablet range (768–1192px):
 
@@ -114,7 +114,7 @@ Recommended specific widths:
 
 - Screenshot of component rendering on Tablet + Light theme at ~1024px width
 
-![alt text](./assets/image-9.png)
+![alt text](../../assets/image-9.png)
 
 ---
 
@@ -138,7 +138,7 @@ Recommended specific widths:
 
 ## Related
 
-- Ticket: [MC-0001](../tickets/MC-0001-UI-kit-Create-Text-component.md)
+- Ticket: [MC-0001](../../../tickets/MC-0001-UI-kit-Create-Text-component.md)
 - Related test cases:
 	- [TC-MC-0007 – TextMedium – Desktop – Light Theme](./TC-MC-0007-UI-TextMedium-Desktop-LightTheme.md)
 	- [TC-MC-0008 – TextMedium – Desktop – Dark Theme](./TC-MC-0008-UI-TextMedium-Desktop-DarkTheme.md)

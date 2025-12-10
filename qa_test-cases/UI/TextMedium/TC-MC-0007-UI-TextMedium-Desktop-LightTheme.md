@@ -16,7 +16,7 @@ updated: 2025-12-09
 ## Objective
 
 Validate that the `TextMedium` UI component renders correctly on **Desktop** in **Light theme**, using the expected typography design tokens and computed styles defined in ticket  
-[MC-0001-UI-kit-Create-Text-component](../tickets/MC-0001-UI-kit-Create-Text-component.md).
+[MC-0001-UI-kit-Create-Text-component](../../../tickets/MC-0001-UI-kit-Create-Text-component.md).
 
 Specifically confirm:
 
@@ -108,7 +108,7 @@ Environment assumptions:
 
 - Screenshot of component rendering on Desktop + Light theme for `TextMedium`
 
-![alt text](./assets/image-7.png)
+![alt text](../../assets/image-7.png)
 
 ---
 
@@ -132,7 +132,7 @@ Environment assumptions:
 
 ## Related
 
-- Ticket: [MC-0001](../tickets/MC-0001-UI-kit-Create-Text-component.md)
+- Ticket: [MC-0001](../../../tickets/MC-0001-UI-kit-Create-Text-component.md)
 - Related test cases:
   - [TC-MC-0001 – TextBold – Desktop – Light Theme](./TC-MC-0001-UI-TextBold-Desktop-LightTheme.md)
   - [TC-MC-0002 – TextBold – Desktop – Dark Theme](./TC-MC-0002-UI-TextBold-Desktop-DarkTheme.md)
