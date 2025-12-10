@@ -28,6 +28,12 @@ The **TextLink** component should:
 - Apply dedicated link color tokens for default and hover states in both Light and Dark themes.
 - Expose a minimal API for navigation-like usage (`to` and `content`) while keeping Storybook navigation behavior turned off.
 
+Storybook references for **TextLink**:
+- Default story (iframe):  
+	`https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textlink--default&viewMode=story`
+- Storybook docs page:  
+	`https://leva13007.github.io/memora-cards-storybook/?path=/docs/ui-atoms-textlink--docs`
+
 ---
 
 ## Requirements / Specifications
@@ -38,7 +44,8 @@ Implement one React component: __TextLink__.
 
 The `TextLink` component must reuse the same base typography tokens and behavior as the `TextMedium` component defined in ticket MC-0001:
 
-- `font-family: Inter`
+- `font-family: inherit;`  
+	(Must resolve to **Inter** via the global typography stack.)
 - `font-size: var(--fonts-size-text);`
 - `line-height: normal;`
 - `font-weight: var(--font-weight-normal);` (token value: `400`)
