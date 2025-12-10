@@ -135,7 +135,7 @@ Example props:
 
 - Screenshot of `TextLink` rendering on Desktop + Light theme (showing hover state)
 
-![alt text](../../assets/image-20.png)
+![alt text](../../assets/image-19-h.png)
 
 ---
 

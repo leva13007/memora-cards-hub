@@ -1,6 +1,6 @@
 ---
-id: TC-MC-0020
-title: "UI-kit: TextLink – Desktop – Dark Theme – Typography Tokens"
+id: TC-MC-0021
+title: "UI-kit: TextLink – Tablet – Light Theme – Typography Tokens"
 type: UI
 priority: Medium
 area: "ui-kit/typography"
@@ -11,19 +11,19 @@ created: 2025-12-10
 updated: 2025-12-10
 ---
 
-# TC-MC-0020 — UI: TextLink – Desktop – Dark Theme – Typography & Link Tokens
+# TC-MC-0021 — UI: TextLink – Tablet – Light Theme – Typography & Link Tokens
 
 ## Objective
 
-Validate that the `TextLink` UI component renders correctly on **Desktop** in **Dark theme**, using the expected typography design tokens (inheriting from `TextMedium`) and link-specific color tokens defined in ticket  
+Validate that the `TextLink` UI component renders correctly on **Tablet** viewport in **Light theme**, using the expected typography design tokens (inheriting from `TextMedium`) and link-specific color tokens defined in ticket  
 [MC-0002-UI-kit-Create-TextLink-component](../../../tickets/MC-0002-UI-kit-Create-TextLink-component.md).
 
-Specifically confirm on desktop viewport (≥1193px):
+Specifically confirm on tablet range (768–1192px):
 
 - correct font family
-- correct desktop font size from token `--fonts-size-text`
+- correct tablet font size from token `--fonts-size-text`
 - correct font-weight via `--font-weight-normal`
-- correct link color for **Dark** theme via `--color-link`
+- correct link color for **Light** theme via `--color-link`
 - correct hover color via `--color-link-hover`
 - correct `cursor` and `text-decoration` styles
 - correct mapping of `to` → `href` and `content` → visible text
@@ -37,8 +37,8 @@ Specifically confirm on desktop viewport (≥1193px):
 
 - Application or Storybook is running.
 - The `TextLink` component is available (e.g., via Storybook story `UI / Atoms / TextLink`).
-- Browser viewport width is ≥ **1193px** (desktop breakpoint).
-- Application theme is set to **Dark**.
+- Browser viewport width is within **tablet range 768–1192px**.
+- Application theme is set to **Light**.
 - Design tokens are loaded:
 	- `--fonts-size-text`
 	- `--font-weight-normal`
@@ -56,16 +56,22 @@ Environment assumptions:
 
 | Parameter      | Value                    |
 |----------------|--------------------------|
-| Device         | Desktop                  |
-| Viewport       | ≥ 1193px                 |
-| Theme          | Dark                     |
+| Device         | Tablet (simulated)       |
+| Viewport       | 768–1192px               |
+| Theme          | Light                    |
 | Browser        | Latest Chrome / Chromium |
+
+Recommended specific widths:
+
+| Scenario       | Width (px) |
+|----------------|------------|
+| Tablet check   | 1024       |
 
 Example props:
 
-| Prop     | Example value                 |
-|----------|-------------------------------|
-| `to`     | `/docs`                       |
+| Prop     | Example value                  |
+|----------|--------------------------------|
+| `to`     | `/docs`                        |
 | `content`| `"The TextLink text content"` |
 
 ---
@@ -73,12 +79,12 @@ Example props:
 ## Steps
 
 1. Open Storybook or the application in a desktop browser.
-2. Set viewport width to **≥ 1193px**.
-3. Ensure the **Dark** theme is active.
-4. Navigate to the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textlink--default&viewMode=story&globals=theme:dark) or `TextLink` [Storybook story](https://leva13007.github.io/memora-cards-storybook/?path=/docs/ui-atoms-textlink--docs) that showcases the `TextLink` component (`UI / Atoms / TextLink`).
+2. Set viewport width to a tablet value within **768–1192px** (for example, **1024px**).
+3. Ensure the **Light** theme is active.
+4. Navigate to the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textlink--default&viewMode=story) or `TextLink` [Storybook story](https://leva13007.github.io/memora-cards-storybook/?path=/docs/ui-atoms-textlink--docs) that showcases the `TextLink` component (`UI / Atoms / TextLink`).
 5. Configure the story or component props to use:
-	- `to="/docs"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textlink--default&viewMode=story&args=to:docs&globals=theme:dark)
-	- `content="The TextLink text content"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textlink--default&viewMode=story&args=content%3AThe%20TextLink%20text%20content&globals=theme:dark)
+	- `to="/docs"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textlink--default&viewMode=story&args=to:docs)
+	- `content="The TextLink text content"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textlink--default&viewMode=story&args=content%3AThe%20TextLink%20text%20content)
 6. Identify a `TextLink` element rendered with these props.
 7. Open browser devtools and inspect the `<a>` element.
 8. In the **Elements** panel, confirm the DOM structure is:
@@ -98,7 +104,7 @@ Example props:
 	- `--color-link`
 	- `--color-link-hover`
 12. With the pointer **not hovering** over the link, verify that:
-	- `color` resolves to the Dark theme value of `--color-link`.
+	- `color` resolves to the Light theme value of `--color-link`.
 13. Move the mouse pointer over the `TextLink` or set in Devtools panel to the `:hover` state and verify that:
 	- `color` changes to the value of `--color-link-hover`.
 14. Verify that:
@@ -111,12 +117,12 @@ Example props:
 ## Expected Result
 
 - `font-family` = inherit from (_Inter_) or **Inter**
-- `font-size` = **1rem (16px)** for desktop, sourced from `--fonts-size-text`
+- `font-size` = **0.875rem (14px)** for tablet, sourced from `--fonts-size-text`
 - `font-weight` = **400**, mapped from token `--font-weight-normal`
 - `line-height` = **normal** (or browser-resolved equivalent)
-- In **Dark theme**, when not hovered:
-	- `color` = `#8ab4f8` equals the resolved value of **`--color-link`**
-- In **Dark theme**, on hover:
+- In **Light theme**, when not hovered:
+	- `color` = `#1a73e8` equals the resolved value of **`--color-link`**
+- In **Light theme**, on hover:
 	- `color` = `#174ea6` equals the resolved value of **`--color-link-hover`**
 - `cursor` = `pointer`
 - `text-decoration` = `unset` (no browser default underline)
@@ -129,33 +135,32 @@ Example props:
 
 ## Screenshots / Attachments (optional)
 
-- Screenshot of `TextLink` rendering on Desktop + Dark theme (showing default state)
+- Screenshot of `TextLink` rendering on Tablet + Light theme (showing default state)
 
-![alt text](../../assets/image-20.png)
+![alt text](../../assets/image-21.png)
 
-- Screenshot of `TextLink` rendering on Desktop + Dark theme (showing hover state)
+- Screenshot of `TextLink` rendering on Tablet + Light theme (showing hover state)
 
-![alt text](../../assets/image-20-h.png)
+![alt text](../../assets/image-21-h.png)
 
 ---
 
 ## Edge Cases  
 *(Not required for pass/fail, but recommended to observe)*
 
-- Adjust viewport around desktop threshold (1192px ↔ 1194px) and confirm:
-	- ≥1193px uses 1rem font-size from `--fonts-size-text`
-	- tablet range uses 0.875rem
-- Test very long `content` strings to verify wrapping and hover behavior across multiple lines.
+- Move viewport just below and above the tablet range:
+	- **≤767px** (mobile) should use `0.75rem` font-size
+	- **≥1193px** (desktop) should use `1rem` font-size
+- Test very long `content` strings to verify wrapping and hover behavior across multiple lines at tablet width.
 - Use different `to` values (absolute URL, relative path, hash, `mailto:`) and confirm they map correctly to `href` without affecting typography or tokens.
-- Temporarily enable real navigation (outside Storybook) and verify that clicking the link navigates to the `to` target while preserving visual styling.
 
 ---
 
 ## Notes
 
-- This test case covers only **Desktop + Dark theme** for the `TextLink` component.
-- Separate test cases should cover Light theme and Tablet/Mobile variants.
-- Typography expectations should match `TextMedium` Desktop + Dark behavior, except for using link-specific color tokens instead of `--color-text`.
+- This test case covers only **Tablet (768–1192px) + Light theme** for the `TextLink` component.
+- Separate test cases should cover Dark theme and Desktop/Mobile variants.
+- Typography expectations should match `TextMedium` Tablet + Light behavior, except for using link-specific color tokens instead of `--color-text`.
 
 ---
 
@@ -164,8 +169,8 @@ Example props:
 - Ticket: [MC-0002](../../../tickets/MC-0002-UI-kit-Create-TextLink-component.md)
 - Related test cases:
 	- [TC-MC-0019 – TextLink – Desktop – Light Theme](./TC-MC-0019-UI-TextLink-Desktop-LightTheme.md)
-	- [TC-MC-0008 – TextMedium – Desktop – Dark Theme](../TextMedium/TC-MC-0008-UI-TextMedium-Desktop-DarkTheme.md)
-	- [TC-MC-0014 – TextLight – Desktop – Dark Theme](../TextLight/TC-MC-0014-UI-TextLight-Desktop-DarkTheme.md)
-	- (future) TextLink – Tablet – Light/Dark Theme
+	- (future) TextLink – Tablet – Dark Theme
 	- (future) TextLink – Mobile – Light/Dark Theme
+	- [TC-MC-0009 – TextMedium – Tablet – Light Theme](../TextMedium/TC-MC-0009-UI-TextMedium-Tablet-LightTheme.md)
+	- [TC-MC-0015 – TextLight – Tablet – Light Theme](../TextLight/TC-MC-0015-UI-TextLight-Tablet-LightTheme.md)
 
