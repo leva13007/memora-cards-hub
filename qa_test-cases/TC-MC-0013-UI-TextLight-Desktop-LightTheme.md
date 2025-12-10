@@ -108,7 +108,7 @@ Environment assumptions:
 
 - Screenshot of component rendering on Desktop + Light theme for `TextLight`
 
-![alt text](./assets/image-12.png)
+![alt text](./assets/image-13.png)
 
 ---
 

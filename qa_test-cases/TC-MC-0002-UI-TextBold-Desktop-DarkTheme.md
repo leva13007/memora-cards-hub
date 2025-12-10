@@ -108,7 +108,7 @@ Environment assumptions:
 
 - Screenshot of component rendering on Desktop + Dark theme
 
-![alt text](./assets/image-1.png)
+![alt text](./assets/image-2.png)
 
 ---
 

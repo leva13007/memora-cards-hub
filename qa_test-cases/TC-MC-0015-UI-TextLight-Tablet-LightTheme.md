@@ -114,7 +114,7 @@ Recommended specific widths:
 
 - Screenshot of component rendering on Tablet + Light theme for `TextLight` at ~1024px width
 
-![alt text](./assets/image-14.png)
+![alt text](./assets/image-15.png)
 
 ---
 

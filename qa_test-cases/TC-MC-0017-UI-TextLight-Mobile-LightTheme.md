@@ -114,7 +114,7 @@ Recommended specific widths:
 
 - Screenshot of component rendering on Mobile + Light theme at ~375px width
 
-![alt text](./assets/image-16.png)
+![alt text](./assets/image-17.png)
 
 ---
 

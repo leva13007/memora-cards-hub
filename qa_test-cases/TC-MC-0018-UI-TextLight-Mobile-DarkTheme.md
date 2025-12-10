@@ -114,7 +114,7 @@ Recommended specific widths:
 
 - Screenshot of component rendering on Mobile + Dark theme at ~375px width
 
-![alt text](./assets/image-17.png)
+![alt text](./assets/image-18.png)
 
 ---
 

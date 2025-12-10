@@ -108,7 +108,7 @@ Environment assumptions:
 
 - Screenshot of component rendering on Desktop + Light theme for `TextMedium`
 
-![alt text](./assets/image-6.png)
+![alt text](./assets/image-7.png)
 
 ---
 

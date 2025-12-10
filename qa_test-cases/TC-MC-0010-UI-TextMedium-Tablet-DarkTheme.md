@@ -114,7 +114,7 @@ Recommended specific widths:
 
 - Screenshot of component rendering on Tablet + Dark theme at ~1024px width
 
-![alt text](./assets/image-9.png)
+![alt text](./assets/image-10.png)
 
 ---
 
