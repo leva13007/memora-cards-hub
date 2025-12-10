@@ -8,7 +8,7 @@ area: "ui-kit/typography"               # ui-kit/typography | ui-kit/buttons | a
 author: "Oleh Levchenko"
 assignee: ""
 created: 2025-12-08
-updated: YYYY-MM-DD
+updated: 2025-12-08
 labels: []             # free-form tags
 links:
   figma: ""
