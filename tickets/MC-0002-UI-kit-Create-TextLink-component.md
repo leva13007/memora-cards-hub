@@ -96,11 +96,11 @@ The `TextLink` component must support at least the following props:
 - `content`
   - Type: `string`.
   - Required: **Yes**.
-  - Default example value: `"Content text here"`.
+  - Default example value: `"The TextLink text content"`.
   - Behavior:
     - Sets the visible text content inside the `<a>` element.
-    - When `content="Content text here"` and `to="/path"`, the rendered markup must be:
-      - `<a href="/path">Content text here</a>`
+    - When `content="The TextLink text content"` and `to="/path"`, the rendered markup must be:
+      - `<a href="/path">The TextLink text content</a>`
 
 The component may later support additional optional props (for example, `target`, `rel`, or `aria-*` attributes), but those are out of scope for this initial ticket unless explicitly added.
 
@@ -118,7 +118,7 @@ The component may later support additional optional props (for example, `target`
 9. When the pointer hovers over the `TextLink` component in Light theme, the `color` must change to `var(--color-link-hover);` where `--color-link-hover: #174ea6;`.
 10. When the pointer hovers over the `TextLink` component in Dark theme, the `color` must change to `var(--color-link-hover);` where `--color-link-hover: #174ea6;`.
 11. When the `TextLink` component is rendered, it must apply `cursor: pointer;` and `text-decoration: unset;` (no browser default underline).
-12. When the `TextLink` component is rendered with `to="/somewhere"` and `content="Content text here"`, it must render an anchor element `<a href="/somewhere">Content text here</a>`.
+12. When the `TextLink` component is rendered with `to="/somewhere"` and `content="The TextLink text content"`, it must render an anchor element `<a href="/somewhere">The TextLink text content</a>`.
 13. When the `TextLink` component is rendered without a `to` value in Storybook, it must not navigate the browser away from the Storybook UI (navigation behavior must be effectively turned off in stories).
 14. All visual behavior (font size, font family, font weight, colors, line-height) must be driven by the design tokens listed above and not by hard-coded values, except where tokens themselves define explicit values.
 
