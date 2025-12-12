@@ -9,12 +9,6 @@ author: "Oleh Levchenko"
 assignee: ""
 created: 2025-12-08
 updated: 2025-12-08
-labels: []             # free-form tags
-links:
-  figma: ""
-  pr: ""
-  design-doc: ""
-  related-tickets: []
 ---
 
 # MC-0001 — UI-kit: Create Text component(Light / Medium / Bold)

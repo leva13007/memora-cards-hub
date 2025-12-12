@@ -9,12 +9,6 @@ author: "Oleh Levchenko"
 assignee: ""
 created: 2025-12-12
 updated: 2025-12-12
-labels: []             # free-form tags
-links:
-	figma: ""
-	pr: ""
-	design-doc: ""
-	related-tickets:
 ---
 
 # MC-0005 — UI-kit: Create Container component

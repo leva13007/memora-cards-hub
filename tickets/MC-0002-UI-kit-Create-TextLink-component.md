@@ -9,13 +9,6 @@ author: "Oleh Levchenko"
 assignee: ""
 created: 2025-12-10
 updated: 2025-12-10
-labels: []             # free-form tags
-links:
-  figma: ""
-  pr: ""
-  design-doc: ""
-  related-tickets:
-    - MC-0001-UI-kit-Create-Text-component
 ---
 
 # MC-0002 — UI-kit: Create TextLink component

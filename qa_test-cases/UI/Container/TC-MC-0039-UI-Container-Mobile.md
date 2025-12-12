@@ -70,8 +70,8 @@ Component configuration:
 1. Open Storybook or the application in a desktop browser with responsive mode, or directly on a mobile device.
 2. Set browser viewport width to a mobile value **<768px** (for example, **375px** or **414px**).
 3. Navigate to the `Container` default story:
-   - Docs: `https://leva13007.github.io/memora-cards-storybook/?path=/docs/ui-atoms-container--docs`
-   - Story: `https://leva13007.github.io/memora-cards-storybook/?path=/story/ui-atoms-container--default`
+   - Docs: [link](https://leva13007.github.io/memora-cards-storybook/?path=/docs/ui-atoms-container--docs)
+   - Story: [link](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-container--default&viewMode=story)
 4. In Storybook controls (if available), ensure that:
    - `fluid` is **false** or not set.
 5. Locate the rendered `Container` in the canvas. It may wrap example content (e.g., text blocks or headings).
