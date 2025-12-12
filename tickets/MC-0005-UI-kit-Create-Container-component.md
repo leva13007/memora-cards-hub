@@ -69,15 +69,15 @@ The `Container` must use breakpoint-specific widths when `fluid` is **false** or
 
 Breakpoints for this component must align with the global responsive system used in typography tickets (for example, [MC-0004](./MC-0004-UI-kit-Create-H2-component.md)):
 
-- **Desktop**: viewport width **≥1193px**
-- **Tablet**: viewport width **768–1192px**
+- **Desktop**: viewport width **≥1280px**
+- **Tablet**: viewport width **768–1279px**
 - **Mobile**: viewport width **<768px**
 
 Widths by breakpoint when `fluid` is **false** or omitted:
 
-- **Desktop (≥1193px)**
+- **Desktop (≥1280px)**
 	- `width: 1200px`
-- **Tablet (768–1192px)**
+- **Tablet (768–1279px)**
 	- `width: 700px`
 - **Mobile (<768px)**
 	- `width: 100%;`
@@ -85,8 +85,8 @@ Widths by breakpoint when `fluid` is **false** or omitted:
 
 Behavior summary (non-fluid):
 
-- On **Desktop (≥1193px)** viewports, the container is a fixed-width column of `1200px`, centered via `margin-left/right: auto`.
-- On **Tablet (768–1192px)** viewports, the container is a fixed-width column of `700px`, centered via `margin-left/right: auto`.
+- On **Desktop (≥1280px)** viewports, the container is a fixed-width column of `1200px`, centered via `margin-left/right: auto`.
+- On **Tablet (768–1279px)** viewports, the container is a fixed-width column of `700px`, centered via `margin-left/right: auto`.
 - On **Mobile (<768px)** viewports, the container spans the available width with `width: 100%; max-width: 100%;` while still applying horizontal padding from `--container-padding`.
 
 ### Component props

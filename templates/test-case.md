@@ -38,8 +38,8 @@ Example:
 
 | Device   | Width (px) |
 |----------|------------|
-| Desktop  | ≥ 1193    |
-| Tablet   | 768–1192   |
+| Desktop  | ≥ 1280    |
+| Tablet   | 768–1279   |
 | Mobile   | ≤ 767      |
 
 ---

@@ -18,7 +18,7 @@ updated: 2025-12-10
 Validate that the `TextLight` UI component renders correctly on **Tablet** viewport in **Dark theme**, using the expected typography design tokens and computed styles defined in ticket  
 [MC-0001-UI-kit-Create-Text-component](../../../tickets/MC-0001-UI-kit-Create-Text-component.md).
 
-Specifically confirm on tablet range (768–1192px):
+Specifically confirm on tablet range (768–1279px):
 
 - correct font family
 - correct tablet font size from token `--fonts-size-text`
@@ -35,7 +35,7 @@ Specifically confirm on tablet range (768–1192px):
 
 - Application or Storybook is running.
 - The `TextLight` component is available (e.g., via Storybook story `UI / Atoms / TextLight`).
-- Browser viewport width is within **tablet range 768–1192px**.
+- Browser viewport width is within **tablet range 768–1279px**.
 - Application theme is set to **Dark**.
 - Design tokens are loaded:
 	- `--color-text`
@@ -54,7 +54,7 @@ Environment assumptions:
 | Parameter      | Value                    |
 |----------------|--------------------------|
 | Device         | Tablet (simulated)       |
-| Viewport       | 768–1192px               |
+| Viewport       | 768–1279px               |
 | Theme          | Dark                     |
 | Browser        | Latest Chrome / Chromium |
 
@@ -69,7 +69,7 @@ Recommended specific widths:
 ## Steps
 
 1. Open Storybook or the application in a desktop browser.
-2. Set viewport width to a tablet value within **768–1192px** (for example, **1024px**).
+2. Set viewport width to a tablet value within **768–1279px** (for example, **1024px**).
 3. Ensure the **Dark** theme is active.
 4. Navigate to the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textlight--default&viewMode=story&globals=theme:dark) or [Storybook story](https://leva13007.github.io/memora-cards-storybook/?path=/docs/ui-atoms-textlight--docs) that showcases the `TextLight` component (`UI / Atoms / TextLight`).
 5. Identify a sample `TextLight` text element (e.g., "Sample Light Text").
@@ -124,7 +124,7 @@ Recommended specific widths:
 
 - Move viewport just below and above the tablet range:
 	- **≤767px** (mobile) should use `0.75rem` font-size
-	- **≥1193px** (desktop) should use `1rem` font-size
+	- **≥1280px** (desktop) should use `1rem` font-size
 - Toggle Dark → Light → Dark and verify color token re-evaluates correctly back to Dark theme value for `variant="primary"` and does not affect `variant="warning"` using `--color-warning`.
 - Test long text wrapping to ensure no layout shifts at tablet width.
 
@@ -132,7 +132,7 @@ Recommended specific widths:
 
 ## Notes
 
-- This test case covers only **Tablet (768–1192px) + Dark theme** for the `TextLight` component.
+- This test case covers only **Tablet (768–1279px) + Dark theme** for the `TextLight` component.
 - Complementary test cases cover Desktop and Light theme variants, and analogous Tablet cases exist for `TextMedium` and `TextBold`.
 
 ---

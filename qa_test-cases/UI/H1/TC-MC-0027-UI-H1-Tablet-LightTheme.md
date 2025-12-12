@@ -18,7 +18,7 @@ updated: 2025-12-10
 Validate that the `H1` UI component renders correctly on **Tablet** viewport in **Light theme**, using the expected typography design tokens and semantic `<h1>` behavior defined in ticket  
 [MC-0003-UI-kit-Create-H1-component](../../../tickets/MC-0003-UI-kit-Create-H1-component.md).
 
-Specifically confirm on tablet range (768–1192px):
+Specifically confirm on tablet range (768–1279px):
 
 - correct `<h1>` semantics in the DOM
 - correct font family (inheriting **Inter**)
@@ -34,7 +34,7 @@ Specifically confirm on tablet range (768–1192px):
 
 - Application or Storybook is running.
 - The `H1` component is available (e.g., via Storybook story `UI / Atoms / H1`).
-- Browser viewport width is within **tablet range 768–1192px**.
+- Browser viewport width is within **tablet range 768–1279px**.
 - Application theme is set to **Light**.
 - Design tokens are loaded:
 	- `--color-text`
@@ -53,7 +53,7 @@ Environment assumptions:
 | Parameter      | Value                    |
 |----------------|--------------------------|
 | Device         | Tablet (simulated)       |
-| Viewport       | 768–1192px               |
+| Viewport       | 768–1279px               |
 | Theme          | Light                    |
 | Browser        | Latest Chrome / Chromium |
 
@@ -68,7 +68,7 @@ Recommended specific widths:
 ## Steps
 
 1. Open Storybook or the application in a desktop browser.
-2. Set viewport width to a tablet value within **768–1192px** (for example, **1024px**).
+2. Set viewport width to a tablet value within **768–1279px** (for example, **1024px**).
 3. Ensure the **Light** theme is active.
 4. Navigate to the [H1 default story iframe](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-h1--default&viewMode=story) or `H1` [Storybook docs page](https://leva13007.github.io/memora-cards-storybook/?path=/docs/ui-atoms-h1--docs) that showcases the `H1` component (`UI / Atoms / H1`).
 5. If the story supports controls/args for content, set the heading text to a simple value (for example, `"Dashboard"`). Otherwise, use the default example text shown in the story.
@@ -116,7 +116,7 @@ Recommended specific widths:
 
 - Move viewport just below and above the tablet range:
 	- **≤767px** (mobile) should use `1.5rem` from `--font-size-h-1`
-	- **≥1193px** (desktop) should use `2rem` from `--font-size-h-1`
+	- **≥1280px** (desktop) should use `2rem` from `--font-size-h-1`
 - Test long heading text that wraps to multiple lines and verify line-height and spacing remain visually consistent at tablet width.
 - Verify that global theme toggling Light → Dark → Light correctly updates `--color-text` for H1 (even though this test focuses on Light theme, brief Dark check can reveal token wiring issues).
 
@@ -124,7 +124,7 @@ Recommended specific widths:
 
 ## Notes
 
-- This test case covers only **Tablet (768–1192px) + Light theme** for the `H1` component.
+- This test case covers only **Tablet (768–1279px) + Light theme** for the `H1` component.
 - Separate test cases should cover Dark theme and Desktop/Mobile breakpoints.
 - Typography expectations must match the `H1` specification in MC-0003.
 

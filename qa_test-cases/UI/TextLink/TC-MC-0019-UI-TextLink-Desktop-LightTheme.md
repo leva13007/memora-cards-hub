@@ -18,7 +18,7 @@ updated: 2025-12-10
 Validate that the `TextLink` UI component renders correctly on **Desktop** in **Light theme**, using the expected typography design tokens (inheriting from `TextMedium`) and link-specific color tokens defined in ticket  
 [MC-0002-UI-kit-Create-TextLink-component](../../../tickets/MC-0002-UI-kit-Create-TextLink-component.md).
 
-Specifically confirm on desktop viewport (≥1193px):
+Specifically confirm on desktop viewport (≥1280px):
 
 - correct font family
 - correct desktop font size from token `--fonts-size-text`
@@ -37,7 +37,7 @@ Specifically confirm on desktop viewport (≥1193px):
 
 - Application or Storybook is running.
 - The `TextLink` component is available (e.g., via Storybook story `UI / Atoms / TextLink`).
-- Browser viewport width is ≥ **1193px** (desktop breakpoint).
+- Browser viewport width is ≥ **1280px** (desktop breakpoint).
 - Application theme is set to **Light**.
 - Design tokens are loaded:
 	- `--fonts-size-text`
@@ -57,7 +57,7 @@ Environment assumptions:
 | Parameter      | Value                    |
 |----------------|--------------------------|
 | Device         | Desktop                  |
-| Viewport       | ≥ 1193px                 |
+| Viewport       | ≥ 1280px                 |
 | Theme          | Light                    |
 | Browser        | Latest Chrome / Chromium |
 
@@ -73,7 +73,7 @@ Example props:
 ## Steps
 
 1. Open Storybook or the application in a desktop browser.
-2. Set viewport width to **≥ 1193px**.
+2. Set viewport width to **≥ 1280px**.
 3. Ensure the **Light** theme is active.
 4. Navigate to the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textlink--default&viewMode=story) or `TextLink` [Storybook story](https://leva13007.github.io/memora-cards-storybook/?path=/docs/ui-atoms-textlink--docs) that showcases the `TextLink` component (`UI / Atoms / TextLink`).
 5. Configure the story or component props to use:
@@ -141,10 +141,6 @@ Example props:
 
 ## Edge Cases  
 *(Not required for pass/fail, but recommended to observe)*
-
-- Adjust viewport around desktop threshold (1192px ↔ 1194px) and confirm:
-	- ≥1193px uses 1rem font-size from `--fonts-size-text`
-	- tablet range uses 0.875rem
 - Test very long `content` strings to verify wrapping and hover behavior across multiple lines.
 - Use different `to` values (absolute URL, relative path, hash, `mailto:`) and confirm they map correctly to `href` without affecting typography or tokens.
 - Temporarily enable real navigation (outside Storybook) and verify that clicking the link navigates to the `to` target while preserving visual styling.

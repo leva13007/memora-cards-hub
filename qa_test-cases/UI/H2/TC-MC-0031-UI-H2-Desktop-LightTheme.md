@@ -18,7 +18,7 @@ updated: 2025-12-11
 Validate that the `H2` UI component renders correctly on **Desktop** viewport in **Light theme**, using the expected typography design tokens and semantic `<h2>` behavior defined in ticket  
 [MC-0004-UI-kit-Create-H2-component](../../../tickets/MC-0004-UI-kit-Create-H2-component.md).
 
-Specifically confirm on desktop viewport (≥1193px):
+Specifically confirm on desktop viewport (≥1280px):
 
 - correct `<h2>` semantics in the DOM
 - correct font family (inheriting **Inter**)
@@ -34,7 +34,7 @@ Specifically confirm on desktop viewport (≥1193px):
 
 - Application or Storybook is running.
 - The `H2` component is available (e.g., via Storybook story `UI / Atoms / H2`).
-- Browser viewport width is ≥ **1193px** (desktop breakpoint).
+- Browser viewport width is ≥ **1280px** (desktop breakpoint).
 - Application theme is set to **Light**.
 - Design tokens are loaded:
 	- `--color-text`
@@ -53,7 +53,7 @@ Environment assumptions:
 | Parameter      | Value                    |
 |----------------|--------------------------|
 | Device         | Desktop                  |
-| Viewport       | ≥ 1193px                 |
+| Viewport       | ≥ 1280px                 |
 | Theme          | Light                    |
 | Browser        | Latest Chrome / Chromium |
 
@@ -62,7 +62,7 @@ Environment assumptions:
 ## Steps
 
 1. Open Storybook or the application in a desktop browser.
-2. Set viewport width to **≥ 1193px**.
+2. Set viewport width to **≥ 1280px**.
 3. Ensure the **Light** theme is active.
 4. Navigate to the [H2 default story iframe](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-h2--default&viewMode=story) or `H2` [Storybook docs page](https://leva13007.github.io/memora-cards-storybook/?path=/docs/ui-atoms-h2--docs) that showcases the `H2` component (`UI / Atoms / H2`).
 5. If the story supports controls/args for content, set the heading text to a simple value (for example, `"Section title"`). Otherwise, use the default example text shown in the story.
@@ -99,7 +99,7 @@ Environment assumptions:
 
 ## Screenshots / Attachments (optional)
 
-- Screenshot of `H2` rendering on Desktop + Light theme at ≥1193px width (showing default or example heading text)
+- Screenshot of `H2` rendering on Desktop + Light theme at ≥1280px width (showing default or example heading text)
 
 ![alt text](../../assets/image-31.png)
 
@@ -107,10 +107,6 @@ Environment assumptions:
 
 ## Edge Cases  
 *(Not required for pass/fail, but recommended to observe)*
-
-- Adjust viewport around the desktop threshold (1192px ↔ 1194px) and confirm:
-	- ≥1193px uses 1.5rem from `--font-size-h-2`
-	- tablet range uses 1.25rem (to be covered in a separate Tablet test case)
 - Test long heading text that wraps to multiple lines and verify line-height and spacing remain visually consistent.
 - Verify that global theme toggling Light → Dark → Light correctly updates `--color-text` for H2 (even though this test focuses on Light theme, brief Dark check can reveal token wiring issues).
 
@@ -118,7 +114,7 @@ Environment assumptions:
 
 ## Notes
 
-- This test case covers only **Desktop (≥1193px) + Light theme** for the `H2` component.
+- This test case covers only **Desktop (≥1280px) + Light theme** for the `H2` component.
 - Separate test cases should cover Dark theme and Tablet/Mobile breakpoints.
 - Typography expectations must match the `H2` specification in MC-0004.
 

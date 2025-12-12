@@ -18,7 +18,7 @@ updated: 2025-12-09
 Validate that the `TextBold` UI component renders correctly on **Tablet** viewport in **Light theme**, using the expected typography design tokens and computed styles defined in ticket  
 [MC-0001-UI-kit-Create-Text-component](../../../tickets/MC-0001-UI-kit-Create-Text-component.md).
 
-Specifically confirm on tablet range (768–1192px):
+Specifically confirm on tablet range (768–1279px):
 
 - correct font family
 - correct tablet font size from token `--fonts-size-text`
@@ -35,7 +35,7 @@ Specifically confirm on tablet range (768–1192px):
 
 - Application or Storybook is running.
 - The `TextBold` component is available (e.g., via Storybook story `UI / Atoms / TextBold`).
-- Browser viewport width is within **tablet range 768–1192px**.
+- Browser viewport width is within **tablet range 768–1279px**.
 - Application theme is set to **Light**.
 - Design tokens are loaded:
 	- `--color-text`
@@ -54,7 +54,7 @@ Environment assumptions:
 | Parameter      | Value                    |
 |----------------|--------------------------|
 | Device         | Tablet (simulated)       |
-| Viewport       | 768–1192px               |
+| Viewport       | 768–1279px               |
 | Theme          | Light                    |
 | Browser        | Latest Chrome / Chromium |
 
@@ -69,7 +69,7 @@ Recommended specific widths:
 ## Steps
 
 1. Open Storybook or the application in a desktop browser.
-2. Set viewport width to a tablet value within **768–1192px** (for example, **1024px**).
+2. Set viewport width to a tablet value within **768–1279px** (for example, **1024px**).
 3. Ensure the **Light** theme is active.
 4. Navigate to the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textbold--default&viewMode=story) or [Storybook story](https://leva13007.github.io/memora-cards-storybook/?path=/docs/ui-atoms-textbold--docs) that showcases the `TextBold` component (`UI / Atoms / TextBold`).
 5. Identify a sample `TextBold` text element (e.g., “Sample Bold Text”).
@@ -123,7 +123,7 @@ Recommended specific widths:
 
 - Move viewport just below and above the tablet range:
 	- **≤767px** (mobile) should use `0.75rem` font-size
-	- **≥1193px** (desktop) should use `1rem` font-size
+	- **≥1280px** (desktop) should use `1rem` font-size
 - Toggle Light → Dark → Light and verify color token re-evaluates correctly back to Light theme value.
 - Test long text wrapping to ensure no layout shifts at tablet width.
 
@@ -131,7 +131,7 @@ Recommended specific widths:
 
 ## Notes
 
-- This test case covers only **Tablet (768–1192px) + Light theme**.
+- This test case covers only **Tablet (768–1279px) + Light theme**.
 - Complementary test cases cover Desktop and Dark theme variants.
 
 ---

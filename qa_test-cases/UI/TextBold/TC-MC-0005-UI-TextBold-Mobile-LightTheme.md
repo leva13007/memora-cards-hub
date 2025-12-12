@@ -123,8 +123,8 @@ Recommended specific widths:
 
 - Move viewport just below and above the mobile range:
 	- **<768px** should consistently use `0.75rem` font-size
-	- **768–1192px** (tablet) should use `0.875rem` font-size
-	- **≥1193px** (desktop) should use `1rem` font-size
+   - **768–1279px** (tablet) should use `0.875rem` font-size
+   - **≥1280px** (desktop) should use `1rem` font-size
 - Toggle Light → Dark → Light and verify color token re-evaluates correctly back to Light theme value.
 - Test long text wrapping and multi-line content to ensure no layout shifts at small mobile width.
 

@@ -116,8 +116,8 @@ The component may later support additional optional props (for example, `target`
 ## Acceptance Criteria  
 1. When the `TextLink` component is rendered, it must use the `Inter` font family.
 2. When the `TextLink` component is rendered, it must apply `line-height: normal;`.
-3. When the `TextLink` component is viewed on Desktop screens (≥1193px), it must use font-size `1rem` (16px) via `var(--fonts-size-text)`.
-4. When the `TextLink` component is viewed on Tablet screens (between 768px and 1192px), it must use font-size `0.875rem` (14px) via `var(--fonts-size-text)`.
+3. When the `TextLink` component is viewed on Desktop screens (≥1280px), it must use font-size `1rem` (16px) via `var(--fonts-size-text)`.
+4. When the `TextLink` component is viewed on Tablet screens (between 768px and 1279px), it must use font-size `0.875rem` (14px) via `var(--fonts-size-text)`.
 5. When the `TextLink` component is viewed on Mobile screens (<768px), it must use font-size `0.75rem` (12px) via `var(--fonts-size-text)`.
 6. When the `TextLink` component is rendered, it must apply `font-weight: var(--font-weight-normal);` with token value `400`.
 7. When the application theme is set to Light, the `TextLink` component must use `color: var(--color-link);` where `--color-link: #1a73e8;` in its default (non-hover) state.

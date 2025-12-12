@@ -18,7 +18,7 @@ updated: 2025-12-10
 Validate that the `H1` UI component renders correctly on **Desktop** viewport in **Dark theme**, using the expected typography design tokens and semantic `<h1>` behavior defined in ticket  
 [MC-0003-UI-kit-Create-H1-component](../../../tickets/MC-0003-UI-kit-Create-H1-component.md).
 
-Specifically confirm on desktop viewport (≥1193px):
+Specifically confirm on desktop viewport (≥1280px):
 
 - correct `<h1>` semantics in the DOM
 - correct font family (inheriting **Inter**)
@@ -34,7 +34,7 @@ Specifically confirm on desktop viewport (≥1193px):
 
 - Application or Storybook is running.
 - The `H1` component is available (e.g., via Storybook story `UI / Atoms / H1`).
-- Browser viewport width is ≥ **1193px** (desktop breakpoint).
+- Browser viewport width is ≥ **1280px** (desktop breakpoint).
 - Application theme is set to **Dark**.
 - Design tokens are loaded:
 	- `--color-text`
@@ -53,7 +53,7 @@ Environment assumptions:
 | Parameter      | Value                    |
 |----------------|--------------------------|
 | Device         | Desktop                  |
-| Viewport       | ≥ 1193px                 |
+| Viewport       | ≥ 1280px                 |
 | Theme          | Dark                     |
 | Browser        | Latest Chrome / Chromium |
 
@@ -62,7 +62,7 @@ Environment assumptions:
 ## Steps
 
 1. Open Storybook or the application in a desktop browser.
-2. Set viewport width to **≥ 1193px**.
+2. Set viewport width to **≥ 1280px**.
 3. Ensure the **Dark** theme is active.
 4. Navigate to the [H1 default story iframe](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-h1--default&viewMode=story&globals=theme:dark) or `H1` [Storybook docs page](https://leva13007.github.io/memora-cards-storybook/?path=/docs/ui-atoms-h1--docs) that showcases the `H1` component (`UI / Atoms / H1`).
 5. If the story supports controls/args for content, set the heading text to a simple value (for example, `"Dashboard"`). Otherwise, use the default example text shown in the story.
@@ -99,7 +99,7 @@ Environment assumptions:
 
 ## Screenshots / Attachments (optional)
 
-- Screenshot of `H1` rendering on Desktop + Dark theme at ≥1193px width (showing default or example heading text)
+- Screenshot of `H1` rendering on Desktop + Dark theme at ≥1280px width (showing default or example heading text)
 
 ![alt text](../../assets/image-26.png)
 
@@ -108,9 +108,6 @@ Environment assumptions:
 ## Edge Cases  
 *(Not required for pass/fail, but recommended to observe)*
 
-- Adjust viewport around the desktop threshold (1192px ↔ 1194px) and confirm:
-	- ≥1193px uses 2rem from `--font-size-h-1`
-	- tablet range uses 1.75rem (to be covered in a separate Tablet test case)
 - Test long heading text that wraps to multiple lines and verify line-height and spacing remain visually consistent in Dark theme.
 - Verify that global theme toggling Dark → Light → Dark correctly updates `--color-text` for H1.
 
@@ -118,7 +115,7 @@ Environment assumptions:
 
 ## Notes
 
-- This test case covers only **Desktop (≥1193px) + Dark theme** for the `H1` component.
+- This test case covers only **Desktop (≥1280px) + Dark theme** for the `H1` component.
 - Separate test cases should cover Light theme and Tablet/Mobile breakpoints.
 - Typography expectations must match the `H1` specification in MC-0003.
 

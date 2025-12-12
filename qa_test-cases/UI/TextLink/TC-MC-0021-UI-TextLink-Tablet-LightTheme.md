@@ -18,7 +18,7 @@ updated: 2025-12-10
 Validate that the `TextLink` UI component renders correctly on **Tablet** viewport in **Light theme**, using the expected typography design tokens (inheriting from `TextMedium`) and link-specific color tokens defined in ticket  
 [MC-0002-UI-kit-Create-TextLink-component](../../../tickets/MC-0002-UI-kit-Create-TextLink-component.md).
 
-Specifically confirm on tablet range (768–1192px):
+Specifically confirm on tablet range (768–1279px):
 
 - correct font family
 - correct tablet font size from token `--fonts-size-text`
@@ -37,7 +37,7 @@ Specifically confirm on tablet range (768–1192px):
 
 - Application or Storybook is running.
 - The `TextLink` component is available (e.g., via Storybook story `UI / Atoms / TextLink`).
-- Browser viewport width is within **tablet range 768–1192px**.
+- Browser viewport width is within **tablet range 768–1279px**.
 - Application theme is set to **Light**.
 - Design tokens are loaded:
 	- `--fonts-size-text`
@@ -57,7 +57,7 @@ Environment assumptions:
 | Parameter      | Value                    |
 |----------------|--------------------------|
 | Device         | Tablet (simulated)       |
-| Viewport       | 768–1192px               |
+| Viewport       | 768–1279px               |
 | Theme          | Light                    |
 | Browser        | Latest Chrome / Chromium |
 
@@ -79,7 +79,7 @@ Example props:
 ## Steps
 
 1. Open Storybook or the application in a desktop browser.
-2. Set viewport width to a tablet value within **768–1192px** (for example, **1024px**).
+2. Set viewport width to a tablet value within **768–1279px** (for example, **1024px**).
 3. Ensure the **Light** theme is active.
 4. Navigate to the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textlink--default&viewMode=story) or `TextLink` [Storybook story](https://leva13007.github.io/memora-cards-storybook/?path=/docs/ui-atoms-textlink--docs) that showcases the `TextLink` component (`UI / Atoms / TextLink`).
 5. Configure the story or component props to use:
@@ -150,7 +150,7 @@ Example props:
 
 - Move viewport just below and above the tablet range:
 	- **≤767px** (mobile) should use `0.75rem` font-size
-	- **≥1193px** (desktop) should use `1rem` font-size
+	- **≥1280px** (desktop) should use `1rem` font-size
 - Test very long `content` strings to verify wrapping and hover behavior across multiple lines at tablet width.
 - Use different `to` values (absolute URL, relative path, hash, `mailto:`) and confirm they map correctly to `href` without affecting typography or tokens.
 
@@ -158,7 +158,7 @@ Example props:
 
 ## Notes
 
-- This test case covers only **Tablet (768–1192px) + Light theme** for the `TextLink` component.
+- This test case covers only **Tablet (768–1279px) + Light theme** for the `TextLink` component.
 - Separate test cases should cover Dark theme and Desktop/Mobile variants.
 - Typography expectations should match `TextMedium` Tablet + Light behavior, except for using link-specific color tokens instead of `--color-text`.
 

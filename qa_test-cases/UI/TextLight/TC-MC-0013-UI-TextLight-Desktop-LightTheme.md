@@ -35,7 +35,7 @@ Specifically confirm:
 
 - Application or Storybook is running.
 - The `TextLight` component is available (e.g., via Storybook story `UI / Atoms / TextLight`).
-- Browser viewport width is ≥ **1193px** (desktop breakpoint).
+- Browser viewport width is ≥ **1280px** (desktop breakpoint).
 - Application theme is set to **Light**.
 - Design tokens are loaded:
 	- `--color-text`
@@ -54,7 +54,7 @@ Environment assumptions:
 | Parameter      | Value                    |
 |----------------|--------------------------|
 | Device         | Desktop                  |
-| Viewport       | ≥ 1193px                 |
+| Viewport       | ≥ 1280px                 |
 | Theme          | Light                    |
 | Browser        | Latest Chrome / Chromium |
 
@@ -63,7 +63,7 @@ Environment assumptions:
 ## Steps
 
 1. Open Storybook or the application in a desktop browser.
-2. Set viewport width to **≥ 1193px**.
+2. Set viewport width to **≥ 1280px**.
 3. Ensure the **Light** theme is active.
 4. Navigate to the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textlight--default&viewMode=story) or [Storybook story](https://leva13007.github.io/memora-cards-storybook/?path=/docs/ui-atoms-textlight--docs) that showcases the `TextLight` component (`UI / Atoms / TextLight`).
 5. Identify a sample `TextLight` text element (e.g., "Sample Light Text").
@@ -114,10 +114,6 @@ Environment assumptions:
 
 ## Edge Cases  
 *(Not required for pass/fail, but recommended to observe)*
-
-- Adjust viewport around desktop threshold (1192px ↔ 1194px) and confirm:
-	- ≥1193px uses 1rem
-	- tablet range uses 0.875rem
 - Toggle Light → Dark → Light and verify color token re-evaluates correctly for `variant="primary"` and does not affect `variant="warning"` using `--color-warning`.
 - Test long text wrapping and multi-line content to ensure no layout shifts.
 

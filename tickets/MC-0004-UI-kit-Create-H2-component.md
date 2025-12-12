@@ -68,8 +68,8 @@ Design token requirements:
 	- **Light theme**: `--color-text: #0f172a`
 	- **Dark theme**: `--color-text: #f5f7fb`
 - `--font-size-h-2` is breakpoint-dependent:
-	- **Desktop** (≥1193px): `--font-size-h-2: 1.5rem`
-	- **Tablet** (768–1192px): `--font-size-h-2: 1.25rem`
+	- **Desktop** (≥1280px): `--font-size-h-2: 1.5rem`
+	- **Tablet** (768–1279px): `--font-size-h-2: 1.25rem`
 	- **Mobile** (<768px): `--font-size-h-2: 1.125rem`
 
 The component must **not** hard-code the pixel/rem values directly into component styles; it should rely on the design tokens above, which may be provided via CSS variables.
@@ -105,8 +105,8 @@ Typography and tokens:
 4. When the `H2` component is rendered, it must apply `font-weight: var(--font-weight-semi);` with token value `600`.
 5. When the application theme is set to Light, the `H2` component must use `color: var(--color-text);` where `--color-text: #0f172a`.
 6. When the application theme is set to Dark, the `H2` component must use `color: var(--color-text);` where `--color-text: #f5f7fb`.
-7. When the `H2` component is viewed on Desktop screens (≥1193px), it must use `font-size: var(--font-size-h-2);` where `--font-size-h-2: 1.5rem`.
-8. When the `H2` component is viewed on Tablet screens (between 768px and 1192px), it must use `font-size: var(--font-size-h-2);` where `--font-size-h-2: 1.25rem`.
+7. When the `H2` component is viewed on Desktop screens (≥1280px), it must use `font-size: var(--font-size-h-2);` where `--font-size-h-2: 1.5rem`.
+8. When the `H2` component is viewed on Tablet screens (between 768px and 1279px), it must use `font-size: var(--font-size-h-2);` where `--font-size-h-2: 1.25rem`.
 9. When the `H2` component is viewed on Mobile screens (<768px), it must use `font-size: var(--font-size-h-2);` where `--font-size-h-2: 1.125rem`.
 10. All visual behavior (font size, font family, font weight, color, line-height) must be driven by the design tokens listed above and not by hard-coded values, except where tokens themselves define explicit values.
 

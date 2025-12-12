@@ -84,9 +84,9 @@ All Text components (__TextLight__, __TextMedium__, __TextBold__) must support t
 ## Acceptance Criteria  
 1. When the Text components are rendered, they must display text with the correct font family `Inter`.
 2. When the Text components are rendered, they must apply the correct `line-height: normal;`.
-3. When the Text components are viewed on Desktop screen > 1193px, they must use font-size `1rem` (16px).
-4. When the Text components are viewed on Tablet screen between 768px and 1192px, they must use font-size `0.875rem` (14px).
-5. When the Text components are viewed on Mobile screen < 768px, they must use font-size `0.75rem` (12px).
+3. When the Text components are viewed on Desktop screens (viewport width ≥1280px), they must use font-size `1rem` (16px).
+4. When the Text components are viewed on Tablet screens (viewport width between 768px and 1279px), they must use font-size `0.875rem` (14px).
+5. When the Text components are viewed on Mobile screens (viewport width <768px), they must use font-size `0.75rem` (12px).
 6. When the application theme is set to Dark and `variant="primary"`, the Text components must use `color: var(--color-text);` where `--color-text: #f5f7fb`.
 7. When the application theme is set to Light and `variant="primary"`, the Text components must use `color: var(--color-text);` where `--color-text: #0f172a;`.
 8. When `variant="warning"` (for any theme), the Text components must use `color: var(--color-warning);` where `--color-warning: #ec1515;`.
