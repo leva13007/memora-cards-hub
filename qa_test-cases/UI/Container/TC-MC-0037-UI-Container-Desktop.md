@@ -13,7 +13,7 @@ updated: 2025-12-12
 
 # TC-MC-0037 — UI: Container – Desktop – Non-fluid layout
 
-## 🎯 Objective  
+## Objective  
 Validate that the `Container` UI component renders correctly on **Desktop** viewport in **non-fluid** mode (`fluid` omitted or `false`), using the expected layout behavior defined in ticket  
 [MC-0005-UI-kit-Create-Container-component](../../../tickets/MC-0005-UI-kit-Create-Container-component.md).
 
