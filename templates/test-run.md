@@ -12,7 +12,7 @@ related-tickets: []     # MC-XXXX if applicable
 
 # {{id}} — {{title}}
 
-## 🎯 Purpose  
+## Purpose  
 Short explanation of why this test run exists.  
 Example:
 - Validate UI-kit typography before merging to `develop`
