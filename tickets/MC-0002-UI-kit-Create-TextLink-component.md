@@ -75,6 +75,16 @@ The component must rely on design tokens:
 - `--color-link`
 - `--color-link-hover`
 
+### Accessibility (focus-visible)
+
+The `TextLink` must provide a clear keyboard focus indicator using `:focus-visible`.
+
+- Required style:
+  - `outline: 1px solid var(--color-link, currentColor);`
+- Notes:
+  - `outline` must be visible in both Light and Dark themes.
+  - Do not remove focus outlines without providing an accessible alternative.
+
 ### Component semantics
 
 - The `TextLink` component must render a semantic HTML anchor element:
@@ -121,6 +131,7 @@ The component may later support additional optional props (for example, `target`
 12. When the `TextLink` component is rendered with `to="/somewhere"` and `content="The TextLink text content"`, it must render an anchor element `<a href="/somewhere">The TextLink text content</a>`.
 13. When the `TextLink` component is rendered without a `to` value in Storybook, it must not navigate the browser away from the Storybook UI (navigation behavior must be effectively turned off in stories).
 14. All visual behavior (font size, font family, font weight, colors, line-height) must be driven by the design tokens listed above and not by hard-coded values, except where tokens themselves define explicit values.
+15. When the `TextLink` receives keyboard focus, it must show a visible focus indicator via `.link:focus-visible { outline: 1px solid var(--color-link, currentColor); }`.
 
 All criteria must be objectively verifiable.
 
