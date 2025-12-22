@@ -56,12 +56,11 @@ TC-MC-0003 — Button Primary States
 
 Format B (table — recommended):
 
-| ID          | Title                                | Area               | Priority |
-|-------------|----------------------------------------|--------------------|----------|
-| TC-MC-0001  | H1 Light Theme Typography              | ui-kit/typography  | High     |
-| TC-MC-0002  | H1 Dark Theme Typography               | ui-kit/typography  | High     |
-| TC-MC-0003  | Button Primary States                  | ui-kit/buttons     | Medium   |
-
+| ID          | Title                                | Priority |
+|-------------|----------------------------------------|----------|
+| TC-MC-0001  | H1 Light Theme Typography              | High     |
+| TC-MC-0002  | H1 Dark Theme Typography               | High     |
+| TC-MC-0003  | Button Primary States                  | Medium   |
 ---
 
 ## Related Materials  
