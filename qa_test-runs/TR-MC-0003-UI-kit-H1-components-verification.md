@@ -72,4 +72,4 @@ Run a manual UI verification for the `H1` typography atom described in `MC-0003`
 ---
 
 ## Executions
-- (pending)
+- EX-MC-0004-2025-12-23 — Oleh Levchenko — Storybook — Pending (`qa_executions/EX-MC-0004-2025-12-23.md`)

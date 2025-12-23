@@ -73,12 +73,12 @@ Validate responsive font sizes, theme colors, font-weight tokens, and core props
 | TC-MC-0010  | UI: TextMedium — Tablet — Dark Theme        | Medium   |
 | TC-MC-0011  | UI: TextMedium — Mobile — Light Theme       | Medium   |
 | TC-MC-0012  | UI: TextMedium — Mobile — Dark Theme        | Medium   |
-| TC-MC-0019  | UI: TextLight — Desktop — Light Theme       | Medium   |
-| TC-MC-0020  | UI: TextLight — Desktop — Dark Theme        | Medium   |
-| TC-MC-0021  | UI: TextLight — Tablet — Light Theme        | Medium   |
-| TC-MC-0022  | UI: TextLight — Tablet — Dark Theme         | Medium   |
-| TC-MC-0023  | UI: TextLight — Mobile — Light Theme        | Medium   |
-| TC-MC-0024  | UI: TextLight — Mobile — Dark Theme         | Medium   |
+| TC-MC-0013  | UI: TextLight — Desktop — Light Theme       | Medium   |
+| TC-MC-0014  | UI: TextLight — Desktop — Dark Theme        | Medium   |
+| TC-MC-0015  | UI: TextLight — Tablet — Light Theme        | Medium   |
+| TC-MC-0016  | UI: TextLight — Tablet — Dark Theme         | Medium   |
+| TC-MC-0017  | UI: TextLight — Mobile — Light Theme        | Medium   |
+| TC-MC-0018  | UI: TextLight — Mobile — Dark Theme         | Medium   |
 ---
 
 ## Related Materials
@@ -108,4 +108,4 @@ Validate responsive font sizes, theme colors, font-weight tokens, and core props
 ---
 
 ## Executions
-- (pending)
+- EX-2025-12-23-02 — Oleh Levchenko — Storybook — Pending (`qa_executions/EX-2025-12-23-02-UI-kit-Text-components.md`)

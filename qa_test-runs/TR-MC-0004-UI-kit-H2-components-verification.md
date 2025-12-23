@@ -72,4 +72,4 @@ Run a manual UI verification for the `H2` typography atom described in `MC-0004`
 ---
 
 ## Executions
-- (pending)
+- EX-MC-0005-2025-12-23 — Oleh Levchenko — Storybook — Pending (`qa_executions/EX-MC-0005-2025-12-23.md`)

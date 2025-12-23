@@ -1,6 +1,6 @@
 ---
-id: EX-YYYY-MM-DD-XX
-run-id: TR-YYYY-MM-DD-XX     # reference to the test-run
+id: EX-MC-XXXX-YYYY-MM-DD
+run-id: TR-MC-XXXX-YYYY-MM-DD     # reference to the test-run
 executed-by: ""              # person, CI, MCP agent, etc.
 environment: ""              # local | dev | staging | prod | storybook
 started: YYYY-MM-DD HH:MM

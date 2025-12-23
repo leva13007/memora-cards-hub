@@ -68,4 +68,4 @@ Validate the `Container` layout component from `MC-0005` in Storybook, ensuring 
 ---
 
 ## Executions
-- (pending)
+- EX-2025-12-23-01 — Oleh Levchenko — Storybook — Pending (`qa_executions/EX-2025-12-23-01-UI-kit-Container.md`)

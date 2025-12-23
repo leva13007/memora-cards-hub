@@ -76,4 +76,4 @@ Validate `TextLink` UI-kit component behavior and styling across breakpoints and
 ---
 
 ## Executions
-- (pending)
+- EX-MC-0003-2025-12-23 — Oleh Levchenko — Storybook — Pending (`qa_executions/EX-MC-0003-2025-12-23.md`)

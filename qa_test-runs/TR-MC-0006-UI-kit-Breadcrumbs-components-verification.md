@@ -80,5 +80,5 @@ Validate the `Breadcrumbs` molecule from `MC-0006` in Storybook: composition rul
 ---
 
 ## Executions
-- (pending)
+- EX-MC-0006-2025-12-23 — Oleh Levchenko — Storybook — Pending (`qa_executions/EX-MC-0006-2025-12-23.md`)
 

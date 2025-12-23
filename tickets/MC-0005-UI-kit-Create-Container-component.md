@@ -174,9 +174,7 @@ Potential pitfalls or scenarios that must be considered:
 ## Related
 
 - Depends on / interacts with:
-	- [MC-0001 — UI-kit: Create Text component](./MC-0001-UI-kit-Create-Text-component.md) (typography inside containers)
-	- [MC-0003 — UI-kit: Create H1 component](./MC-0003-UI-kit-Create-H1-component.md)
-	- [MC-0004 — UI-kit: Create H2 component](./MC-0004-UI-kit-Create-H2-component.md)
+
 - Future work:
 	- Grid or layout primitives that may compose multiple `Container` instances.
 	- Page templates that standardize header/body/footer using `Container`.
