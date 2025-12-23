@@ -153,3 +153,7 @@ Suggested manual QA scenarios:
 	- [MC-0001 (Text components: TextMedium)](./MC-0001-UI-kit-Create-Text-component.md)
 	- [MC-0002 (TextLink)](./MC-0002-UI-kit-Create-TextLink-component.md)
 
+---
+
+## Sprint
+- [Sprint 01](../sprints/MC-0001-Sprint-01.md)
