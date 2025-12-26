@@ -1,5 +1,5 @@
 ---
-id: TR-2025-12-22-07
+id: TR-MC-0006-UI-kit-Breadcrumbs-components-verification
 title: "UI-kit: Breadcrumbs component verification"
 type: UI              # Regression | Smoke | UI | E2E | Performance | Custom
 scope: "ui-kit"
@@ -8,10 +8,10 @@ owner: "Oleh Levchenko"
 environment: "storybook"         # local | dev | staging | production | storybook
 status: Planned         # Planned | In Progress | Completed | Canceled
 related-tickets:
-	- MC-0006
+	- MC-0006-UI-kit-Create-Breadcrumbs-component
 ---
 
-# TR-2025-12-22-07 — UI-kit: Breadcrumbs component verification
+# TR-MC-0006-UI-kit-Breadcrumbs-components-verification — UI-kit: Breadcrumbs component verification
 
 ## Purpose
 Validate the `Breadcrumbs` molecule from `MC-0006` in Storybook: composition rules (links vs current page), separator behavior (including `TextMedium` usage), wrapping behavior, and required accessibility/semantics.
@@ -65,20 +65,13 @@ Validate the `Breadcrumbs` molecule from `MC-0006` in Storybook: composition rul
 ---
 
 ## Related Materials
-- Ticket: `tickets/MC-0006-UI-kit-Create-Breadcrumbs-component.md`
-- Test cases:
-	- `qa_test-cases/UI/Breadcrumbs/TC-MC-0041-UI-Breadcrumbs-composition-rules.md`
-	- `qa_test-cases/UI/Breadcrumbs/TC-MC-0042-UI-Breadcrumbs-separators.md`
-	- `qa_test-cases/UI/Breadcrumbs/TC-MC-0043-UI-Breadcrumbs-accessibility-and-semantics.md`
+- Ticket: [MC-0006: UI-kit: Create Breadcrumbs component](../tickets/MC-0006-UI-kit-Create-Breadcrumbs-component.md)
 
 ---
 
 ## Notes
-- This run intentionally avoids re-testing typography token correctness of `TextLink` / `TextMedium` (covered by their own suites).
-- If an issue is found, create a bug ticket and reference `TR-2025-12-22-07`.
 
 ---
 
 ## Executions
-- EX-MC-0006-2025-12-23 — Oleh Levchenko — Storybook — Pending (`qa_executions/EX-MC-0006-2025-12-23.md`)
-
+- [EX-MC-0006-2025-12-27: First execution of TR-MC-0006](../qa_executions/EX-MC-0006-2025-12-23.md)

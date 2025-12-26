@@ -112,7 +112,8 @@ Environment assumptions:
 
 ---
 
-## Edge Cases  
+## Edge Cases
+
 *(Not required for pass/fail, but recommended to observe)*
 - Toggle Light → Dark → Light and verify color token re-evaluates correctly for `variant="primary"` and does not affect `variant="warning"` using `--color-warning`.
 - Test long text wrapping and multi-line content to ensure no layout shifts.
@@ -128,9 +129,4 @@ Environment assumptions:
 
 ## Related
 
-- Ticket: [MC-0001](../../../tickets/MC-0001-UI-kit-Create-Text-component.md)
-- Related test cases:
-  - [TC-MC-0001 – TextBold – Desktop – Light Theme](./TC-MC-0001-UI-TextBold-Desktop-LightTheme.md)
-  - [TC-MC-0002 – TextBold – Desktop – Dark Theme](./TC-MC-0002-UI-TextBold-Desktop-DarkTheme.md)
-  - (future) TextMedium – Desktop – Dark/Tablet/Mobile
-
+- Ticket: [MC-0001-UI-kit-Create-Text-component](../../../tickets/MC-0001-UI-kit-Create-Text-component.md)

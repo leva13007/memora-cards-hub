@@ -139,7 +139,8 @@ Example props:
 
 ---
 
-## Edge Cases  
+## Edge Cases
+
 *(Not required for pass/fail, but recommended to observe)*
 - Test very long `content` strings to verify wrapping and hover behavior across multiple lines.
 - Use different `to` values (absolute URL, relative path, hash, `mailto:`) and confirm they map correctly to `href` without affecting typography or tokens.
@@ -157,11 +158,4 @@ Example props:
 
 ## Related
 
-- Ticket: [MC-0002](../../../tickets/MC-0002-UI-kit-Create-TextLink-component.md)
-- Related test cases:
-	- (future) TextLink – Desktop – Dark Theme
-	- (future) TextLink – Tablet – Light/Dark Theme
-	- (future) TextLink – Mobile – Light/Dark Theme
-	- [TC-MC-0007 – TextMedium – Desktop – Light Theme](../TextMedium/TC-MC-0007-UI-TextMedium-Desktop-LightTheme.md)
-	- [TC-MC-0013 – TextLight – Desktop – Light Theme](../TextLight/TC-MC-0013-UI-TextLight-Desktop-LightTheme.md)
-
+- Ticket: [MC-0002-UI-kit-Create-TextLink-component](../../../tickets/MC-0002-UI-kit-Create-TextLink-component.md)

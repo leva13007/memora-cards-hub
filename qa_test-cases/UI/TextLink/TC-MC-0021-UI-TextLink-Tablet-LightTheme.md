@@ -145,7 +145,8 @@ Example props:
 
 ---
 
-## Edge Cases  
+## Edge Cases
+
 *(Not required for pass/fail, but recommended to observe)*
 
 - Move viewport just below and above the tablet range:
@@ -166,11 +167,4 @@ Example props:
 
 ## Related
 
-- Ticket: [MC-0002](../../../tickets/MC-0002-UI-kit-Create-TextLink-component.md)
-- Related test cases:
-	- [TC-MC-0019 – TextLink – Desktop – Light Theme](./TC-MC-0019-UI-TextLink-Desktop-LightTheme.md)
-	- (future) TextLink – Tablet – Dark Theme
-	- (future) TextLink – Mobile – Light/Dark Theme
-	- [TC-MC-0009 – TextMedium – Tablet – Light Theme](../TextMedium/TC-MC-0009-UI-TextMedium-Tablet-LightTheme.md)
-	- [TC-MC-0015 – TextLight – Tablet – Light Theme](../TextLight/TC-MC-0015-UI-TextLight-Tablet-LightTheme.md)
-
+- Ticket: [MC-0002-UI-kit-Create-TextLink-component](../../../tickets/MC-0002-UI-kit-Create-TextLink-component.md)

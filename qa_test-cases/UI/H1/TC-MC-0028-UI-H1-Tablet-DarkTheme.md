@@ -111,7 +111,8 @@ Recommended specific widths:
 
 ---
 
-## Edge Cases  
+## Edge Cases
+
 *(Not required for pass/fail, but recommended to observe)*
 
 - Move viewport just below and above the tablet range:
@@ -132,10 +133,4 @@ Recommended specific widths:
 
 ## Related
 
-- Ticket: [MC-0003](../../../tickets/MC-0003-UI-kit-Create-H1-component.md)
-- Related test cases (planned or existing):
-	- [TC-MC-0026 – H1 – Desktop – Dark Theme](./TC-MC-0026-UI-H1-Desktop-DarkTheme.md)
-	- [TC-MC-0027 – H1 – Tablet – Light Theme](./TC-MC-0027-UI-H1-Tablet-LightTheme.md)
-	- (future) H1 – Mobile – Light/Dark Theme
-	- [TC-MC-0010 – TextMedium – Tablet – Dark Theme](../TextMedium/TC-MC-0010-UI-TextMedium-Tablet-DarkTheme.md)
-	- [TC-MC-0022 – TextLink – Tablet – Dark Theme](../TextLink/TC-MC-0022-UI-TextLink-Tablet-DarkTheme.md)
+- Ticket: [MC-0003-UI-kit-Create-H1-component](../../../tickets/MC-0003-UI-kit-Create-H1-component.md)

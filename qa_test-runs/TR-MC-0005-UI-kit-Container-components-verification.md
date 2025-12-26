@@ -1,5 +1,5 @@
 ---
-id: TR-2025-12-22-06
+id: TR-MC-0005-UI-kit-Container-components-verification
 title: "UI-kit: Container component verification"
 type: UI              # Regression | Smoke | UI | E2E | Performance | Custom
 scope: "ui-kit"
@@ -8,10 +8,10 @@ owner: "Oleh Levchenko"
 environment: "storybook"         # local | dev | staging | production | storybook
 status: Planned         # Planned | In Progress | Completed | Canceled
 related-tickets:
-	- MC-0005
+	- MC-0005-UI-kit-Create-Container-component
 ---
 
-# TR-2025-12-22-06 — UI-kit: Container component verification
+# TR-MC-0005-UI-kit-Container-components-verification — UI-kit: Container component verification
 
 ## Purpose
 Validate the `Container` layout component from `MC-0005` in Storybook, ensuring correct width behavior at each breakpoint, correct padding token usage, and correct `fluid` behavior.
@@ -58,14 +58,13 @@ Validate the `Container` layout component from `MC-0005` in Storybook, ensuring 
 ---
 
 ## Related Materials
-- Ticket: `tickets/MC-0005-UI-kit-Create-Container-component.md`
+- Ticket: [MC-0005: UI-kit: Create Container component](../tickets/MC-0005-UI-kit-Create-Container-component.md)
 
 ---
 
 ## Notes
-- If an issue is found, create a bug ticket and reference `TR-2025-12-22-06`.
 
 ---
 
 ## Executions
-- EX-2025-12-23-01 — Oleh Levchenko — Storybook — Pending (`qa_executions/EX-2025-12-23-01-UI-kit-Container.md`)
+- [EX-MC-0005-2025-12-27: First execution of TR-MC-0005](../qa_executions/EX-MC-0005-2025-12-23.md)

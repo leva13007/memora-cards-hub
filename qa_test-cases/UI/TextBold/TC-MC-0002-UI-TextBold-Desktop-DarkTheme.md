@@ -112,7 +112,8 @@ Environment assumptions:
 
 ---
 
-## Edge Cases  
+## Edge Cases
+
 *(Not required for pass/fail, but recommended to observe)*
 - Toggle Dark → Light → Dark and verify color token re-evaluates correctly back to Dark theme value.
 - Test long text wrapping to ensure no layout shifts.
@@ -128,8 +129,4 @@ Environment assumptions:
 
 ## Related
 
-- Ticket: [MC-0001](../../../tickets/MC-0001-UI-kit-Create-Text-component.md)
-- Related test cases:
-	- [TC-MC-0001 – TextBold – Desktop – Light Theme](./TC-MC-0001-UI-TextBold-Desktop-LightTheme.md)
-	- (future) Tablet / Mobile + Dark theme
-
+- Ticket: [MC-0001-UI-kit-Create-Text-component](../../../tickets/MC-0001-UI-kit-Create-Text-component.md)

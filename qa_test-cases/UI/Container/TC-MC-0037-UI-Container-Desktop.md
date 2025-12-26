@@ -138,7 +138,3 @@ Component configuration:
 ## Related  
 
 - Ticket: [MC-0005-UI-kit-Create-Container-component](../../../tickets/MC-0005-UI-kit-Create-Container-component.md)
-- Other test cases (planned or existing):
-  - [TC-MC-0038 – Container – Tablet](./TC-MC-0038-UI-Container-Tablet.md)
-  - [TC-MC-0039 – Container – Mobile](./TC-MC-0039-UI-Container-Mobile.md)
-  - [TC-MC-0040 – Container – Fluid](./TC-MC-0040-UI-Container-Fluid.md)

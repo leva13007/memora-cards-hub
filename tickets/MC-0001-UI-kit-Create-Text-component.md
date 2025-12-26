@@ -99,11 +99,24 @@ All criteria must be objectively verifiable.
 (Manual or auto-generated)
 
 - Related test cases:
-  - TC-MC-XXXX
-  - TC-MC-YYYY
-- Scenarios to validate:
-  - …
-  - …
+  - TC-MC-0001-UI-TextBold-Desktop-LightTheme
+  - TC-MC-0002-UI-TextBold-Desktop-DarkTheme
+  - TC-MC-0003-UI-TextBold-Tablet-LightTheme
+  - TC-MC-0004-UI-TextBold-Tablet-DarkTheme
+  - TC-MC-0005-UI-TextBold-Mobile-LightTheme
+  - TC-MC-0006-UI-TextBold-Mobile-DarkTheme
+  - TC-MC-0007-UI-TextMedium-Desktop-LightTheme
+  - TC-MC-0008-UI-TextMedium-Desktop-DarkTheme
+  - TC-MC-0009-UI-TextMedium-Tablet-LightTheme
+  - TC-MC-0010-UI-TextMedium-Tablet-DarkTheme
+  - TC-MC-0011-UI-TextMedium-Mobile-LightTheme
+  - TC-MC-0012-UI-TextMedium-Mobile-DarkTheme
+  - TC-MC-0013-UI-TextLight-Desktop-LightTheme
+  - TC-MC-0014-UI-TextLight-Desktop-DarkTheme
+  - TC-MC-0015-UI-TextLight-Tablet-LightTheme
+  - TC-MC-0016-UI-TextLight-Tablet-DarkTheme
+  - TC-MC-0017-UI-TextLight-Mobile-LightTheme
+  - TC-MC-0018-UI-TextLight-Mobile-DarkTheme
 
 ---
 
@@ -115,9 +128,9 @@ Potential pitfalls or scenarios that must be considered:
 ---
 
 ## Related  
-- Depends on: …
-- Blocks: …
-- Duplicate of: …
+- Depends on:
+- Blocks:
+- Duplicate of:
 - Additional Links:
   - Figma: …
   - PR: …

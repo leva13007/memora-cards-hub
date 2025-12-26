@@ -120,15 +120,13 @@ All criteria must be objectively verifiable (e.g., via Storybook, browser devtoo
 ## Test Coverage  
 (Manual or auto-generated)
 
-- Related test cases (to be created):
-	- TC-MC-XXXX — H1 – Desktop – Light/Dark Theme
-	- TC-MC-YYYY — H1 – Tablet – Light/Dark Theme
-	- TC-MC-ZZZZ — H1 – Mobile – Light/Dark Theme
-- Scenarios to validate:
-	- Correct `<h1>` semantics in the DOM.
-	- Typographic consistency of H1 across breakpoints.
-	- Theme-specific color behavior (Light/Dark via `--color-text`).
-	- Proper mapping of `children` → visible heading text.
+- Related test cases:
+	- TC-MC-0025-UI-H1-Desktop-LightTheme
+	- TC-MC-0026-UI-H1-Desktop-DarkTheme
+	- TC-MC-0027-UI-H1-Tablet-LightTheme
+	- TC-MC-0028-UI-H1-Tablet-DarkTheme
+	- TC-MC-0029-UI-H1-Mobile-LightTheme
+	- TC-MC-0030-UI-H1-Mobile-DarkTheme
 
 ---
 
@@ -145,10 +143,8 @@ Potential pitfalls or scenarios that must be considered:
 
 ## Related  
 
-- Depends on:  
-	- [MC-0001 — UI-kit: Create Text component](./MC-0001-UI-kit-Create-Text-component.md)
-- Related:  
-	- [MC-0002 — UI-kit: Create TextLink component](./MC-0002-UI-kit-Create-TextLink-component.md)
+- Depends on:
+- Related:
 - Additional Links:
 	- Figma: …
 	- PR: …

@@ -1,5 +1,5 @@
 ---
-id: TR-2025-12-22-02
+id: TR-MC-0001-UI-kit-Text-components-verification
 title: "UI-kit: Text components (Light/Medium/Bold) — Storybook manual run"
 type: UI              # Regression | Smoke | UI | E2E | Performance | Custom
 scope: "ui-kit"
@@ -8,7 +8,7 @@ owner: "Oleh Levchenko"
 environment: "storybook"         # local | dev | staging | production | storybook
 status: Planned         # Planned | In Progress | Completed | Canceled
 related-tickets:
-	- MC-0001
+	- MC-0001-UI-kit-Create-Text-component
 ---
 
 # TR-MC-0001 — UI Kit: Text component verification (Light/Medium/Bold) — Storybook manual run
@@ -82,7 +82,7 @@ Validate responsive font sizes, theme colors, font-weight tokens, and core props
 ---
 
 ## Related Materials
-- Ticket: `tickets/MC-0001-UI-kit-Create-Text-component.md`
+- Ticket: [MC-0001: UI-kit: Create Text component (Light / Medium / Bold)](../tickets/MC-0001-UI-kit-Create-Text-component.md)
 
 ---
 
@@ -103,9 +103,8 @@ Validate responsive font sizes, theme colors, font-weight tokens, and core props
 ---
 
 ## Notes
-- If new issues are found, create a bug ticket and reference `TR-2025-12-22-02`.
 
 ---
 
 ## Executions
-- EX-2025-12-23-02 — Oleh Levchenko — Storybook — Pending (`qa_executions/EX-2025-12-23-02-UI-kit-Text-components.md`)
+- [EX-MC-0001-2025-12-23: First execution of TR-MC-0001](../qa_executions/EX-MC-0001-2025-12-23.md)

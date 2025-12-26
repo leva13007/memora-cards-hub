@@ -141,22 +141,14 @@ Storybook:
 
 ---
 
-## Test Coverage
+## Test Coverage  
+(Manual or auto-generated)
 
-Manual or automated tests should validate at least the following scenarios (can be covered in separate QA test cases):
-
-- **Desktop, Tablet, Mobile (non-fluid)**:
-	- Correct root `<div>` semantics.
-	- Correct centering via `margin-left/right: auto`.
-	- Correct horizontal padding from `--container-padding`.
-	- Width = `1200px` on Desktop, `700px` on Tablet, `100%` on Mobile.
-- **Fluid mode**:
-	- With `fluid={true}` (or equivalent), container width becomes `100%` on all breakpoints.
-	- Padding from `--container-padding` remains applied.
-- **Token override**:
-	- Overriding `--container-padding` (e.g., via a theme or parent wrapper) correctly changes the effective left/right padding without code changes.
-- **Content wrapping**:
-	- Child typography components (`H1`, `H2`, `Text`, `TextLink`, etc.) render correctly inside the container and are not affected by container-level styles other than layout.
+- Related test cases:
+	- TC-MC-0037-UI-Container-Desktop
+	- TC-MC-0038-UI-Container-Tablet
+	- TC-MC-0039-UI-Container-Mobile
+	- TC-MC-0040-UI-Container-Fluid
 
 ---
 
@@ -171,13 +163,14 @@ Potential pitfalls or scenarios that must be considered:
 
 ---
 
-## Related
-
-- Depends on / interacts with:
-
-- Future work:
-	- Grid or layout primitives that may compose multiple `Container` instances.
-	- Page templates that standardize header/body/footer using `Container`.
+## Related  
+- Depends on:
+- Blocks:
+- Duplicate of:
+- Additional Links:
+  - Figma: …
+  - PR: …
+  - Docs: …
 
 ---
 

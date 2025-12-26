@@ -1,5 +1,5 @@
 ---
-id: TR-2025-12-22-03
+id: TR-MC-0002-UI-kit-TextLink-components-verification
 title: "UI-kit: TextLink component verification"
 type: UI              # Regression | Smoke | UI | E2E | Performance | Custom
 scope: "ui-kit"
@@ -8,10 +8,10 @@ owner: "Oleh Levchenko"
 environment: "storybook"         # local | dev | staging | production | storybook
 status: Planned         # Planned | In Progress | Completed | Canceled
 related-tickets:
-	- MC-0002
+	- MC-0002-UI-kit-Create-TextLink-component
 ---
 
-# TR-2025-12-22-03 — UI-kit: TextLink component verification
+# TR-MC-0002-UI-kit-TextLink-components-verification — UI-kit: TextLink component verification
 
 ## Purpose
 Validate `TextLink` UI-kit component behavior and styling across breakpoints and themes, and confirm the keyboard accessibility focus indicator (`:focus-visible`) required by `MC-0002`.
@@ -66,14 +66,13 @@ Validate `TextLink` UI-kit component behavior and styling across breakpoints and
 ---
 
 ## Related Materials
-- Ticket: `tickets/MC-0002-UI-kit-Create-TextLink-component.md`
+- Ticket: [MC-0002: UI-kit: Create TextLink component](../tickets/MC-0002-UI-kit-Create-TextLink-component.md)
 
 ---
 
 ## Notes
-- If a failure is found, open a bug ticket and reference `TR-2025-12-22-03`.
 
 ---
 
 ## Executions
-- EX-MC-0003-2025-12-23 — Oleh Levchenko — Storybook — Pending (`qa_executions/EX-MC-0003-2025-12-23.md`)
+- [EX-MC-0002-2025-12-24: First execution of TR-MC-0002](../qa_executions/EX-MC-0002-2025-12-23.md)

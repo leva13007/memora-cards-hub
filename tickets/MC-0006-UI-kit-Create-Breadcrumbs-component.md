@@ -113,24 +113,13 @@ All criteria must be objectively verifiable.
 
 ---
 
-## Test Coverage
+## Test Coverage  
 (Manual or auto-generated)
 
-Suggested manual QA scenarios:
-- Items rendering:
-	- 1 item only (single current page)
-	- multiple items with mixture of linked and non-linked items
-	- last item provided with `link` should still be non-link
-- Separator rendering:
-	- default `/`
-	- custom separator (string and ReactNode)
-- Wrapping:
-	- very long labels (verify wrapping)
-- Accessibility:
-	- correct `nav` label and `aria-current` value
-	- separators ignored by screen readers
-- Responsive validation (layout correctness):
-	- Desktop ≥1280px, Tablet 768–1279px, Mobile <768px
+- Related test cases:
+	- TC-MC-0041-UI-Breadcrumbs-composition-rules
+	- TC-MC-0042-UI-Breadcrumbs-separators
+	- TC-MC-0043-UI-Breadcrumbs-accessibility-and-semantics
 
 ---
 
@@ -147,11 +136,16 @@ Suggested manual QA scenarios:
 ---
 
 ## Related
-- Storybook docs: https://leva13007.github.io/memora-cards-storybook/?path=/docs/ui-molecules-breadcrumbs--docs
-- Storybook story: https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-molecules-breadcrumbs--default&viewMode=story
+
 - Depends on:
 	- [MC-0001 (Text components: TextMedium)](./MC-0001-UI-kit-Create-Text-component.md)
 	- [MC-0002 (TextLink)](./MC-0002-UI-kit-Create-TextLink-component.md)
+- Blocks:
+- Duplicate of:
+- Additional Links:
+  - Figma: …
+  - PR: …
+  - Docs: …
 
 ---
 

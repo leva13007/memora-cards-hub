@@ -107,6 +107,7 @@ Use `dataTestId="breadcrumbs"` (if supported by story/controls).
 ---
 
 ## Edge Cases
+
 - `items` length is 0 or 1:
 	- no separators must be rendered.
 - Separator is a whitespace string (e.g. `' '`):
@@ -115,10 +116,11 @@ Use `dataTestId="breadcrumbs"` (if supported by story/controls).
 ---
 
 ## Notes
+
 - This test focuses on separator composition/accessibility; it does not re-test typography token values of `TextMedium`.
 
 ---
 
 ## Related
-- Ticket: MC-0006
-- Related TC: `TC-MC-0041-UI-Breadcrumbs-composition-rules.md`
+
+- Ticket: MC-0006-UI-kit-Create-Breadcrumbs-component

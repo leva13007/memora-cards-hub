@@ -144,7 +144,3 @@ Component configuration:
 ## Related  
 
 - Ticket: [MC-0005](../../../tickets/MC-0005-UI-kit-Create-Container-component.md)
-- Other test cases (planned or existing):
-  - [TC-MC-0037 — Container – Desktop – Non-fluid layout](./TC-MC-0037-UI-Container-Desktop.md)
-  - [TC-MC-0038 — Container – Tablet – Non-fluid layout](./TC-MC-0038-UI-Container-Tablet.md)
-  - TC-MC-0040 — Container – Desktop/Tablet/Mobile – Fluid layout

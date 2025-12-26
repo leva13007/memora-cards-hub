@@ -105,7 +105,8 @@ Environment assumptions:
 
 ---
 
-## Edge Cases  
+## Edge Cases
+
 *(Not required for pass/fail, but recommended to observe)*
 - Test long heading text that wraps to multiple lines and verify line-height and spacing remain visually consistent.
 - Verify that global theme toggling Light → Dark → Light correctly updates `--color-text` for H2 (even though this test focuses on Light theme, brief Dark check can reveal token wiring issues).
@@ -122,10 +123,4 @@ Environment assumptions:
 
 ## Related
 
-- Ticket: [MC-0004](../../../tickets/MC-0004-UI-kit-Create-H2-component.md)
-- Related test cases (planned or existing):
-	- (future) H2 – Desktop – Dark Theme
-	- (future) H2 – Tablet – Light/Dark Theme
-	- (future) H2 – Mobile – Light/Dark Theme
-	- [TC-MC-0007 – TextMedium – Desktop – Light Theme](../TextMedium/TC-MC-0007-UI-TextMedium-Desktop-LightTheme.md)
-	- [TC-MC-0019 – TextLink – Desktop – Light Theme](../TextLink/TC-MC-0019-UI-TextLink-Desktop-LightTheme.md)
+- Ticket: [MC-0004-UI-kit-Create-H2-component](../../../tickets/MC-0004-UI-kit-Create-H2-component.md)

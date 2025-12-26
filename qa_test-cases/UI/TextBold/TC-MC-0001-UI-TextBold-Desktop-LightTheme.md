@@ -112,7 +112,8 @@ Environment assumptions:
 
 ---
 
-## Edge Cases  
+## Edge Cases
+
 *(Not required for pass/fail, but recommended to observe)*
 - Toggle Light → Dark → Light and verify color token re-evaluates correctly.
 - Test long text wrapping to ensure no layout shifts.
@@ -128,6 +129,4 @@ Environment assumptions:
 
 ## Related
 
-- Ticket: [MC-0001](../../../tickets/MC-0001-UI-kit-Create-Text-component.md)
-- Planned related test cases:
-  - ..
+- Ticket: [MC-0001-UI-kit-Create-Text-component](../../../tickets/MC-0001-UI-kit-Create-Text-component.md)

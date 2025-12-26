@@ -145,7 +145,8 @@ Example props:
 
 ---
 
-## Edge Cases  
+## Edge Cases
+
 *(Not required for pass/fail, but recommended to observe)*
 
 - Move viewport around the mobile breakpoint:
@@ -166,9 +167,4 @@ Example props:
 
 ## Related
 
-- Ticket: [MC-0002](../../../tickets/MC-0002-UI-kit-Create-TextLink-component.md)
-- Related test cases:
-	- [TC-MC-0020 – TextLink – Desktop – Dark Theme](./TC-MC-0020-UI-TextLink-Desktop-DarkTheme.md)
-	- [TC-MC-0022 – TextLink – Tablet – Dark Theme](./TC-MC-0022-UI-TextLink-Tablet-DarkTheme.md)
-	- [TC-MC-0012 – TextMedium – Mobile – Dark Theme](../TextMedium/TC-MC-0012-UI-TextMedium-Mobile-DarkTheme.md)
-
+- Ticket: [MC-0002-UI-kit-Create-TextLink-component](../../../tickets/MC-0002-UI-kit-Create-TextLink-component.md)

@@ -111,7 +111,8 @@ Recommended specific widths:
 
 ---
 
-## Edge Cases  
+## Edge Cases
+
 *(Not required for pass/fail, but recommended to observe)*
 
 - Move viewport around the mobile breakpoint:
@@ -132,10 +133,4 @@ Recommended specific widths:
 
 ## Related
 
-- Ticket: [MC-0003](../../../tickets/MC-0003-UI-kit-Create-H1-component.md)
-- Related test cases (planned or existing):
-	- [TC-MC-0025 – H1 – Desktop – Light Theme](./TC-MC-0025-UI-H1-Desktop-LightTheme.md)
-	- [TC-MC-0027 – H1 – Tablet – Light Theme](./TC-MC-0027-UI-H1-Tablet-LightTheme.md)
-	- (future) H1 – Mobile – Dark Theme
-	- [TC-MC-0011 – TextMedium – Mobile – Light Theme](../TextMedium/TC-MC-0011-UI-TextMedium-Mobile-LightTheme.md)
-	- [TC-MC-0023 – TextLink – Mobile – Light Theme](../TextLink/TC-MC-0023-UI-TextLink-Mobile-LightTheme.md)
+- Ticket: [MC-0003-UI-kit-Create-H1-component](../../../tickets/MC-0003-UI-kit-Create-H1-component.md)

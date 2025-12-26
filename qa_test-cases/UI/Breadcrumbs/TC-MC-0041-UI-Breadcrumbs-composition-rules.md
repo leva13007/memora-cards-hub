@@ -116,6 +116,7 @@ Prepare three `items` inputs:
 ---
 
 ## Edge Cases
+
 - `items=[{label:'Only'}]` (no link): should render a single `TextMedium` item with `aria-current="page"` and no separators.
 - Verify that only actual breadcrumb links are focusable with keyboard navigation (Tab): separators and current page should not be focusable.
 - Verify if `items` is an empty array:
@@ -126,9 +127,11 @@ Prepare three `items` inputs:
 ---
 
 ## Notes
+
 - If Storybook Controls don’t allow editing `items` directly, validate these scenarios using any provided stories/examples or by switching to a local sandbox.
 
 ---
 
 ## Related
-- Ticket: MC-0006
+
+- Ticket: MC-0006-UI-kit-Create-Breadcrumbs-component

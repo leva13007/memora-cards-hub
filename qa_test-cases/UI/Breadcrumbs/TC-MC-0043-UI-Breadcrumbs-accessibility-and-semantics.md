@@ -104,6 +104,7 @@ Optional: set `dataTestId="breadcrumbs"` if control exists (helps targeting node
 ---
 
 ## Edge Cases
+
 - Single item breadcrumb:
 	- still uses `nav` + `ol` + `li`
 	- item has `aria-current="page"`
@@ -114,12 +115,11 @@ Optional: set `dataTestId="breadcrumbs"` if control exists (helps targeting node
 ---
 
 ## Notes
+
 - This TC validates structural/a11y requirements only and does not validate typography tokens.
 
 ---
 
 ## Related
-- Ticket: MC-0006
-- Related TCs:
-	- `TC-MC-0041-UI-Breadcrumbs-composition-rules.md`
-	- `TC-MC-0042-UI-Breadcrumbs-separators.md`
+
+- Ticket: MC-0006-UI-kit-Create-Breadcrumbs-component

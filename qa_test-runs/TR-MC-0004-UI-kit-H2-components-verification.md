@@ -1,5 +1,5 @@
 ---
-id: TR-2025-12-22-05
+id: TR-MC-0004-UI-kit-H2-components-verification
 title: "UI-kit: H2 component verification"
 type: UI              # Regression | Smoke | UI | E2E | Performance | Custom
 scope: "ui-kit"
@@ -8,10 +8,10 @@ owner: "Oleh Levchenko"
 environment: "storybook"         # local | dev | staging | production | storybook
 status: Planned         # Planned | In Progress | Completed | Canceled
 related-tickets:
-	- MC-0004
+	- MC-0004-UI-kit-Create-H2-component
 ---
 
-# TR-2025-12-22-05 — UI-kit: H2 component verification
+# TR-MC-0004-UI-kit-H2-components-verification — UI-kit: H2 component verification
 
 ## Purpose
 Run a manual UI verification for the `H2` typography atom described in `MC-0004` across breakpoints and themes, ensuring the component uses the correct semantic tag and token-driven styles.
@@ -62,14 +62,13 @@ Run a manual UI verification for the `H2` typography atom described in `MC-0004`
 ---
 
 ## Related Materials
-- Ticket: `tickets/MC-0004-UI-kit-Create-H2-component.md`
+- Ticket: [MC-0004: UI-kit: Create H2 component](../tickets/MC-0004-UI-kit-Create-H2-component.md)
 
 ---
 
 ## Notes
-- If an issue is found, create a bug ticket and reference `TR-2025-12-22-05`.
 
 ---
 
 ## Executions
-- EX-MC-0005-2025-12-23 — Oleh Levchenko — Storybook — Pending (`qa_executions/EX-MC-0005-2025-12-23.md`)
+- [EX-MC-0004-2025-12-26: First execution of TR-MC-0004](../qa_executions/EX-MC-0004-2025-12-23.md)

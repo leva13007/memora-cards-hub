@@ -128,9 +128,4 @@ Environment assumptions:
 
 ## Related
 
-- Ticket: [MC-0001](../../../tickets/MC-0001-UI-kit-Create-Text-component.md)
-- Related test cases:
-	- [TC-MC-0002 – TextBold – Desktop – Dark Theme](./TC-MC-0002-UI-TextBold-Desktop-DarkTheme.md)
-	- [TC-MC-0007 – TextMedium – Desktop – Light Theme](./TC-MC-0007-UI-TextMedium-Desktop-LightTheme.md)
-	- (future) TextMedium – Tablet/Mobile – Light/Dark
-
+- Ticket: [MC-0001-UI-kit-Create-Text-component](../../../tickets/MC-0001-UI-kit-Create-Text-component.md)

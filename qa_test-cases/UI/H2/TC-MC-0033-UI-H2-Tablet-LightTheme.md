@@ -111,7 +111,8 @@ Recommended specific widths:
 
 ---
 
-## Edge Cases  
+## Edge Cases
+
 *(Not required for pass/fail, but recommended to observe)*
 
 - Move viewport just below and above the tablet range:
@@ -132,10 +133,4 @@ Recommended specific widths:
 
 ## Related
 
-- Ticket: [MC-0004](../../../tickets/MC-0004-UI-kit-Create-H2-component.md)
-- Related test cases (planned or existing):
-	- [TC-MC-0031 – H2 – Desktop – Light Theme](./TC-MC-0031-UI-H2-Desktop-LightTheme.md)
-	- (future) H2 – Tablet – Dark Theme
-	- (future) H2 – Mobile – Light/Dark Theme
-	- [TC-MC-0009 – TextMedium – Tablet – Light Theme](../TextMedium/TC-MC-0009-UI-TextMedium-Tablet-LightTheme.md)
-	- [TC-MC-0021 – TextLink – Tablet – Light Theme](../TextLink/TC-MC-0021-UI-TextLink-Tablet-LightTheme.md)
+- Ticket: [MC-0004-UI-kit-Create-H2-component](../../../tickets/MC-0004-UI-kit-Create-H2-component.md)

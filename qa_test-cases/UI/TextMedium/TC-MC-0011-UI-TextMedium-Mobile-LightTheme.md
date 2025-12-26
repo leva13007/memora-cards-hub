@@ -118,7 +118,8 @@ Recommended specific widths:
 
 ---
 
-## Edge Cases  
+## Edge Cases
+
 *(Not required for pass/fail, but recommended to observe)*
 
 - Move viewport just below and above the mobile range:
@@ -137,11 +138,4 @@ Recommended specific widths:
 
 ## Related
 
-- Ticket: [MC-0001](../../../tickets/MC-0001-UI-kit-Create-Text-component.md)
-- Related test cases:
-	- [TC-MC-0007 – TextMedium – Desktop – Light Theme](./TC-MC-0007-UI-TextMedium-Desktop-LightTheme.md)
-	- [TC-MC-0008 – TextMedium – Desktop – Dark Theme](./TC-MC-0008-UI-TextMedium-Desktop-DarkTheme.md)
-	- [TC-MC-0009 – TextMedium – Tablet – Light Theme](./TC-MC-0009-UI-TextMedium-Tablet-LightTheme.md)
-	- [TC-MC-0010 – TextMedium – Tablet – Dark Theme](./TC-MC-0010-UI-TextMedium-Tablet-DarkTheme.md)
-	- (future) TextMedium – Mobile + Dark theme
-
+- Ticket: [MC-0001-UI-kit-Create-Text-component](../../../tickets/MC-0001-UI-kit-Create-Text-component.md)

@@ -141,14 +141,13 @@ All criteria must be objectively verifiable.
 (Manual or auto-generated)
 
 - Related test cases:
-  - TC-MC-XXXX — TextLink – Desktop – Light Theme
-  - TC-MC-YYYY — TextLink – Desktop – Dark Theme
-  - TC-MC-ZZZZ — TextLink – Tablet/Mobile – Light/Dark Theme
-- Scenarios to validate:
-  - Typographic consistency with `TextMedium` across breakpoints.
-  - Link color and hover behavior in Light and Dark themes.
-  - Proper mapping of `to` → `href` and `content` → visible text.
-  - No unexpected navigation when interacting with Storybook stories.
+  - TC-MC-0019-UI-TextLink-Desktop-LightTheme
+  - TC-MC-0020-UI-TextLink-Desktop-DarkTheme
+  - TC-MC-0021-UI-TextLink-Tablet-LightTheme
+  - TC-MC-0022-UI-TextLink-Tablet-DarkTheme
+  - TC-MC-0023-UI-TextLink-Mobile-LightTheme
+  - TC-MC-0024-UI-TextLink-Mobile-DarkTheme
+  - TC-MC-0044-UI-TextLink-accessibility
 
 ---
 
@@ -165,8 +164,8 @@ Potential pitfalls or scenarios that must be considered:
 
 ## Related  
 - Depends on: [MC-0001 — UI-kit: Create Text component](./MC-0001-UI-kit-Create-Text-component.md)
-- Blocks: …
-- Duplicate of: …
+- Blocks:
+- Duplicate of:
 - Additional Links:
   - Figma: …
   - PR: …

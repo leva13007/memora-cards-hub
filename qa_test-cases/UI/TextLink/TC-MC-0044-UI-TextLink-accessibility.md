@@ -97,6 +97,7 @@ Run the same checks in both themes:
 ---
 
 ## Edge Cases
+
 - Very long link text:
 	- focus outline still fully visible around the focused element (no clipping).
 - `to` value is a hash or mailto (e.g., `#section`, `mailto:test@example.com`):
@@ -110,7 +111,5 @@ Run the same checks in both themes:
 ---
 
 ## Related
-- Ticket: `tickets/MC-0002-UI-kit-Create-TextLink-component.md`
-- Related TCs:
-	- `TC-MC-0019-UI-TextLink-Desktop-LightTheme.md`
-	- `TC-MC-0020-UI-TextLink-Desktop-DarkTheme.md`
+
+- Ticket: [MC-0002-UI-kit-Create-TextLink-component](../../../tickets/MC-0002-UI-kit-Create-TextLink-component.md)
