@@ -21,14 +21,14 @@ During Sprint 01, the following UI components were tested:
 - Breadcrumbs component
 
 ## Excutions Summary
-| Test Excution ID | Test Run ID | Executed By | Environment | Result | Notes |
-|------------------|-------------|-------------|-------------|--------|-------|
-| EX-MC-0001-2025-12-23 | TR-MC-0005 | Oleh Levchenko | Storybook | Pending | Execution for UI kit Container components verification |
-| EX-MC-0002-2025-12-23 | TR-MC-0001 | Oleh Levchenko | Storybook | Pending | Excution for UI kit Text components (TextBold/TextMedium/TextLight) |
-| EX-MC-0003-2025-12-23 | TR-MC-0002 | Oleh Levchenko | Storybook | Pending | Execution for TextLink component verification |
-| EX-MC-0004-2025-12-23 | TR-MC-0003 | Oleh Levchenko | Storybook | Pending | Execution for H1 component verification |
-| EX-MC-0005-2025-12-23 | TR-MC-0004 | Oleh Levchenko | Storybook | Pending | Execution for H2 component verification |
-| EX-MC-0006-2025-12-23 | TR-MC-0006 | Oleh Levchenko | Storybook | Pending | Execution for Breadcrumbs component verification |
+| Test Excution ID      | Test Run ID | Executed By    | Environment | Result  | Notes                                                  |
+|-----------------------|-------------|----------------|-------------|---------|--------------------------------------------------------|
+| [EX-MC-0001-2025-12-30](../qa_executions/EX-MC-0001-2025-12-30.md) | TR-MC-0005  | Oleh Levchenko | Storybook   | In progress | Execution for UI kit Container components verification |
+| EX-MC-0002-2025-12-23 | TR-MC-0001  | Oleh Levchenko | Storybook   | Pending | Excution for UI kit Text components (TextBold/TextMedium/TextLight) |
+| EX-MC-0003-2025-12-23 | TR-MC-0002  | Oleh Levchenko | Storybook   | Pending | Execution for TextLink component verification |
+| EX-MC-0004-2025-12-23 | TR-MC-0003  | Oleh Levchenko | Storybook   | Pending | Execution for H1 component verification |
+| EX-MC-0005-2025-12-23 | TR-MC-0004  | Oleh Levchenko | Storybook   | Pending | Execution for H2 component verification |
+| EX-MC-0006-2025-12-23 | TR-MC-0006  | Oleh Levchenko | Storybook   | Pending | Execution for Breadcrumbs component verification |
 
 ## Defects summary
 |Severity | Count | Notes |

@@ -78,7 +78,7 @@ Component configuration:
 8. In the **Styles** or **Computed** panel for the root `<div>`, verify:
    - `margin-left: auto;`
    - `margin-right: auto;`
-   - `padding-left` is resolved from `var(--container-padding, 0)` (default should equal `1rem`).
+   - `padding-left` is resolved from `var(--container-padding, 0)`.
    - `padding-right` is resolved from `var(--container-padding, 0)`.
    - `width: 700px` at tablet viewport width.
 9. Confirm that no hard-coded padding value (such as `1rem`) is set directly; instead, it must come from the `--container-padding` token.
@@ -95,7 +95,7 @@ Component configuration:
 - At viewport widths within 768–1279px with `fluid` set to `false` / omitted:
   - The container is horizontally centered using `margin-left: auto; margin-right: auto;`.
   - The container has `width: 700px`.
-  - Horizontal padding left and right is applied via `--container-padding` (default `1rem`), **not** hard-coded.
+  - Horizontal padding left and right is applied via `--container-padding` and has value `1rem`, **not** hard-coded.
 - When resizing the viewport within the tablet range (768–1279px):
   - The container width remains fixed at **700px**.
   - The container stays centered in the viewport.

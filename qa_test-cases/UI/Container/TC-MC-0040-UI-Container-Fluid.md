@@ -167,6 +167,8 @@ For all breakpoints with `fluid={true}`:
 
 ## Edge Cases  
 
+- Toggle theme (Light/Dark) and confirm:
+  - Fluid layout behavior remains consistent.
 - Toggle `fluid` **on and off** at a given breakpoint (e.g., Desktop at 1440px) and confirm:
   - `fluid=false` → fixed width (`1200px` on Desktop, `700px` on Tablet).
   - `fluid=true` → `width: 100%`.

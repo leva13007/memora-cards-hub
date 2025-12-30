@@ -14,7 +14,7 @@ related-tickets:
 # TR-MC-0005-UI-kit-Container-components-verification — UI-kit: Container component verification
 
 ## Purpose
-Validate the `Container` layout component from `MC-0005` in Storybook, ensuring correct width behavior at each breakpoint, correct padding token usage, and correct `fluid` behavior.
+Validate the `Container` layout component from [MC-0005: UI-kit: Create Container component](../tickets/MC-0005-UI-kit-Create-Container-component.md) in Storybook, ensuring correct width behavior at each breakpoint, correct padding token usage, and correct `fluid` behavior.
 
 ---
 
@@ -50,10 +50,10 @@ Validate the `Container` layout component from `MC-0005` in Storybook, ensuring 
 
 | ID          | Title                          | Area          | Priority |
 |-------------|--------------------------------|---------------|----------|
-| TC-MC-0037  | UI: Container — Desktop        | ui-kit/layout | Medium   |
-| TC-MC-0038  | UI: Container — Tablet         | ui-kit/layout | Medium   |
-| TC-MC-0039  | UI: Container — Mobile         | ui-kit/layout | Medium   |
-| TC-MC-0040  | UI: Container — Fluid          | ui-kit/layout | Medium   |
+| [TC-MC-0037](../qa_test-cases/UI/Container/TC-MC-0037-UI-Container-Desktop.md)  | UI: Container — Desktop        | ui-kit/layout | Medium   |
+| [TC-MC-0038](../qa_test-cases/UI/Container/TC-MC-0038-UI-Container-Tablet.md)  | UI: Container — Tablet         | ui-kit/layout | Medium   |
+| [TC-MC-0039](../qa_test-cases/UI/Container/TC-MC-0039-UI-Container-Mobile.md)  | UI: Container — Mobile         | ui-kit/layout | Medium   |
+| [TC-MC-0040](../qa_test-cases/UI/Container/TC-MC-0040-UI-Container-Fluid.md)  | UI: Container — Fluid          | ui-kit/layout | Medium   |
 
 ---
 

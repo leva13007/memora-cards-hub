@@ -145,10 +145,10 @@ Storybook:
 (Manual or auto-generated)
 
 - Related test cases:
-	- TC-MC-0037-UI-Container-Desktop
-	- TC-MC-0038-UI-Container-Tablet
-	- TC-MC-0039-UI-Container-Mobile
-	- TC-MC-0040-UI-Container-Fluid
+	- [TC-MC-0037-UI-Container-Desktop](../qa_test-cases/UI/Container/TC-MC-0037-UI-Container-Desktop.md)
+	- [TC-MC-0038-UI-Container-Tablet](../qa_test-cases/UI/Container/TC-MC-0038-UI-Container-Tablet.md)
+	- [TC-MC-0039-UI-Container-Mobile](../qa_test-cases/UI/Container/TC-MC-0039-UI-Container-Mobile.md)
+	- [TC-MC-0040-UI-Container-Fluid](../qa_test-cases/UI/Container/TC-MC-0040-UI-Container-Fluid.md)
 
 ---
 

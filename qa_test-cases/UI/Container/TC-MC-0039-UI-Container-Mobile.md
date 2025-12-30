@@ -81,7 +81,7 @@ Component configuration:
 8. In the **Styles** or **Computed** panel for the root `<div>`, verify:
    - `margin-left: auto;`
    - `margin-right: auto;`
-   - `padding-left` is resolved from `var(--container-padding, 0)` (default should equal `1rem`).
+   - `padding-left` is resolved from `var(--container-padding, 0)`.
    - `padding-right` is resolved from `var(--container-padding, 0)`.
    - `width: 100%`.
    - `max-width: 100%`.
@@ -100,7 +100,7 @@ Component configuration:
   - The container is horizontally centered using `margin-left: auto; margin-right: auto;`.
   - The container has `width: 100%`.
   - The container has `max-width: 100%`.
-  - Horizontal padding left and right is applied via `--container-padding` (default `1rem`), **not** hard-coded.
+  - Horizontal padding left and right is applied via `--container-padding` that equals to `1rem`, **not** hard-coded.
 - When resizing the viewport within the mobile range (e.g., 320px–767px):
   - The container width continues to match the viewport width (full-width behavior).
   - The container stays visually centered and does not create extra horizontal scrollbars on its own.
