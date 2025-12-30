@@ -2,7 +2,7 @@
 id: SR-MC-0001-Sprint-01
 sprint_id: MC-0001-Sprint-01
 start-date: 2025-12-15
-end-date: 2025-12-29
+end-date: 2026-01-04
 ---
 
 # QA Sprint Report for Sprint 01
@@ -27,7 +27,7 @@ During Sprint 01, the following UI components were tested:
 | EX-MC-0002-2025-12-23 | TR-MC-0001  | Oleh Levchenko | Storybook   | Pending | Excution for UI kit Text components (TextBold/TextMedium/TextLight) |
 | EX-MC-0003-2025-12-23 | TR-MC-0002  | Oleh Levchenko | Storybook   | Pending | Execution for TextLink component verification |
 | [EX-MC-0004-2025-12-30](../qa_executions/EX-MC-0004-2025-12-30.md) | TR-MC-0003  | Oleh Levchenko | Storybook   | Passed | Execution for H1 component verification |
-| EX-MC-0005-2025-12-23 | TR-MC-0004  | Oleh Levchenko | Storybook   | Pending | Execution for H2 component verification |
+| [EX-MC-0005-2025-12-30](../qa_executions/EX-MC-0005-2025-12-30.md) | TR-MC-0004  | Oleh Levchenko | Storybook   | Passed | Execution for H2 component verification |
 | EX-MC-0006-2025-12-23 | TR-MC-0006  | Oleh Levchenko | Storybook   | Pending | Execution for Breadcrumbs component verification |
 
 ## Defects summary
