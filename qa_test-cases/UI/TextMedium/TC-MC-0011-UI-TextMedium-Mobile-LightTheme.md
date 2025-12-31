@@ -86,13 +86,13 @@ Recommended specific widths:
 	- `--color-text`
 
 9. Toggle `variant` prop or visit the page with different variants:
-	- Set `variant="primary"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textmedium--default&viewMode=story&args=variant:primary) and verify color uses `--color-text`.
-	- Set `variant="warning"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textmedium--default&viewMode=story&args=variant:warning) and verify color uses `--color-warning`.
+	- Set `variant="primary"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?globals=&args=&id=ui-atoms-textmedium--primary&viewMode=story) and verify color uses `--color-text`.
+	- Set `variant="warning"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?globals=&args=&id=ui-atoms-textmedium--warning&viewMode=story) and verify color uses `--color-warning`.
 
 10. Toggle `as` prop or visit the page with different variants:
-	- Without passing `as` or when `as="span"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textmedium--default&viewMode=story&args=as%3Aspan), verify the element is rendered as `<span>`.
-	- Set `as="p"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textmedium--default&viewMode=story&args=as%3Ap), verify the element is rendered as `<p>`.
-	- In both cases, confirm typography tokens (font-size, weight, line-height, variant color) remain correct.
+   - Without passing `as` or when `as="span"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?globals=&args=&id=ui-atoms-textmedium--span&viewMode=story), verify the element is rendered as `<span>`.
+   - Set `as="p"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?globals=&args=&id=ui-atoms-textmedium--paragraph&viewMode=story), verify the element is rendered as `<p>`.
+   - In both cases, confirm typography tokens (font-size, weight, line-height, variant color) remain correct.
 
 ---
 

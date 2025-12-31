@@ -45,8 +45,8 @@ Implement three React components: __TextLight__, __TextMedium__, and __TextBold_
   - `font-weight: var(--font-weight-normal);`
   - token value: `400`
 - Component __TextBold__ must use:
-  - `font-weight: var(--font-weight-semi);`
-  - token value: `600`
+  - `font-weight: var(--font-weight-bold);`
+  - token value: `700`
 
 ### Component props
 
@@ -86,7 +86,7 @@ All Text components (__TextLight__, __TextMedium__, __TextBold__) must support t
 8. When `variant="warning"` (for any theme), the Text components must use `color: var(--color-warning);` where `--color-warning: #ec1515;`.
 9. When the __TextLight__ component is rendered, it must apply `font-weight: var(--font-weight-light);` with token value `300`.
 10. When the __TextMedium__ component is rendered, it must apply `font-weight: var(--font-weight-normal);` with token value `400`.
-11. When the __TextBold__ component is rendered, it must apply `font-weight: var(--font-weight-semi);` with token value `600`.
+11. When the __TextBold__ component is rendered, it must apply `font-weight: var(--font-weight-bold);` with token value `700`.
 12. When the Text components are rendered without passing the `as` prop, they must render a `<span>` element.
 13. When the Text components are rendered with `as="p"`, they must render a `<p>` element.
 14. Changing the `as` prop (for example, `span` → `p`) must not affect the applied typography tokens or the `variant` color behavior.
@@ -99,25 +99,24 @@ All criteria must be objectively verifiable.
 (Manual or auto-generated)
 
 - Related test cases:
-  - TC-MC-0001-UI-TextBold-Desktop-LightTheme
-  - TC-MC-0002-UI-TextBold-Desktop-DarkTheme
-  - TC-MC-0003-UI-TextBold-Tablet-LightTheme
-  - TC-MC-0004-UI-TextBold-Tablet-DarkTheme
-  - TC-MC-0005-UI-TextBold-Mobile-LightTheme
-  - TC-MC-0006-UI-TextBold-Mobile-DarkTheme
-  - TC-MC-0007-UI-TextMedium-Desktop-LightTheme
-  - TC-MC-0008-UI-TextMedium-Desktop-DarkTheme
-  - TC-MC-0009-UI-TextMedium-Tablet-LightTheme
-  - TC-MC-0010-UI-TextMedium-Tablet-DarkTheme
-  - TC-MC-0011-UI-TextMedium-Mobile-LightTheme
-  - TC-MC-0012-UI-TextMedium-Mobile-DarkTheme
-  - TC-MC-0013-UI-TextLight-Desktop-LightTheme
-  - TC-MC-0014-UI-TextLight-Desktop-DarkTheme
-  - TC-MC-0015-UI-TextLight-Tablet-LightTheme
-  - TC-MC-0016-UI-TextLight-Tablet-DarkTheme
-  - TC-MC-0017-UI-TextLight-Mobile-LightTheme
-  - TC-MC-0018-UI-TextLight-Mobile-DarkTheme
-
+  - [TC-MC-0001-UI-TextBold-Desktop-LightTheme](../qa_test-cases/UI/TextBold/TC-MC-0001-UI-TextBold-Desktop-LightTheme.md)
+  - [TC-MC-0002-UI-TextBold-Desktop-DarkTheme](../qa_test-cases/UI/TextBold/TC-MC-0002-UI-TextBold-Desktop-DarkTheme.md)
+  - [TC-MC-0003-UI-TextBold-Tablet-LightTheme](../qa_test-cases/UI/TextBold/TC-MC-0003-UI-TextBold-Tablet-LightTheme.md)
+  - [TC-MC-0004-UI-TextBold-Tablet-DarkTheme](../qa_test-cases/UI/TextBold/TC-MC-0004-UI-TextBold-Tablet-DarkTheme.md)
+  - [TC-MC-0005-UI-TextBold-Mobile-LightTheme](../qa_test-cases/UI/TextBold/TC-MC-0005-UI-TextBold-Mobile-LightTheme.md)
+  - [TC-MC-0006-UI-TextBold-Mobile-DarkTheme](../qa_test-cases/UI/TextBold/TC-MC-0006-UI-TextBold-Mobile-DarkTheme.md)
+  - [TC-MC-0007-UI-TextMedium-Desktop-LightTheme](../qa_test-cases/UI/TextMedium/TC-MC-0007-UI-TextMedium-Desktop-LightTheme.md)
+  - [TC-MC-0008-UI-TextMedium-Desktop-DarkTheme](../qa_test-cases/UI/TextMedium/TC-MC-0008-UI-TextMedium-Desktop-DarkTheme.md)
+  - [TC-MC-0009-UI-TextMedium-Tablet-LightTheme](../qa_test-cases/UI/TextMedium/TC-MC-0009-UI-TextMedium-Tablet-LightTheme.md)
+  - [TC-MC-0010-UI-TextMedium-Tablet-DarkTheme](../qa_test-cases/UI/TextMedium/TC-MC-0010-UI-TextMedium-Tablet-DarkTheme.md)
+  - [TC-MC-0011-UI-TextMedium-Mobile-LightTheme](../qa_test-cases/UI/TextMedium/TC-MC-0011-UI-TextMedium-Mobile-LightTheme.md)
+  - [TC-MC-0012-UI-TextMedium-Mobile-DarkTheme](../qa_test-cases/UI/TextMedium/TC-MC-0012-UI-TextMedium-Mobile-DarkTheme.md)
+  - [TC-MC-0013-UI-TextLight-Desktop-LightTheme](../qa_test-cases/UI/TextLight/TC-MC-0013-UI-TextLight-Desktop-LightTheme.md)
+  - [TC-MC-0014-UI-TextLight-Desktop-DarkTheme](../qa_test-cases/UI/TextLight/TC-MC-0014-UI-TextLight-Desktop-DarkTheme.md)
+  - [TC-MC-0015-UI-TextLight-Tablet-LightTheme](../qa_test-cases/UI/TextLight/TC-MC-0015-UI-TextLight-Tablet-LightTheme.md)
+  - [TC-MC-0016-UI-TextLight-Tablet-DarkTheme](../qa_test-cases/UI/TextLight/TC-MC-0016-UI-TextLight-Tablet-DarkTheme.md)
+  - [TC-MC-0017-UI-TextLight-Mobile-LightTheme](../qa_test-cases/UI/TextLight/TC-MC-0017-UI-TextLight-Mobile-LightTheme.md)
+  - [TC-MC-0018-UI-TextLight-Mobile-DarkTheme](../qa_test-cases/UI/TextLight/TC-MC-0018-UI-TextLight-Mobile-DarkTheme.md)
 ---
 
 ## Edge Cases  
