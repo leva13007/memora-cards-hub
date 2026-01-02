@@ -117,9 +117,9 @@ All criteria must be objectively verifiable.
 (Manual or auto-generated)
 
 - Related test cases:
-	- TC-MC-0041-UI-Breadcrumbs-composition-rules
-	- TC-MC-0042-UI-Breadcrumbs-separators
-	- TC-MC-0043-UI-Breadcrumbs-accessibility-and-semantics
+	- [TC-MC-0041-UI-Breadcrumbs-composition-rules](../qa_test-cases/UI/Breadcrumbs/TC-MC-0041-UI-Breadcrumbs-composition-rules.md)
+	- [TC-MC-0042-UI-Breadcrumbs-separators](../qa_test-cases/UI/Breadcrumbs/TC-MC-0042-UI-Breadcrumbs-separators.md)
+	- [TC-MC-0043-UI-Breadcrumbs-accessibility-and-semantics](../qa_test-cases/UI/Breadcrumbs/TC-MC-0043-UI-Breadcrumbs-accessibility-and-semantics.md)
 
 ---
 

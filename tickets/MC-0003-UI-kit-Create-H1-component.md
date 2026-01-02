@@ -121,12 +121,12 @@ All criteria must be objectively verifiable (e.g., via Storybook, browser devtoo
 (Manual or auto-generated)
 
 - Related test cases:
-	- TC-MC-0025-UI-H1-Desktop-LightTheme
-	- TC-MC-0026-UI-H1-Desktop-DarkTheme
-	- TC-MC-0027-UI-H1-Tablet-LightTheme
-	- TC-MC-0028-UI-H1-Tablet-DarkTheme
-	- TC-MC-0029-UI-H1-Mobile-LightTheme
-	- TC-MC-0030-UI-H1-Mobile-DarkTheme
+	- [TC-MC-0025-UI-H1-Desktop-LightTheme](../qa_test-cases/UI/H1/TC-MC-0025-UI-H1-Desktop-LightTheme.md)
+	- [TC-MC-0026-UI-H1-Desktop-DarkTheme](../qa_test-cases/UI/H1/TC-MC-0026-UI-H1-Desktop-DarkTheme.md)
+	- [TC-MC-0027-UI-H1-Tablet-LightTheme](../qa_test-cases/UI/H1/TC-MC-0027-UI-H1-Tablet-LightTheme.md)
+	- [TC-MC-0028-UI-H1-Tablet-DarkTheme](../qa_test-cases/UI/H1/TC-MC-0028-UI-H1-Tablet-DarkTheme.md)
+	- [TC-MC-0029-UI-H1-Mobile-LightTheme](../qa_test-cases/UI/H1/TC-MC-0029-UI-H1-Mobile-LightTheme.md)
+	- [TC-MC-0030-UI-H1-Mobile-DarkTheme](../qa_test-cases/UI/H1/TC-MC-0030-UI-H1-Mobile-DarkTheme.md)
 
 ---
 

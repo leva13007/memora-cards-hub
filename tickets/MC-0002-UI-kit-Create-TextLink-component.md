@@ -141,14 +141,13 @@ All criteria must be objectively verifiable.
 (Manual or auto-generated)
 
 - Related test cases:
-  - TC-MC-0019-UI-TextLink-Desktop-LightTheme
-  - TC-MC-0020-UI-TextLink-Desktop-DarkTheme
-  - TC-MC-0021-UI-TextLink-Tablet-LightTheme
-  - TC-MC-0022-UI-TextLink-Tablet-DarkTheme
-  - TC-MC-0023-UI-TextLink-Mobile-LightTheme
-  - TC-MC-0024-UI-TextLink-Mobile-DarkTheme
-  - TC-MC-0044-UI-TextLink-accessibility
-
+  - [TC-MC-0019-UI-TextLink-Desktop-LightTheme](../qa_test-cases/UI/TextLink/TC-MC-0019-UI-TextLink-Desktop-LightTheme.md)
+  - [TC-MC-0020-UI-TextLink-Desktop-DarkTheme](../qa_test-cases/UI/TextLink/TC-MC-0020-UI-TextLink-Desktop-DarkTheme.md)
+  - [TC-MC-0021-UI-TextLink-Tablet-LightTheme](../qa_test-cases/UI/TextLink/TC-MC-0021-UI-TextLink-Tablet-LightTheme.md)
+  - [TC-MC-0022-UI-TextLink-Tablet-DarkTheme](../qa_test-cases/UI/TextLink/TC-MC-0022-UI-TextLink-Tablet-DarkTheme.md)
+  - [TC-MC-0023-UI-TextLink-Mobile-LightTheme](../qa_test-cases/UI/TextLink/TC-MC-0023-UI-TextLink-Mobile-LightTheme.md)
+  - [TC-MC-0024-UI-TextLink-Mobile-DarkTheme](../qa_test-cases/UI/TextLink/TC-MC-0024-UI-TextLink-Mobile-DarkTheme.md)
+  - [TC-MC-0044-UI-TextLink-accessibility](../qa_test-cases/UI/TextLink/TC-MC-0044-UI-TextLink-accessibility.md)
 ---
 
 ## Edge Cases  
