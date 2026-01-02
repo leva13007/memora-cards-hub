@@ -19,7 +19,6 @@ Verify Breadcrumbs separator behavior:
 - separators render **between** items only (never after last)
 - separators are rendered using `TextMedium`
 - separators are ignored by screen readers (`aria-hidden="true"`)
-- separators follow the documented `data-testid` contract (when `dataTestId` is passed)
 
 ---
 
@@ -46,8 +45,6 @@ Use at least 3 breadcrumb items to validate separator count/placement:
 	{ "label": "Current page" }
 ]
 ```
-
-Use `dataTestId="breadcrumbs"` (if supported by story/controls).
 
 ---
 
@@ -80,17 +77,17 @@ Use `dataTestId="breadcrumbs"` (if supported by story/controls).
 ## Expected Result
 
 ### Scenario 1 — Default separator (`/`)
-- For N breadcrumb items, **N-1** separators are rendered.
-- Default separator is `/`.
-- Separators appear **only** between items and never after the last item.
-- Separators are rendered using `TextMedium`.
+- Separators are visible between existing items
+- No separator after the last item
+- No separator befor the first item
+- Separator content is `/`
 
 ### Scenario 2 — Separator uses `TextMedium`
-- Separator is rendered using the `TextMedium` component.
+- Separator is rendered using the `TextMedium` component (for example see the link: [TC-MC-0007](../TextMedium/TC-MC-0007-UI-TextMedium-Desktop-LightTheme.md))
 
 ### Scenario 3 — Custom separator value
 - Separator content updates to the custom value (e.g., `"_"`).
-- Separator continues to use `TextMedium`.
+- Separator continues to use `TextMedium`component (for example see the link: [TC-MC-0007](../TextMedium/TC-MC-0007-UI-TextMedium-Desktop-LightTheme.md))
 
 ---
 

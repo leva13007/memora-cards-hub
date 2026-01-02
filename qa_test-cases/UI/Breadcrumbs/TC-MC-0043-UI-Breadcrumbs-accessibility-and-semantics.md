@@ -93,7 +93,7 @@ Optional: set `dataTestId="breadcrumbs"` if control exists (helps targeting node
 - Keyboard navigation:
 	- focus lands only on interactive breadcrumb links (non-last items with links)
 	- focus does not land on separators
-	- focus does not land on the current page item
+	- focus does not land on the last item
 
 ---
 
