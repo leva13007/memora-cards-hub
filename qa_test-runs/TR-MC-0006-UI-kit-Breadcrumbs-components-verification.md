@@ -65,7 +65,7 @@ Validate the `Breadcrumbs` molecule from `MC-0006` in Storybook: composition rul
 ---
 
 ## Related Materials
-- Ticket: [MC-0006: UI-kit: Create Breadcrumbs component](../tickets/MC-0006-UI-kit-Create-Breadcrumbs-component.md)
+- Ticket: [MC-0006: UI-kit: Create Breadcrumbs component](../tickets/Story/MC-0006-UI-kit-Create-Breadcrumbs-component.md)
 
 ---
 

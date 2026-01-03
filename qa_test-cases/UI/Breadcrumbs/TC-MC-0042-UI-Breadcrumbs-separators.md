@@ -28,7 +28,7 @@ Verify Breadcrumbs separator behavior:
 - Browser devtools are available (DOM + accessibility tree inspection).
 
 References:
-- Ticket: `tickets/MC-0006-UI-kit-Create-Breadcrumbs-component.md`
+- Ticket: [MC-0006-UI-kit-Create-Breadcrumbs-component.md](../../../tickets/Story/MC-0006-UI-kit-Create-Breadcrumbs-component.md)
 - Storybook docs: https://leva13007.github.io/memora-cards-storybook/?path=/docs/ui-molecules-breadcrumbs--docs
 - Storybook story: https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-molecules-breadcrumbs--default&viewMode=story
 

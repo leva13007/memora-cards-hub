@@ -8,16 +8,22 @@
 
 ## 4. Design Dependencies
 
-## 5. Behavioral Model
+## 5. Conceptual Model
 
-## 6. Tokens & Variables
+## 6. Behavioral Rules
 
 ## 7. States & Variants
 
-## 8. Rules & Constraints
+## 8. Layout & Responsiveness
 
-## 9. Accessibility (if applicable)
+## 9. Tokens & Theming
 
-## 10. Non-normative Implementation Notes
+## 10. Accessibility
 
-## 11. Change Impact
+## 11. Rules & Constraints
+
+## 12. Non-normative Implementation Notes
+
+## 13. Edge Cases
+
+## 14. Change Impact
