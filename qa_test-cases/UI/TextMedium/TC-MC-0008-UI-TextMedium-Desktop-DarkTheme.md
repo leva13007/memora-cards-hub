@@ -16,7 +16,7 @@ updated: 2025-12-09
 ## Objective
 
 Validate that the `TextMedium` UI component renders correctly on **Desktop** in **Dark theme**, using the expected typography design tokens and computed styles defined in ticket  
-[MC-0001-UI-kit-Create-Text-component](../../../tickets/MC-0001-UI-kit-Create-Text-component.md).
+[MC-0001-UI-kit-Create-Text-component](../../../tickets/Story/MC-0001-UI-kit-Create-Text-component.md).
 
 Specifically confirm:
 
@@ -80,12 +80,12 @@ Environment assumptions:
 	- `--color-text`
 
 9. Toggle `variant` prop or visit the page with different variants:
-	- Set `variant="primary"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textmedium--default&viewMode=story&args=variant:primary&globals=theme:dark) and verify color uses `--color-text`.
-	- Set `variant="warning"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textmedium--default&viewMode=story&args=variant:warning&globals=theme:dark) and verify color uses `--color-warning`.
+	- Set `variant="primary"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?args=&id=ui-atoms-textmedium--primary&viewMode=story&globals=theme:dark) and verify color uses `--color-text`.
+	- Set `variant="warning"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?globals=&args=&id=ui-atoms-textmedium--warning&viewMode=story&globals=theme:dark) and verify color uses `--color-warning`.
 
 10. Toggle `as` prop or visit the page with different variants:
-	- Without passing `as` or when `as="span"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textmedium--default&viewMode=story&args=as%3Aspan&globals=theme:dark), verify the element is rendered as `<span>`.
-	- Set `as="p"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textmedium--default&viewMode=story&args=as%3Ap&globals=theme:dark), verify the element is rendered as `<p>`.
+	- Without passing `as` or when `as="span"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?globals=&args=&id=ui-atoms-textmedium--span&viewMode=story&globals=theme:dark), verify the element is rendered as `<span>`.
+	- Set `as="p"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?globals=&args=&id=ui-atoms-textmedium--paragraph&viewMode=story&globals=theme:dark), verify the element is rendered as `<p>`.
 	- In both cases, confirm typography tokens (font-size, weight, line-height, variant color) remain correct.
 
 ---
@@ -128,4 +128,4 @@ Environment assumptions:
 
 ## Related
 
-- Ticket: [MC-0001-UI-kit-Create-Text-component](../../../tickets/MC-0001-UI-kit-Create-Text-component.md)
+- Ticket: [MC-0001-UI-kit-Create-Text-component](../../../tickets/Story/MC-0001-UI-kit-Create-Text-component.md)

@@ -82,19 +82,21 @@ Prepare three `items` inputs:
 ## Expected Result
 
 ### Scenario 1: single item (with link)
-- Item 0 is rendered as **TextMedium (non-link)** because it is the **last** item.
+- Item 0 is rendered as **TextMedium (non-link)** (for example see the link: [TC-MC-0007](../TextMedium/TC-MC-0007-UI-TextMedium-Desktop-LightTheme.md)) because it is the **last** item.
 - Item 0 has `aria-current="page"`.
 
 ### Scenario 2: 3 items, last without link
-- Item 0 and Item 1 are rendered as **links** (`TextLink`) because:
+- Item 0 and Item 1 are rendered as **TextLink** (for example see the link: [TC-MC-0019](../TextLink/TC-MC-0019-UI-TextLink-Desktop-LightTheme.md)) and displayed as **links** because:
 	- they have `link`
 	- they are not the last item
-- Item 2 is rendered as **TextMedium (non-link)**.
+- Item 2 is rendered as **TextMedium (non-link)** (for example see the link: [TC-MC-0007](../TextMedium/TC-MC-0007-UI-TextMedium-Desktop-LightTheme.md)).
 - Item 2 has `aria-current="page"`.
 
 ### Scenario 3: 3 items, last with link
-- Item 0 and Item 1 are rendered as **links** (`TextLink`).
-- Item 2 is rendered as **TextMedium (non-link)** even though `link` is provided, because it is the **last** item.
+- Item 0 and Item 1 are rendered as **TextLink** (for example see the link: [TC-MC-0019](../TextLink/TC-MC-0019-UI-TextLink-Desktop-LightTheme.md)) and displayed as **links** because:
+	- they have `link`
+	- they are not the last item
+- Item 2 is rendered as **TextMedium (non-link)** (for example see the link: [TC-MC-0007](../TextMedium/TC-MC-0007-UI-TextMedium-Desktop-LightTheme.md)) even though `link` is provided, because it is the **last** item.
 - Item 2 has `aria-current="page"`.
 
 ---

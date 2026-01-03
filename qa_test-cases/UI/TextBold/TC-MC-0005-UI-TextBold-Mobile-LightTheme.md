@@ -16,13 +16,13 @@ updated: 2025-12-09
 ## Objective
 
 Validate that the `TextBold` UI component renders correctly on **Mobile** viewport in **Light theme**, using the expected typography design tokens and computed styles defined in ticket  
-[MC-0001-UI-kit-Create-Text-component](../../../tickets/MC-0001-UI-kit-Create-Text-component.md).
+[MC-0001-UI-kit-Create-Text-component](../../../tickets/Story/MC-0001-UI-kit-Create-Text-component.md).
 
 Specifically confirm on mobile range (<768px):
 
 - correct font family
 - correct mobile font size from token `--fonts-size-text` 
-- correct font-weight via `--font-weight-semi`
+- correct font-weight via `--font-weight-bold`
 - correct text color for **Light** theme when `variant="primary"`
 - correct behavior when `variant="warning"`
 - correct default `as` prop (`<span>`) and optional `as="p"` behavior
@@ -40,7 +40,7 @@ Specifically confirm on mobile range (<768px):
 - Design tokens are loaded:
 	- `--color-text`
 	- `--fonts-size-text`
-	- `--font-weight-semi`
+	- `--font-weight-bold`
 - Browser devtools are available to inspect computed styles.
 
 ---
@@ -82,16 +82,16 @@ Recommended specific widths:
    - `color`
 8. Confirm that the styles originate from or match the expected design tokens:
    - `--fonts-size-text`
-   - `--font-weight-semi`
+   - `--font-weight-bold`
    - `--color-text`
 
 9. Toggle `variant` prop or visit the page with different variants:
-  - Set `variant="primary"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textbold--default&viewMode=story&args=variant:primary) and verify color uses `--color-text`.
-  - Set `variant="warning"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textbold--default&viewMode=story&args=variant:warning) and verify color uses `--color-warning`.
+  - Set `variant="primary"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?globals=&args=&id=ui-atoms-textbold--primary&viewMode=story) and verify color uses `--color-text`.
+  - Set `variant="warning"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?globals=&args=&id=ui-atoms-textbold--warning&viewMode=story) and verify color uses `--color-warning`.
 
 10. Toggle `as` prop or visit the page with different variants:
-   - Without passing `as` or when `as="span"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textbold--default&viewMode=story&args=as%3Aspan), verify the element is rendered as `<span>`.
-   - Set `as="p"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textbold--default&viewMode=story&args=as%3Ap), verify the element is rendered as `<p>`.
+   - Without passing `as` or when `as="span"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?globals=&args=&id=ui-atoms-textbold--span&viewMode=story), verify the element is rendered as `<span>`.
+   - Set `as="p"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?globals=&args=&id=ui-atoms-textbold--paragraph&viewMode=story), verify the element is rendered as `<p>`.
    - In both cases, confirm typography tokens (font-size, weight, line-height, variant color) remain correct.
 
 ---
@@ -100,7 +100,7 @@ Recommended specific widths:
 
 - `font-family` = inherit from (_Inter_) or **Inter**
 - `font-size` = **0.75rem (12px)** for mobile, sourced from `--fonts-size-text`
-- `font-weight` = **600**, mapped from token `--font-weight-semi`
+- `font-weight` = **700**, mapped from token `--font-weight-bold`
 - `line-height` = **normal** (or browser-resolved equivalent)
 - When `variant="primary"`, `color` = `#0f172a` equals the resolved value of **`--color-text`** for **Light theme**
 - When `variant="warning"`, `color` = `#ec1515` equals the resolved value of **`--color-warning`** (for both Light and Dark themes)
@@ -140,4 +140,4 @@ Recommended specific widths:
 
 ## Related
 
-- Ticket: [MC-0001-UI-kit-Create-Text-component](../../../tickets/MC-0001-UI-kit-Create-Text-component.md)
+- Ticket: [MC-0001-UI-kit-Create-Text-component](../../../tickets/Story/MC-0001-UI-kit-Create-Text-component.md)
