@@ -1,0 +1,44 @@
+# Design Tokens
+
+This document defines concrete, implementation-ready values
+used across the Memora project.
+
+All numeric values must be defined here and must not be duplicated
+in tickets, test cases, or other documentation.
+
+## Container
+
+| Token               | Mobile | Tablet | Desktop |
+|---------------------|--------|--------|---------|
+| --container-width   | fluid  | 720px  | 1200px  |
+| --container-padding | 16px   | 16px   | 16px    |
+
+## Typography — base font size
+
+| Token               | Mobile | Tablet | Desktop |
+|---------------------|--------|--------|---------|
+| --font-size-base    | 12px   | 14px   | 16px    |
+
+## Typography — font weights
+
+| Token                 | Value |
+|-----------------------|-------|
+| --font-weight-light   | 300   |
+| --font-weight-regular | 400   |
+| --font-weight-medium  | 500   |
+| --font-weight-bold    | 700   |
+
+## Colours
+
+| Token                 | Light theme | Dark theme |
+|-----------------------|-------------|------------|
+| --color-text          | #0f172a   | #e5e7eb  |
+
+## Rules
+
+- Tokens defined here are the **source of truth** for concrete values.
+- Tickets must not redefine token values; they should reference token names (and the relevant design docs).
+- QA test cases may assert concrete values (px, rem, etc.) but should reference the corresponding token name and keep expectations in sync with this file.
+- Any token change requires:
+  - updating affected test cases
+  - re-running related test runs

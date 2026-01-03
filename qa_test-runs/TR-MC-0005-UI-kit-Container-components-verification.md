@@ -14,7 +14,7 @@ related-tickets:
 # TR-MC-0005-UI-kit-Container-components-verification — UI-kit: Container component verification
 
 ## Purpose
-Validate the `Container` layout component from [MC-0005: UI-kit: Create Container component](../tickets/MC-0005-UI-kit-Create-Container-component.md) in Storybook, ensuring correct width behavior at each breakpoint, correct padding token usage, and correct `fluid` behavior.
+Validate the `Container` layout component from [MC-0005: UI-kit: Create Container component](../tickets/Story/MC-0005-UI-kit-Create-Container-component.md) in Storybook, ensuring correct width behavior at each breakpoint, correct padding token usage, and correct `fluid` behavior.
 
 ---
 
@@ -58,7 +58,7 @@ Validate the `Container` layout component from [MC-0005: UI-kit: Create Containe
 ---
 
 ## Related Materials
-- Ticket: [MC-0005: UI-kit: Create Container component](../tickets/MC-0005-UI-kit-Create-Container-component.md)
+- Ticket: [MC-0005: UI-kit: Create Container component](../tickets/Story/MC-0005-UI-kit-Create-Container-component.md)
 
 ---
 

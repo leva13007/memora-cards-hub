@@ -15,7 +15,7 @@ updated: 2025-12-12
 
 ## Objective  
 Validate that the `Container` UI component renders correctly on **Desktop** viewport in **non-fluid** mode (`fluid` omitted or `false`), using the expected layout behavior defined in ticket  
-[MC-0005-UI-kit-Create-Container-component](../../../tickets/MC-0005-UI-kit-Create-Container-component.md).
+[MC-0005-UI-kit-Create-Container-component](../../../tickets/Story/MC-0005-UI-kit-Create-Container-component.md).
 
 Specifically confirm on desktop viewport (≥1280px):
 
@@ -137,4 +137,4 @@ Component configuration:
 
 ## Related  
 
-- Ticket: [MC-0005-UI-kit-Create-Container-component](../../../tickets/MC-0005-UI-kit-Create-Container-component.md)
+- Ticket: [MC-0005-UI-kit-Create-Container-component](../../../tickets/Story/MC-0005-UI-kit-Create-Container-component.md)

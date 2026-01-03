@@ -4,49 +4,38 @@ title: ""
 type: Story            # Story | Task | Feature | Spike | Chore | Improvement   Bug | 
 status: Open           # ToDo | Sprint ready | In Progress | In Review | Ready for testing | In testing | Issue found | Blocked | Done
 priority: Medium       # Low | Medium | High | Critical
-area: ""               # ui-kit/typography | ui-kit/buttons | app/editor | backend | infra
+area: ""               # ui-kit | backend | infra
 author: ""
 assignee: ""
+estimated:             # story points
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
-labels: []             # free-form tags
-links:
-  figma: ""
-  pr: ""
-  design-doc: ""
-  related-tickets: []
+started:               # YYYY-MM-DD
+ended:                 # YYYY-MM-DD
+sprint-id:             # e.g. MC-0001-Sprint-01
+labels: []             # free-form tags (optional)
 ---
 
-## Description  
-Detailed description of the task, including the problem, the goal, and any design or technical context.
+# MC-XXXX — <Ticket title>
 
----
+## Description (required)
+Describe the problem, goal, and user value.
 
-## Requirements / Specifications  
-Clear, structured, testable requirements.
-
-Examples:
-
-- Component H1 must use:
-  - `font-family: Inter`
-  - `font-weight: 700`
-  - responsive font-sizes for desktop/tablet/mobile
-- Must support Light and Dark themes
-- Must rely on design tokens:
-  - `--color-text`
-  - `--font-weight-bold`
+Include a short behavior summary.
 
 ---
 
-## Acceptance Criteria  
-A list of conditions that must be met for this ticket to be considered “Done”.
+## Design References (source of truth)
 
-1. …
-2. …
-3. …
-4. …
+If design values/tokens/breakpoints are involved, link the authoritative docs here.
 
-All criteria must be objectively verifiable.
+- Design spec:
+	- [DE-XXXX](../design/design/DE-XXXX.md)
+
+---
+
+## Acceptance Criteria / Definition of Done (required)
+Keep this list short and objectively verifiable.
 
 ---
 
@@ -54,20 +43,8 @@ All criteria must be objectively verifiable.
 (Manual or auto-generated)
 
 - Related test cases:
-  - TC-MC-XXXX
-  - TC-MC-YYYY
-- Scenarios to validate:
   - …
   - …
-
----
-
-## Edge Cases  
-Potential pitfalls or scenarios that must be considered:
-
-- …
-- …
-- …
 
 ---
 
@@ -76,14 +53,13 @@ Potential pitfalls or scenarios that must be considered:
 - Blocks: …
 - Duplicate of: …
 - Additional Links:
+  - Storybook docs: …
+  - Storybook story: …
   - Figma: …
   - PR: …
   - Docs: …
 
 ---
 
-## 📂 Change Log  
-
-| Date       | Author | Changes                     |
-|------------|--------|-----------------------------|
-| YYYY-MM-DD | name   | Created ticket              |
+## Sprint
+- [Sprint XX](../sprints/MC-000X-Sprint-XX.md)
