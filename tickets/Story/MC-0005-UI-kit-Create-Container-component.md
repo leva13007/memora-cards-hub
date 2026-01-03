@@ -33,11 +33,11 @@ The **Container** component should:
 ## Design References (source of truth)
 
 - Breakpoints:
-  - [Breakpoints](../design/foundations/breakpoints.md)
+  - [Breakpoints](../../design/foundations/breakpoints.md)
 - Tokens:
-	- [Container tokens](../design/foundations/tokens.md#container)
+	- [Container tokens](../../design/foundations/tokens.md#container)
 - Container design spec:
-	- [DE-0001-Container](../design/design/DE-0001-container.md)
+	- [DE-0001-Container](../../design/design/DE-0001-container.md)
 
 ## Acceptance Criteria / Definition of Done (required)
 
@@ -52,13 +52,13 @@ The **Container** component should:
 (Manual or auto-generated)
 
 - Related test cases:
-	- [TC-MC-0037-UI-Container-Desktop](../qa_test-cases/UI/Container/TC-MC-0037-UI-Container-Desktop.md)
-	- [TC-MC-0038-UI-Container-Tablet](../qa_test-cases/UI/Container/TC-MC-0038-UI-Container-Tablet.md)
-	- [TC-MC-0039-UI-Container-Mobile](../qa_test-cases/UI/Container/TC-MC-0039-UI-Container-Mobile.md)
-	- [TC-MC-0040-UI-Container-Fluid](../qa_test-cases/UI/Container/TC-MC-0040-UI-Container-Fluid.md)
+	- [TC-MC-0037-UI-Container-Desktop](../../qa_test-cases/UI/Container/TC-MC-0037-UI-Container-Desktop.md)
+	- [TC-MC-0038-UI-Container-Tablet](../../qa_test-cases/UI/Container/TC-MC-0038-UI-Container-Tablet.md)
+	- [TC-MC-0039-UI-Container-Mobile](../../qa_test-cases/UI/Container/TC-MC-0039-UI-Container-Mobile.md)
+	- [TC-MC-0040-UI-Container-Fluid](../../qa_test-cases/UI/Container/TC-MC-0040-UI-Container-Fluid.md)
 
+## Related
 
-## Related  
 - Depends on:
 - Blocks:
 - Duplicate of:
@@ -70,4 +70,5 @@ The **Container** component should:
     	`https://leva13007.github.io/memora-cards-storybook/?path=/story/ui-atoms-container--default`
 
 ## Sprint
+
 - [Sprint 01](../sprints/MC-0001-Sprint-01.md)

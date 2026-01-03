@@ -16,7 +16,7 @@ updated: 2025-12-09
 ## Objective
 
 Validate that the `TextBold` UI component renders correctly on **Tablet** viewport in **Light theme**, using the expected typography design tokens and computed styles defined in ticket  
-[MC-0001-UI-kit-Create-Text-component](../../../tickets/MC-0001-UI-kit-Create-Text-component.md).
+[MC-0001-UI-kit-Create-Text-component](../../../tickets/Story/MC-0001-UI-kit-Create-Text-component.md).
 
 Specifically confirm on tablet range (768–1279px):
 
@@ -139,4 +139,4 @@ Recommended specific widths:
 
 ## Related
 
-- Ticket: [MC-0001-UI-kit-Create-Text-component](../../../tickets/MC-0001-UI-kit-Create-Text-component.md)
+- Ticket: [MC-0001-UI-kit-Create-Text-component](../../../tickets/Story/MC-0001-UI-kit-Create-Text-component.md)

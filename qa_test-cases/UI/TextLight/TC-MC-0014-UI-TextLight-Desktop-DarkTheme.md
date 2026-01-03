@@ -16,7 +16,7 @@ updated: 2025-12-10
 ## Objective
 
 Validate that the `TextLight` UI component renders correctly on **Desktop** in **Dark theme**, using the expected typography design tokens and computed styles defined in ticket  
-[MC-0001-UI-kit-Create-Text-component](../../../tickets/MC-0001-UI-kit-Create-Text-component.md).
+[MC-0001-UI-kit-Create-Text-component](../../../tickets/Story/MC-0001-UI-kit-Create-Text-component.md).
 
 Specifically confirm:
 
@@ -129,4 +129,4 @@ Environment assumptions:
 
 ## Related
 
-- Ticket: [MC-0001-UI-kit-Create-Text-component](../../../tickets/MC-0001-UI-kit-Create-Text-component.md)
+- Ticket: [MC-0001-UI-kit-Create-Text-component](../../../tickets/Story/MC-0001-UI-kit-Create-Text-component.md)

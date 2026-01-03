@@ -82,7 +82,7 @@ Validate responsive font sizes, theme colors, font-weight tokens, and core props
 ---
 
 ## Related Materials
-- Ticket: [MC-0001: UI-kit: Create Text component (Light / Medium / Bold)](../tickets/MC-0001-UI-kit-Create-Text-component.md)
+- Ticket: [MC-0001: UI-kit: Create Text component (Light / Medium / Bold)](../tickets/Story/MC-0001-UI-kit-Create-Text-component.md)
 
 ---
 

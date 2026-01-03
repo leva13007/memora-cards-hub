@@ -22,17 +22,18 @@ The height of the font is controlled via `line-height: normal;` across all compo
 
 ### Typography — base font size
 
-| Token               | Mobile | Tablet  | Desktop |
-|---------------------|--------|---------|---------|
-| --font-size-h-1     | 1.5rem | 1.75rem | 2rem    |
-| --font-size-h-2     | 1.125rem | 1.25rem | 1.5rem    |
+| Token                 | Mobile   | Tablet   | Desktop |
+|-----------------------|----------|----------|---------|
+| --font-size-h-1       | 1.5rem   | 1.75rem  | 2rem    |
+| --font-size-h-2       | 1.125rem | 1.25rem  | 1.5rem  |
+| --fonts-size-text     | 0.75rem  | 0.875rem | 1rem    |
 
 ### Typography — font weights
 
 | Token                 | Value |
 |-----------------------|-------|
 | --font-weight-light   | 300   |
-| --font-weight-regular | 400   |
+| --font-weight-normal  | 400   |
 | --font-weight-semi    | 600   |
 | --font-weight-bold    | 700   |
 
@@ -41,6 +42,7 @@ The height of the font is controlled via `line-height: normal;` across all compo
 | Token                 | Light theme | Dark theme |
 |-----------------------|-------------|------------|
 | --color-text          | #0f172a   | #e5e7eb  |
+| --color-warning       | #ec1515   | #ec1515  |
 
 ## Rules
 
