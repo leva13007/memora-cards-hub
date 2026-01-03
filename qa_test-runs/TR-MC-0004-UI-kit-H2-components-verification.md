@@ -62,7 +62,7 @@ Run a manual UI verification for the `H2` typography atom described in `MC-0004`
 ---
 
 ## Related Materials
-- Ticket: [MC-0004: UI-kit: Create H2 component](../tickets/MC-0004-UI-kit-Create-H2-component.md)
+- Ticket: [MC-0004: UI-kit: Create H2 component](../tickets/Story/MC-0004-UI-kit-Create-H2-component.md)
 
 ---
 

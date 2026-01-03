@@ -25,6 +25,7 @@ The height of the font is controlled via `line-height: normal;` across all compo
 | Token               | Mobile | Tablet  | Desktop |
 |---------------------|--------|---------|---------|
 | --font-size-h-1     | 1.5rem | 1.75rem | 2rem    |
+| --font-size-h-2     | 1.125rem | 1.25rem | 1.5rem    |
 
 ### Typography — font weights
 
@@ -32,7 +33,7 @@ The height of the font is controlled via `line-height: normal;` across all compo
 |-----------------------|-------|
 | --font-weight-light   | 300   |
 | --font-weight-regular | 400   |
-| --font-weight-medium  | 500   |
+| --font-weight-semi    | 600   |
 | --font-weight-bold    | 700   |
 
 ## Colours
