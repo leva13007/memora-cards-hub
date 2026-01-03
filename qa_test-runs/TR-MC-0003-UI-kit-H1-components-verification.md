@@ -62,7 +62,7 @@ Run a manual UI verification for the `H1` typography atom described in `MC-0003`
 ---
 
 ## Related Materials
-- Ticket: [MC-0003: UI-kit: Create H1 component](../tickets/MC-0003-UI-kit-Create-H1-component.md)
+- Ticket: [MC-0003: UI-kit: Create H1 component](../tickets/Story/MC-0003-UI-kit-Create-H1-component.md)
 
 ---
 

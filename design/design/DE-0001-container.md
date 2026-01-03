@@ -19,12 +19,9 @@ Does not define typography, vertical spacing, or grid behavior.
 
 ### 5.1 Width behavior by breakpoint (non-fluid mode)
 
-| Breakpoint | Width behavior         |
-|------------|------------------------|
-| Mobile     | Full-width (`fluid`)   |
-| Tablet     | Fixed-width (`720px`)  |
-| Desktop    | Fixed-width (`1200px`) |
-
+| Mobile     | Tablet    | Desktop   |
+|------------|-----------|-----------|
+| Full-width | 720px     | 1200px    |
 
 ### 5.2 Fluid mode override
 

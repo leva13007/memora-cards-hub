@@ -13,13 +13,20 @@ in tickets, test cases, or other documentation.
 | --container-width   | fluid  | 720px  | 1200px  |
 | --container-padding | 16px   | 16px   | 16px    |
 
-## Typography — base font size
+## Typography
 
-| Token               | Mobile | Tablet | Desktop |
-|---------------------|--------|--------|---------|
-| --font-size-base    | 12px   | 14px   | 16px    |
+Font family for all text components:
+- `Inter`, sans-serif or `inherit` from parent(which resolves to `Inter`).
 
-## Typography — font weights
+The height of the font is controlled via `line-height: normal;` across all components.
+
+### Typography — base font size
+
+| Token               | Mobile | Tablet  | Desktop |
+|---------------------|--------|---------|---------|
+| --font-size-h-1     | 1.5rem | 1.75rem | 2rem    |
+
+### Typography — font weights
 
 | Token                 | Value |
 |-----------------------|-------|
