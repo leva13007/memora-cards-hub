@@ -43,6 +43,8 @@ The height of the font is controlled via `line-height: normal;` across all compo
 |-----------------------|-------------|------------|
 | --color-text          | #0f172a   | #e5e7eb  |
 | --color-warning       | #ec1515   | #ec1515  |
+| --color-link          | #1a73e8   | #8ab4f8  |
+| --color-link-hover    | #174ea6   | #174ea6  |
 
 ## Rules
 

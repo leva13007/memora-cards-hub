@@ -30,7 +30,7 @@ The primary goal of Sprint 01 is to conduct comprehensive testing of the newly d
 
 ## Tickets list
 - [MC-0001: UI-kit: Create Text component (Light / Medium / Bold)](../tickets/Story/MC-0001-UI-kit-Create-Text-component.md)
-- [MC-0002: UI-kit: Create TextLink component](../tickets/MC-0002-UI-kit-Create-TextLink-component.md)
+- [MC-0002: UI-kit: Create TextLink component](../tickets/Story/MC-0002-UI-kit-Create-TextLink-component.md)
 - [MC-0003: UI-kit: Create H1 component](../tickets/Story/MC-0003-UI-kit-Create-H1-component.md)
 - [MC-0004: UI-kit: Create H2 component](../tickets/Story/MC-0004-UI-kit-Create-H2-component.md)
 - [MC-0005: UI-kit: Create Container component](../tickets/Story/MC-0005-UI-kit-Create-Container-component.md)

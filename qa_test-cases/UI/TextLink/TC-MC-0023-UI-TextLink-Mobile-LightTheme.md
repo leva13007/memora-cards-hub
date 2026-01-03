@@ -16,7 +16,7 @@ updated: 2025-12-10
 ## Objective
 
 Validate that the `TextLink` UI component renders correctly on **Mobile** viewport in **Light theme**, using the expected typography design tokens (inheriting from `TextMedium`) and link-specific color tokens defined in ticket  
-[MC-0002-UI-kit-Create-TextLink-component](../../../tickets/MC-0002-UI-kit-Create-TextLink-component.md).
+[MC-0002-UI-kit-Create-TextLink-component](../../../tickets/Story/MC-0002-UI-kit-Create-TextLink-component.md).
 
 Specifically confirm on mobile range (<768px):
 
@@ -168,4 +168,4 @@ Example props:
 
 ## Related
 
-- Ticket: [MC-0002-UI-kit-Create-TextLink-component](../../../tickets/MC-0002-UI-kit-Create-TextLink-component.md)
+- Ticket: [MC-0002-UI-kit-Create-TextLink-component](../../../tickets/Story/MC-0002-UI-kit-Create-TextLink-component.md)

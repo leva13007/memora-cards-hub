@@ -66,7 +66,7 @@ Validate `TextLink` UI-kit component behavior and styling across breakpoints and
 ---
 
 ## Related Materials
-- Ticket: [MC-0002: UI-kit: Create TextLink component](../tickets/MC-0002-UI-kit-Create-TextLink-component.md)
+- Ticket: [MC-0002: UI-kit: Create TextLink component](../tickets/Story/MC-0002-UI-kit-Create-TextLink-component.md)
 
 ---
 
