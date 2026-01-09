@@ -2,7 +2,7 @@
 id: MC-0001-Sprint-01
 title: Sprint 01
 start-date: 2025-12-15
-end-date: 2025-12-29
+end-date: 2026-01-09
 ---
 
 # Sprint 01
@@ -29,11 +29,12 @@ The primary goal of Sprint 01 is to conduct comprehensive testing of the newly d
 ---
 
 ## Tickets list
-- [MC-0001: UI-kit: Create Text component (Light / Medium / Bold)](../tickets/MC-0001-UI-kit-Create-Text-component.md)
-- [MC-0002: UI-kit: Create TextLink component](../tickets/MC-0002-UI-kit-Create-TextLink-component.md)
-- [MC-0003: UI-kit: Create H1 component](../tickets/MC-0003-UI-kit-Create-H1-component.md)
-- [MC-0004: UI-kit: Create H2 component](../tickets/MC-0004-UI-kit-Create-H2-component.md)
-- [MC-0006: UI-kit: Create Breadcrumbs component](../tickets/MC-0006-UI-kit-Create-Breadcrumbs-component.md)
+- [MC-0001: UI-kit: Create Text component (Light / Medium / Bold)](../tickets/Story/MC-0001-UI-kit-Create-Text-component.md)
+- [MC-0002: UI-kit: Create TextLink component](../tickets/Story/MC-0002-UI-kit-Create-TextLink-component.md)
+- [MC-0003: UI-kit: Create H1 component](../tickets/Story/MC-0003-UI-kit-Create-H1-component.md)
+- [MC-0004: UI-kit: Create H2 component](../tickets/Story/MC-0004-UI-kit-Create-H2-component.md)
+- [MC-0005: UI-kit: Create Container component](../tickets/Story/MC-0005-UI-kit-Create-Container-component.md)
+- [MC-0006: UI-kit: Create Breadcrumbs component](../tickets/Story/MC-0006-UI-kit-Create-Breadcrumbs-component.md)
 
 ---
 

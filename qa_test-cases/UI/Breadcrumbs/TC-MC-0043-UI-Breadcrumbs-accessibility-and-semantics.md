@@ -31,7 +31,7 @@ Validate that `Breadcrumbs` meets the required **semantic HTML** and **accessibi
 	- Accessibility tree / Accessibility panel
 
 References:
-- Ticket: `tickets/MC-0006-UI-kit-Create-Breadcrumbs-component.md`
+- Ticket: [MC-0006-UI-kit-Create-Breadcrumbs-component.md](../../../tickets/Story/MC-0006-UI-kit-Create-Breadcrumbs-component.md)
 - Storybook docs: https://leva13007.github.io/memora-cards-storybook/?path=/docs/ui-molecules-breadcrumbs--docs
 - Storybook story: https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-molecules-breadcrumbs--default&viewMode=story
 
@@ -93,7 +93,7 @@ Optional: set `dataTestId="breadcrumbs"` if control exists (helps targeting node
 - Keyboard navigation:
 	- focus lands only on interactive breadcrumb links (non-last items with links)
 	- focus does not land on separators
-	- focus does not land on the current page item
+	- focus does not land on the last item
 
 ---
 
