@@ -6,7 +6,7 @@ scope: "ui-kit"
 created: 2026-01-06
 owner: "Oleh Levchenko"
 environment: "storybook"        # local | dev | staging | production | storybook
-status: Planned          # Planned | In Progress | Completed | Canceled
+status: Active         # Planned | Active | Canceled | Deprecated
 related-tickets:
 	- MC-0001-UI-kit-Create-Text-component
 	- MC-0002-UI-kit-Create-TextLink-component

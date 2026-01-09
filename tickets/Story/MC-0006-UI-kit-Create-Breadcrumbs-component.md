@@ -2,7 +2,7 @@
 id: MC-0006
 title: "UI-kit: Create Breadcrumbs component"
 type: Story            # Epic | Feature | Story | Task | Spike | Chore | Improvement
-status: Open           # ToDo | Sprint ready | In Progress | In Review | Ready for testing | In testing | Issue found | Blocked | Done
+status: Done           # ToDo | Sprint ready | In Progress | In Review | Ready for testing | In testing | Issue found | Blocked | Done
 priority: Medium       # Low | Medium | High | Critical
 area: "ui-kit"  # ui-kit | backend | infra
 author: "Oleh Levchenko"

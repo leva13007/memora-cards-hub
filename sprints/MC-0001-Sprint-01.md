@@ -2,7 +2,7 @@
 id: MC-0001-Sprint-01
 title: Sprint 01
 start-date: 2025-12-15
-end-date: 2025-12-29
+end-date: 2026-01-09
 ---
 
 # Sprint 01

@@ -95,7 +95,7 @@ Component configuration:
 - The `Container` root element is a semantic `<div>`.
 - At viewport widths ≥1280px with `fluid` set to `false` / omitted:
   - The container is horizontally centered using `margin-left: auto; margin-right: auto;`.
-  - Horizontal padding left and right is applied via `--container-padding` that equal to `1rem`, **not** hard-coded.
+  - Horizontal padding left and right is applied via `--container-padding` that equal `1rem`, **not** hard-coded.
   - The container has `width: 1200px`.
 - When resizing the viewport within the desktop range (≥1280px):
   - The container width remains fixed at **1200px**.

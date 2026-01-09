@@ -79,7 +79,7 @@ Use at least 3 breadcrumb items to validate separator count/placement:
 ### Scenario 1 — Default separator (`/`)
 - Separators are visible between existing items
 - No separator after the last item
-- No separator befor the first item
+- No separator before the first item
 - Separator content is `/`
 
 ### Scenario 2 — Separator uses `TextMedium`
