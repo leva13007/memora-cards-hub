@@ -16,7 +16,7 @@ updated: 2025-12-11
 ## Objective
 
 Validate that the `H2` UI component renders correctly on **Tablet** viewport in **Light theme**, using the expected typography design tokens and semantic `<h2>` behavior defined in ticket  
-[MC-0004-UI-kit-Create-H2-component](../../../tickets/MC-0004-UI-kit-Create-H2-component.md).
+[MC-0004-UI-kit-Create-H2-component](../../../tickets/Story/MC-0004-UI-kit-Create-H2-component.md).
 
 Specifically confirm on tablet range (768–1279px):
 
@@ -133,4 +133,4 @@ Recommended specific widths:
 
 ## Related
 
-- Ticket: [MC-0004-UI-kit-Create-H2-component](../../../tickets/MC-0004-UI-kit-Create-H2-component.md)
+- Ticket: [MC-0004-UI-kit-Create-H2-component](../../../tickets/Story/MC-0004-UI-kit-Create-H2-component.md)

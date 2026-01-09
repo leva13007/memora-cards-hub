@@ -15,7 +15,7 @@ updated: 2025-12-12
 
 ## Objective  
 Validate that the `Container` UI component renders correctly on **Desktop** viewport in **non-fluid** mode (`fluid` omitted or `false`), using the expected layout behavior defined in ticket  
-[MC-0005-UI-kit-Create-Container-component](../../../tickets/MC-0005-UI-kit-Create-Container-component.md).
+[MC-0005-UI-kit-Create-Container-component](../../../tickets/Story/MC-0005-UI-kit-Create-Container-component.md).
 
 Specifically confirm on desktop viewport (≥1280px):
 
@@ -95,8 +95,8 @@ Component configuration:
 - The `Container` root element is a semantic `<div>`.
 - At viewport widths ≥1280px with `fluid` set to `false` / omitted:
   - The container is horizontally centered using `margin-left: auto; margin-right: auto;`.
+  - Horizontal padding left and right is applied via `--container-padding` that equal `1rem`, **not** hard-coded.
   - The container has `width: 1200px`.
-  - Horizontal padding left and right is applied via `--container-padding` (default `1rem`), **not** hard-coded.
 - When resizing the viewport within the desktop range (≥1280px):
   - The container width remains fixed at **1200px**.
   - The container stays centered in the viewport.
@@ -137,4 +137,4 @@ Component configuration:
 
 ## Related  
 
-- Ticket: [MC-0005-UI-kit-Create-Container-component](../../../tickets/MC-0005-UI-kit-Create-Container-component.md)
+- Ticket: [MC-0005-UI-kit-Create-Container-component](../../../tickets/Story/MC-0005-UI-kit-Create-Container-component.md)

@@ -16,7 +16,7 @@ updated: 2025-12-10
 ## Objective
 
 Validate that the `TextLink` UI component renders correctly on **Mobile** viewport in **Dark theme**, using the expected typography design tokens (inheriting from `TextMedium`) and link-specific color tokens defined in ticket  
-[MC-0002-UI-kit-Create-TextLink-component](../../../tickets/MC-0002-UI-kit-Create-TextLink-component.md).
+[MC-0002-UI-kit-Create-TextLink-component](../../../tickets/Story/MC-0002-UI-kit-Create-TextLink-component.md).
 
 Specifically confirm on mobile range (<768px):
 
@@ -85,6 +85,7 @@ Example props:
 5. Configure the story or component props to use:
 	- `to="/docs"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textlink--default&viewMode=story&args=to:docs&globals=theme:dark)
 	- `content="The TextLink text content"` or open the [page](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textlink--default&viewMode=story&args=content%3AThe%20TextLink%20text%20content&globals=theme:dark)
+	- final link should be as: [final link](https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textlink--default&viewMode=story&args=to:docs;content:The%20TextLink%20text%20content&globals=theme:dark)
 6. Identify a `TextLink` element rendered with these props.
 7. Open browser devtools and inspect the `<a>` element.
 8. In the **Elements** panel, confirm the DOM structure is:
@@ -167,4 +168,4 @@ Example props:
 
 ## Related
 
-- Ticket: [MC-0002-UI-kit-Create-TextLink-component](../../../tickets/MC-0002-UI-kit-Create-TextLink-component.md)
+- Ticket: [MC-0002-UI-kit-Create-TextLink-component](../../../tickets/Story/MC-0002-UI-kit-Create-TextLink-component.md)

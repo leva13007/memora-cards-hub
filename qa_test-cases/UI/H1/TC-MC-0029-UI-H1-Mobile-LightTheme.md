@@ -16,7 +16,7 @@ updated: 2025-12-11
 ## Objective
 
 Validate that the `H1` UI component renders correctly on **Mobile** viewport in **Light theme**, using the expected typography design tokens and semantic `<h1>` behavior defined in ticket  
-[MC-0003-UI-kit-Create-H1-component](../../../tickets/MC-0003-UI-kit-Create-H1-component.md).
+[MC-0003-UI-kit-Create-H1-component](../../../tickets/Story/MC-0003-UI-kit-Create-H1-component.md).
 
 Specifically confirm on mobile range (<768px):
 
@@ -133,4 +133,4 @@ Recommended specific widths:
 
 ## Related
 
-- Ticket: [MC-0003-UI-kit-Create-H1-component](../../../tickets/MC-0003-UI-kit-Create-H1-component.md)
+- Ticket: [MC-0003-UI-kit-Create-H1-component](../../../tickets/Story/MC-0003-UI-kit-Create-H1-component.md)

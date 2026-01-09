@@ -112,4 +112,4 @@ Run the same checks in both themes:
 
 ## Related
 
-- Ticket: [MC-0002-UI-kit-Create-TextLink-component](../../../tickets/MC-0002-UI-kit-Create-TextLink-component.md)
+- Ticket: [MC-0002-UI-kit-Create-TextLink-component](../../../tickets/Story/MC-0002-UI-kit-Create-TextLink-component.md)

@@ -16,7 +16,7 @@ updated: 2025-12-12
 ## Objective
 
 Validate that the `H2` UI component renders correctly on **Mobile** viewport in **Dark theme**, using the expected typography design tokens and semantic `<h2>` behavior defined in ticket  
-[MC-0004-UI-kit-Create-H2-component](../../../tickets/MC-0004-UI-kit-Create-H2-component.md).
+[MC-0004-UI-kit-Create-H2-component](../../../tickets/Story/MC-0004-UI-kit-Create-H2-component.md).
 
 Specifically confirm on mobile range (<768px):
 
@@ -133,4 +133,4 @@ Recommended specific widths:
 
 ## Related
 
-- Ticket: [MC-0004-UI-kit-Create-H2-component](../../../tickets/MC-0004-UI-kit-Create-H2-component.md)
+- Ticket: [MC-0004-UI-kit-Create-H2-component](../../../tickets/Story/MC-0004-UI-kit-Create-H2-component.md)

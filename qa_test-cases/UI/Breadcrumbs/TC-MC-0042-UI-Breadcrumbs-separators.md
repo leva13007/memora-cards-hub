@@ -19,7 +19,6 @@ Verify Breadcrumbs separator behavior:
 - separators render **between** items only (never after last)
 - separators are rendered using `TextMedium`
 - separators are ignored by screen readers (`aria-hidden="true"`)
-- separators follow the documented `data-testid` contract (when `dataTestId` is passed)
 
 ---
 
@@ -29,7 +28,7 @@ Verify Breadcrumbs separator behavior:
 - Browser devtools are available (DOM + accessibility tree inspection).
 
 References:
-- Ticket: `tickets/MC-0006-UI-kit-Create-Breadcrumbs-component.md`
+- Ticket: [MC-0006-UI-kit-Create-Breadcrumbs-component.md](../../../tickets/Story/MC-0006-UI-kit-Create-Breadcrumbs-component.md)
 - Storybook docs: https://leva13007.github.io/memora-cards-storybook/?path=/docs/ui-molecules-breadcrumbs--docs
 - Storybook story: https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-molecules-breadcrumbs--default&viewMode=story
 
@@ -46,8 +45,6 @@ Use at least 3 breadcrumb items to validate separator count/placement:
 	{ "label": "Current page" }
 ]
 ```
-
-Use `dataTestId="breadcrumbs"` (if supported by story/controls).
 
 ---
 
@@ -80,17 +77,17 @@ Use `dataTestId="breadcrumbs"` (if supported by story/controls).
 ## Expected Result
 
 ### Scenario 1 — Default separator (`/`)
-- For N breadcrumb items, **N-1** separators are rendered.
-- Default separator is `/`.
-- Separators appear **only** between items and never after the last item.
-- Separators are rendered using `TextMedium`.
+- Separators are visible between existing items
+- No separator after the last item
+- No separator before the first item
+- Separator content is `/`
 
 ### Scenario 2 — Separator uses `TextMedium`
-- Separator is rendered using the `TextMedium` component.
+- Separator is rendered using the `TextMedium` component (for example see the link: [TC-MC-0007](../TextMedium/TC-MC-0007-UI-TextMedium-Desktop-LightTheme.md))
 
 ### Scenario 3 — Custom separator value
 - Separator content updates to the custom value (e.g., `"_"`).
-- Separator continues to use `TextMedium`.
+- Separator continues to use `TextMedium`component (for example see the link: [TC-MC-0007](../TextMedium/TC-MC-0007-UI-TextMedium-Desktop-LightTheme.md))
 
 ---
 
