@@ -37,14 +37,23 @@ The height of the font is controlled via `line-height: normal;` across all compo
 | --font-weight-semi    | 600   |
 | --font-weight-bold    | 700   |
 
+### Button
+| Token                 | Value |
+|-----------------------|-------|
+| --border-radius-button  | 0.25rem   |
+
 ## Colours
 
 | Token                 | Light theme | Dark theme |
 |-----------------------|-------------|------------|
 | --color-text          | #0f172a   | #e5e7eb  |
+| --color-text-white    | #e5e7eb   | #e5e7eb  |
 | --color-warning       | #ec1515   | #ec1515  |
+| --color-warning-hover | #b71d1d   | #b71d1d  |
 | --color-link          | #1a73e8   | #8ab4f8  |
 | --color-link-hover    | #174ea6   | #174ea6  |
+| --color-bg-secondary  | transparent   | transparent  |
+| --color-bg-secondary-hover  | #94a3b8   | #94a3b8  |
 
 ## Rules
 
