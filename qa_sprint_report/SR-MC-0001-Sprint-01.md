@@ -25,6 +25,16 @@ During Sprint 01, the following UI components were tested:
 |--------------------------------------------------------------------|-------------|---------|--------------------------------------------------------|
 | [EX-MC-0001](../qa_executions/TR-MC-0001/EX-MC-0001.md)            | Storybook   | Passed  | This full execution implicitly covers smoke and regression checks for Sprint 01. |
 
+### Test Cases Chart
+
+```mermaid
+xychart-beta
+    title Test Cases Execution Results - Sprint 01
+    x-axis "Test Cases" ["Passed", "Failed", "Blocked", "Not Executed"]
+    y-axis "Count" 0 --> 50
+    bar [44, 0, 0, 0]
+```
+
 ## Defects summary
 |Severity | Count | Notes |
 |---------|-------|-------|
@@ -32,6 +42,16 @@ During Sprint 01, the following UI components were tested:
 | High    | 0 | No major defects reported |
 | Medium    | 0 | No minor defects reported |
 | Low     | 0 | No cosmetic defects reported |
+
+### Defect Chart
+
+```mermaid
+xychart-beta
+    title Defects by Severity - Sprint 01
+    x-axis "Severity" ["Critical", "High", "Medium", "Low"]
+    y-axis "Count" 0 --> 10
+    bar [0, 0, 0, 0]
+```
 
 
 ## List of Defects
@@ -43,6 +63,28 @@ During Sprint 01, the following UI components were tested:
 The following test runs are considered stable as of Sprint 01:
 - [TR-MC-REG-0001](../qa_test-runs/regression/TR-MC-REG-0001.md) — UI-kit core regression
 - [TR-MC-SM-0001.md](../qa_test-runs/smoke/TR-MC-SM-0001.md) — UI-kit smoke
+
+## Time spent on testing
+| Activity               | Estimated Hours |
+|------------------------|-----------------|
+| Test Case Creation     | 16              |
+| Test Execution         | 24              |
+| Defect Reporting       | 4               |
+| Reporting              | 8               |
+| Regression Testing     | 0               |
+| Automation (initial setup) | 0              |
+| Smoke Testing          | 0               |
+| **Total**              | **52**          |
+
+### Time Spent Chart
+
+```mermaid
+xychart-beta
+    title Time Spent on QA Activities - Sprint 01
+    x-axis "Activity" ["Test Case Creation", "Test Execution", "Defect Reporting", "Reporting", "Regression Testing", "Automation", "Smoke Testing"]
+    y-axis "Hours" 0 --> 30
+    bar [16, 24, 4, 8, 0, 0, 0]
+```
 
 ## Risk Assessment
 No significant risks were identified during Sprint 01.
