@@ -32,7 +32,7 @@ Define the core visual, behavioral, and accessibility rules for the `Button` ato
 
 ## 6. Variants
 Border should be applied as per the variant table below.
-Border-radius: `--border-radius-button` : `0.25rem` for all variants.
+Border-radius: `--border-radius` : `0.25rem` for all variants.
 
 ### 6.1 Semantic element
 - Buttons must render as a semantic `<button>` element by default.
@@ -42,14 +42,14 @@ Border-radius: `--border-radius-button` : `0.25rem` for all variants.
 |-----------|-------------------|-------------------------------|-----------------------|-------|
 | Primary   | `--color-link`    | `--color-link`                 | `--color-text`        | High-emphasis CTAs            |
 | Warning   | `--color-warning` | `--color-warning`                 | `--color-text-white`  | Destructive / caution actions |
-| Secondary | `--color-bg-secondary` | `1px solid --color-text`      | `--color-text`        | Ghost / low-emphasis actions  |
+| Secondary | `--color-secondary` | `1px solid --color-text`      | `--color-text`        | Ghost / low-emphasis actions  |
 
 ### 6.2 Visual variants - Hover states
 | Variant   | Background              | Border                        | Text/Icon color       |
 |-----------|-------------------------|-------------------------------|-----------------------|
 | Primary   | `--color-link-hover`    | `--color-link-hover`          | `--color-text`        |
 | Warning   | `--color-warning-hover` | `--color-warning-hover`       | `--color-text-white`  |
-| Secondary | `--color-bg-secondary-hover` | `1px solid --color-text`      | `--color-text`        |
+| Secondary | `--color-secondary-hover` | `1px solid --color-text`      | `--color-text`        |
 
 Other baseline styles:
 - Cursor: `pointer`
@@ -99,8 +99,8 @@ Notes:
 - `--color-warning-hover`
 - `--color-text`
 - `--color-text-white`
-- `--color-bg-secondary`
-- `--color-bg-secondary-hover`
+- `--color-secondary`
+- `--color-secondary-hover`
 
 ## 10. Accessibility
 - Default rendering should be `<button type="button">` with the appropriate `type` override for forms.
