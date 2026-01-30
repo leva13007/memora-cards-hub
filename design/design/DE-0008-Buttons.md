@@ -32,24 +32,26 @@ Define the core visual, behavioral, and accessibility rules for the `Button` ato
 
 ## 6. Variants
 Border should be applied as per the variant table below.
-Border-radius: `--border-radius` : `0.25rem` for all variants.
+Border-radius: `--border-radius`.
 
 ### 6.1 Semantic element
 - Buttons must render as a semantic `<button>` element by default.
 
 ### 6.2 Visual variants
-| Variant   | Background        | Border                        | Text/Icon color       | Usage |
-|-----------|-------------------|-------------------------------|-----------------------|-------|
-| Primary   | `--color-link`    | `--color-link`                 | `--color-text`        | High-emphasis CTAs            |
-| Warning   | `--color-warning` | `--color-warning`                 | `--color-text-white`  | Destructive / caution actions |
-| Secondary | `--color-secondary` | `1px solid --color-text`      | `--color-text`        | Ghost / low-emphasis actions  |
+| Variant       | Background            | Border              | Text/Icon color       | Usage                         |
+|---------------|-----------------------|---------------------|-----------------------|-------------------------------|
+| Primary       | `--color-link`        | `--color-link`      | `--color-text`        | High-emphasis CTAs            |
+| Warning       | `--color-warning`     | `--color-warning`   | `--color-text-white`  | Destructive / caution actions |
+| ~~Secondary~~ |                       |                     |                       |                               |
+| Ghost         | `--color-transparent` | `--color-text`      | `--color-text`        | Ghost / low-emphasis actions  |
 
 ### 6.2 Visual variants - Hover states
-| Variant   | Background              | Border                        | Text/Icon color       |
-|-----------|-------------------------|-------------------------------|-----------------------|
-| Primary   | `--color-link-hover`    | `--color-link-hover`          | `--color-text`        |
-| Warning   | `--color-warning-hover` | `--color-warning-hover`       | `--color-text-white`  |
-| Secondary | `--color-secondary-hover` | `1px solid --color-text`      | `--color-text`        |
+| Variant       | Background                  | Border                  | Text/Icon color       |
+|---------------|-----------------------------|-------------------------|-----------------------|
+| Primary       | `--color-link-hover`        | `--color-link-hover`    | `--color-text`        |
+| Warning       | `--color-warning-hover`     | `--color-warning-hover` | `--color-text-white`  |
+| ~~Secondary~~ |                             |                         |                       |
+| Ghost         | `--color-transparent-hover` | `--color-text`          | `--color-text`        |
 
 Other baseline styles:
 - Cursor: `pointer`
@@ -59,7 +61,7 @@ Keyboard focus must be clearly visible.
 
 Required focus-visible style:
 
-`outline: 1px solid var(--color-link, currentColor)`
+`outline: var(--outline) solid var(--color-link, currentColor)`
 
 Notes:
 - The focus indicator must remain visible in both themes.
@@ -67,12 +69,9 @@ Notes:
 
 ### 6.4 Icon Rules
 1. Icons are optional and appear **only to the left** of the text.
-2. Icon size tracks the text size:
-   - Desktop (`--fonts-size-text` = 1rem) → icon box 16px (matching `TextMedium` line-height) by default.
-   - Tablet → icon 14px.
-   - Mobile → icon 12px.
+2. Icon size tracks the text size `--fonts-size-text`
 3. Icon color uses `currentColor`, so variant/tone automatically applies.
-4. Spacing between icon and text: `0.5rem`.
+4. Spacing between icon and text: `--gap-4`.
 5. When no text is provided, button should fall back to icon-only configuration (future enhancement) but still honor min width and accessible label.
 
 ## 7. States & Variants
@@ -86,8 +85,8 @@ Notes:
 - Do not change layout, padding, or spacing; icon alignment must remain intact.
 
 ## 8. Layout & Responsiveness
-- Horizontal padding: `1rem`
-- Vertical padding: `0.625rem`
+- Horizontal padding: `--gap-horizontal`
+- Vertical padding: `--gap-vertical`
 
 ## 9. Tokens & Theming
 ### Required tokens
@@ -99,11 +98,11 @@ Notes:
 - `--color-warning-hover`
 - `--color-text`
 - `--color-text-white`
-- `--color-secondary`
-- `--color-secondary-hover`
+- `--color-transparent`
+- `--color-transparent-hover`
 
 ## 10. Accessibility
 - Default rendering should be `<button type="button">` with the appropriate `type` override for forms.
 - Provide `aria-disabled` when using non-button elements.
-- Focus state must be visible for keyboard users (e.g., 2px outline using `--color-link`).
+- Focus state must be visible for keyboard users.
 - Ensure icon-only buttons are supplied with `aria-label` or visually hidden text.

@@ -38,16 +38,25 @@ Icons are distributed as **inline SVG** symbols with a fixed viewBox (`0 0 16 16
 - No hard-coded hex values are allowed inside icon SVGs.
 
 ## 7. States & Variants
+- **Sizes**: Height and width should be set via value `1rem`.
+- **Color states**: icons inherit parent color, so variants come from host components; no per-icon state files are needed.
+- **Theming**: Light/Dark modes work automatically through `currentColor`. Components should set the surrounding text color token to match theme requirements.
 
 ## 8. Layout & Responsiveness
+- Icons should never stretch to fill container width/height; they remain square and scale proportionally per the size prop.
 
 ## 9. Tokens & Theming
+- Icons do not introduce new tokens. They rely on existing tokens for:
+  - Color: `--color-text`, `--color-link`, `--color-warning`, etc. (inherited via `currentColor`).
+- Any new color usage must reference an existing token; do not embed literal hex values inside SVG data.
 
 ## 10. Accessibility
+- Default icon usage is decorative: set `aria-hidden="true"` and `focusable="false"` when icons convey no standalone meaning.
+- When an icon is the only content (e.g., icon button), provide an accessible name via `aria-label`, `aria-labelledby`, or visually hidden text on the host component; the icon itself should receive `role="img"` only if it supplies `aria-label`.
+- Avoid using icons to communicate status without accompanying text or `aria-label`; pair with text or tooltips for clarity.
 
 ## 11. Rules & Constraints
-- Do not add drop shadows, gradients, or extra strokes.
-- Icon components must expose a `size` prop (defaults to `16`) and a `color` prop (defaults to `currentColor`).
+1. Do not add drop shadows, gradients, or extra strokes unless approved in the design spec.
 
 ## 12. Non-normative Implementation Notes
 - Use `<svg>` with `viewBox="0 0 16 16"` for all icons.
@@ -120,7 +129,10 @@ Star-fill icon example:
 
 
 ## 13. Edge Cases
-- Animations (spin, pulse) must reuse the same icon shapes and only modify transform/opacity.
+- Animations (spin, pulse) must reuse the same icon shapes and only modify transform/opacity; no extra DOM wrappers.
+- When icons pair with badges or counters, ensure the enclosing component handles layout; do not embed badge shapes inside icon SVGs.
+- If an icon must indicate a two-tone state (e.g., partially filled star), create a separate asset rather than layering fills at runtime.
+- High-DPI displays: rely on vector nature; do not rasterize icons. If exporting PNG fallbacks, document them separately.
 
 ## 14. Change Impact
 - Updates to any icon path require notifying dependent tickets/components.

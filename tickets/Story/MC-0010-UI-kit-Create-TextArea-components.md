@@ -24,7 +24,6 @@ Implement the multi-line `TextArea` atom that extends the TextInput visual syste
 Goals:
 - Provide a `<textarea>` wrapper that shares typography, padding, and tokens with TextInput but disallows browser resizing (`resize: none`).
 - Support optional label above and error text below, ensuring only one supporting text block appears at a time.
-- Expose props for `rows`, `minRows`, `maxRows` (optional), `state`, `disabled`, `fullWidth`, and `ariaLabel` for no-label scenarios.
 - Document usage and states in Storybook.
 
 ## Design References (source of truth)
@@ -39,18 +38,16 @@ Goals:
 
 ## Acceptance Criteria / Definition of Done (required)
 1. `TextArea` renders a semantic `<textarea>` with default `rows=3`, and disables drag resizing.
-2. Invalid state applies `--color-warning` border/background per DE-0010, sets `aria-invalid="true"`, and shows error text below using `role="alert"`;
+2. Invalid state applies `--color-warning` border/background per `DE-0010`, sets `aria-invalid="true"`, and shows error text below using `role="alert"`;
 3. Disabled state applies `opacity: 0.7`, uses native `disabled` attribute (or `aria-disabled` fallback), blocks pointer events, and keeps layout unchanged.
-4. Component maintains TextInput-aligned padding, typographic tokens, and focus outlines (`2px` high-contrast ring) across breakpoints.
-5. Storybook docs at `UI / Atoms / TextArea` showcase states, rows adjustments, disabled/invalid demos, and accessibility guidance with no console errors.
+4. Component maintains TextInput-aligned padding, typographic tokens, and focus outlines (high-contrast ring) across breakpoints.
+5. Storybook docs at `TextArea` showcase states, rows adjustments, disabled/invalid demos, and accessibility guidance with no console errors.
 
 ## Test Coverage  
 (Manual or auto-generated)
 
 - Related test cases:
-	- (TBD) `TC-MC-0061-UI-TextArea-primary-desktop`
-	- (TBD) `TC-MC-0062-UI-TextArea-invalid-accessibility`
-	- (TBD) `TC-MC-0063-SM-UI-TextArea`
+	- (TBD)
 
 ## Related  
 - Depends on:
@@ -59,8 +56,7 @@ Goals:
 	- Future feature forms requiring multi-line inputs
 - Duplicate of:
 - Additional Links:
-	- Storybook docs: `https://leva13007.github.io/memora-cards-storybook/?path=/docs/ui-atoms-textarea--docs`
-	- Storybook story: `https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-textarea--default&viewMode=story`
+	- Storybook docs: 
 
 ## Sprint
 - [Sprint 02](../../sprints/MC-0002-Sprint-02.md)

@@ -7,11 +7,10 @@ Define the visual, behavioral, and accessibility rules of the `TextInput` atom s
 - Applies to single-line text inputs used for forms, filters, and simple search fields.
 - Covers two visual states: **Primary** (default) and **Invalid** (error), plus the **Disabled** state.
 - Specifies label placement, error text behavior, typography, spacing, and focus affordances.
-- Excludes multi-line textarea, masked inputs, and complex components (e.g., combo boxes, date pickers).
 
 ## 3. Terminology
 - **Label**: Text describing the input, rendered above the field when provided.
-- **Helper / Error text**: Supporting copy below the field. Error text uses the warning color token.
+- **Error text**: Supporting copy below the field. Error text uses the warning color token.
 - **Primary state**: Default, valid styling.
 - **Invalid state**: Displays error styling when validation fails.
 - **Disabled**: Input cannot be interacted with; visuals show reduced emphasis.
@@ -26,45 +25,46 @@ Define the visual, behavioral, and accessibility rules of the `TextInput` atom s
 	- [design/foundations/theme.md](../foundations/theme.md)
 
 ## 5. Conceptual Model
-- Composition: `Label` (optional) → `Input field` (TextMedium typography) → `Helper/Error text` (optional).
-- Input is rendered as `<input type="text">` (or email/password variations) with a 1px border, 8px vertical padding, and 12px horizontal padding by default.
-- Layout is vertical stack with consistent spacing: `label` sits 0.375rem above the input, error text sits 0.375rem below.
+- Composition: `Label` (optional) → `Input field` (TextMedium typography) → `Error text` (optional).
+- Input is rendered as `<input type="text">` (or email/password variations) with a border, vertical padding, and horizontal padding.
+- Layout is vertical stack with consistent spacing.
 
 ## 6. Behavioral Rules
-- Focus: On focus, the input border color changes to `--color-link` with a 2px outline for accessibility.
+- Focus: On focus, the input border color changes to `--color-link` with a outline for accessibility.
 - Invalid state: When invalid, border color changes to `--color-warning`, and error text appears below the input.
-- Disabled state: Input and associated text reduce opacity to 0.7 and block pointer events.
-- Placeholder text uses the same typography but at 60% opacity.
+- Disabled state: Input and associated text reduce opacity to `0.7` and block pointer events.
+- Placeholder text uses the same typography but at `0.7` opacity.
 
 ## 7. States & Visuals
 
-| State     | Border color               | Background                    | Text color                 | Label                        | Error text                   |
-|-----------|----------------------------|-------------------------------|----------------------------|------------------------------|------------------------------|
-| Primary   | `--color-text`             | `--color-bg`                  | `--color-text`             | Label text `--color-text`    |                              |
-| Invalid   | `--color-warning`          | `--color-warning` @ 15% alpha | `--color-warning`          | Label text `--color-warning` | Error text `--color-warning` |
-| Disabled  | `--color-text` @ 15% alpha | `--color-grey`                | `--color-text` @ 15% alpha | Label hidden or muted        |                              |
+| State     | Border color          | Background              | Text color           | Label                        | Error text                   |
+|-----------|-----------------------|-------------------------|----------------------|------------------------------|------------------------------|
+| Primary   | `--color-text`        | `--color-bg`            | `--color-text`       | Label text `--color-text`    |                              |
+| Invalid   | `--color-warning`     | `--color-warning` @ 70% | `--color-warning`    | Label text `--color-warning` | Error text `--color-warning` |
+| Disabled  | `--color-text` @ 70%	| `--color-grey`          | `--color-text` @ 70% | Label hidden or muted        |                              |
 
 ### 7.1 Focus state
 - On focus, border color changes to `--color-link`.
-- Outline: `2px solid var(--color-link, currentColor)`.
+- Outline: `var(--outline) solid var(--color-link, currentColor)`.
 
 ### 7.2 Label Rules
 1. Labels, when provided, render above the input using `TextMedium` typography (same tokens as body text) and `--color-text`.
-2. Required indicators (e.g., `*`) appear within the label; use `--color-warning` for the indicator only.
-3. Label spacing: 0.375rem gap between label and input.
+2. Label spacing: `--size-5` gap between label and input.
+3. ~~Required indicators (e.g., `*`) appear within the label; use `--color-warning` for the indicator only.~~
 
 ### 7.3 Error Text Rules
 1. Error text is optional and renders only when the field is invalid.
-2. Error message sits 0.375rem below the input and left-aligns with the field content.
+2. Error message sits `--size-5` below the input and left-aligns with the field content.
 3. Typography: uses `TextMedium` tokens with `--color-warning`.
 4. Error text must set `role="alert"` for screen readers.
 
 ## 8. Layout & Responsiveness
-- Default width is fluid; component stretches to the width of its container while preserving internal padding.
-- Minimum tap target height: 40px on Desktop/Tablet, 36px on Mobile (padding may adjust slightly per breakpoint to keep this minimum).
-- Horizontal padding: 12px Desktop/Tablet, 10px Mobile; vertical padding: 8px Desktop/Tablet, 6px Mobile.
+- Default `width` is fluid; component stretches to the width of its container while preserving internal padding.
+- ~~Minimum tap target height: 40px on Desktop/Tablet, 36px on Mobile (padding may adjust slightly per breakpoint to keep this minimum).~~
+- Horizontal padding: `--gap-horizontal`; vertical padding: `--gap-vertical`.
 - Label, field, and error text always align on the same left edge; right edge follows container width.
-- When placed in responsive grids, ensure gutter spacing keeps at least 16px clearance between adjacent inputs.
+- `Label` sits `--size-5` above the input, `error text` sits `--size-5` below
+- ~~When placed in responsive grids, ensure gutter spacing keeps at least 16px clearance between adjacent inputs.~~
 
 ## 9. Tokens & Theming
 - Typography: `TextMedium`.
@@ -72,11 +72,11 @@ Define the visual, behavioral, and accessibility rules of the `TextInput` atom s
 	- Primary text/border: `--color-text`
 	- Focus outline: `--color-link`
 	- Error text/border: `--color-warning`
-	- Error background: `--color-warning` @ 15% alpha
-  - Disabled text/border: `--color-text` @ 15% alpha
-	- Placeholder: `--color-text` @ 60% opacity
+	- Error background: `--color-warning` @ 70%
+  - Disabled text/border: `--color-text` @ 70%
+	- Placeholder: `--color-text` @ 70% opacity
 - Border radius reuses the global control radius token `--border-radius`.
-- Background follows theme: `--color-bg` for primary, `--color-warning` @ 15% alpha for invalid, `--color-grey` for disabled.
+- Background follows theme: `--color-bg` for primary, `--color-warning` @ 70% for invalid, `--color-grey` for disabled.
 - Do not hardcode values outside of tokens; any new token additions must be documented in `design/foundations/tokens.md` first.
 
 ## 10. Accessibility

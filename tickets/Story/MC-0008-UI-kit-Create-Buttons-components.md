@@ -37,20 +37,17 @@ Goals:
 	- [design/foundations/theme.md](../../design/foundations/theme.md)
 
 ## Acceptance Criteria / Definition of Done (required)
-1. Provide a `Button` component that renders a semantic `<button>` by default (with `type` override) and supports the props: `variant`, `disabled`, `icon`, `onClick`, `fullWidth`, `ariaLabel` (for icon-only future use).
-2. `variant="primary" | "warning" | "secondary"` applies the background, border, and text/icon colors from DE-0008, including hover/active/focus-visible token transitions; focus-visible outline uses `--color-link` (primary/secondary) or `--color-warning` (warning).
-3. `icon` prop renders the Icon atom to the left of the label, keeps spacing defined in the spec (0.5rem), inherits `currentColor`, and scales with typography tokens per breakpoint.
-4. Disabled state applies `opacity: 0.7`, blocks pointer/keyboard interaction (`disabled` attribute or `aria-disabled`), and preserves layout/spacing.
+1. Provide a `Button` component that renders a semantic `<button>`.
+2. `variant="primary" | "warning" | "secondary"` applies the background, border, and text/icon colors from [DE-0008-Buttons](../../design/design/DE-0008-Buttons.md), including hover/active/focus-visible token transitions; focus-visible outline.
+3. `icon` prop renders the Icon atom to the left of the label, keeps spacing, inherits `currentColor`.
+4. `Disabled` state applies `opacity: 0.7`, blocks pointer/keyboard interaction.
 5. Component exposes Storybook stories under `UI / Atoms / Button` that document all variants, disabled state, icon usage, and accessibility guidance; stories load with no console errors.
-6. README/Storybook docs list required tokens, icon alignment rules, and usage guidelines; API docs explain how to supply `aria-label` for icon-only buttons.
 
 ## Test Coverage  
 (Manual or auto-generated)
 
 - Related test cases:
-	- (TBD) `TC-MC-0055-UI-Button-primary-desktop`
-	- (TBD) `TC-MC-0056-UI-Button-warning-accessibility`
-	- (TBD) `TC-MC-0057-SM-UI-Button` (Storybook smoke)
+	- (TBD)
 
 ## Related  
 - Depends on:
@@ -59,9 +56,7 @@ Goals:
 	- Future feature tickets requiring actionable CTAs
 - Duplicate of:
 - Additional Links:
-	- Storybook docs: `https://leva13007.github.io/memora-cards-storybook/?path=/docs/ui-atoms-button--docs`
-	- Storybook story: `https://leva13007.github.io/memora-cards-storybook/iframe.html?id=ui-atoms-button--default&viewMode=story`
+	- Storybook docs: 
 
 ## Sprint
 - [Sprint 02](../../sprints/MC-0002-Sprint-02.md)
-
